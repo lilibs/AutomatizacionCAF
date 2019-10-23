@@ -44,8 +44,10 @@ Feature: Creacion de clientes con validaciones implementadas
     Given El usuario ingresa en la pagina principal
     When El usuario selecciona la opcion cliente
     And El usuario selecciona el link de Crear Cliente
-    And El usuario ingresa 
-    Then I verify the <status> in step
+    And El usuario ingresa los campos de <NombreCliente> y <IdBBG>
+    And El usuario arrastra el campo de <ModalidadClienteDisponible> a <ModalidadClienteAsociado>
+    And El cliente arrastra el campo de <ProductosDisponibles> a <ProductosAsociados>
+    Then Deberia visualizar el mensaje de confirmacion
 
     Examples: 
       | name  | value | status  |
