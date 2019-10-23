@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="15.834493">
+<testcase classname="Usuario que ingresa al formulario y en la barra de busqueda consulta un cliente." name="Consulta cliente existente correctamente" time="8.023998">
+<system-out><![CDATA[Given El usuario ingresa en la pagina principal.............................passed
+When El usuario seleccione la opcion cliente................................passed
+And El usuario ingrese el nombre del cliente BBVA en el campo de busqueda...passed
+Then Deberia visualizar en el resultado de la busqueda el nombre de BBVA....passed
+]]></system-out>
+</testcase>
+<testcase classname="Usuario que ingresa al formulario y en la barra de busqueda consulta un cliente." name="Consulta cliente no existente" time="7.810495">
+<system-out><![CDATA[Given El usuario ingresa en la pagina principal.............................passed
+When El usuario seleccione la opcion cliente................................passed
+And El usuario ingrese el nombre del cliente Andres en el campo de busqueda.passed
+Then Deberia visualizar en el resultado de la busqueda cero registros <Respuesta>.passed
+]]></system-out>
+</testcase>
+</testsuite>

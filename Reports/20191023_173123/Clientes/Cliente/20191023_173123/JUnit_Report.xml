@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Cliente" time="16" tests="1" failures="0" errors="0">
+    <testsuite name="Cliente" tests="1" failures="0" errors="0" time="16" timestamp="2019-10-23 17:31:25" hostname="Ltoroc - P-Ltoroc.intergrupo.com" id="Test Suites/Clientes/Cliente">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="E:\\TORO\\INTERGRUPO\\AUTOMATIZACION_PROYECTOS\\PROYECTOS\\CAF\\CAF\\Reports\\20191023_173123\\Clientes\\Cliente\\20191023_173123"/>
+            <property name="logFiles" value="E:\\TORO\\INTERGRUPO\\AUTOMATIZACION_PROYECTOS\\PROYECTOS\\CAF\\CAF\\Reports\\20191023_173123\\Clientes\\Cliente\\20191023_173123\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Ltoroc - P-Ltoroc.intergrupo.com"/>
+            <property name="os" value="Windows 10 32bit"/>
+            <property name="katalonVersion" value="6.3.0.1"/>
+            <property name="browser" value="Chrome 77.0.3865.120"/>
+            <property name="hostAddress" value="192.168.0.14"/>
+            <property name="sessionId" value="573d5751e10b0d9621853b1d574ed664"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Windows 10"/>
+        </properties>
+        <testcase name="Test Cases/Clientes/ConsultaCliente" classname="Test Cases/Clientes/ConsultaCliente" status="PASSED">
+            <system-out>2019-10-23 17:31:26 - [TEST_CASE][PASSED] - Test Cases/Clientes/ConsultaCliente: Test Cases/Clientes/ConsultaCliente&#xD;
+&#xD;
+2019-10-23 17:31:26 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/Clientes/ConsultarCliente.feature"): Feature file: 'Include/features/Clientes/ConsultarCliente.feature' was passed&#xD;
+&#xD;
+2019-10-23 17:31:26 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Clientes/ConsultarCliente.feature' and extract report to folder: 'E:\TORO\INTERGRUPO\AUTOMATIZACION_PROYECTOS\PROYECTOS\CAF\CAF\Reports\20191023_173123\Clientes\Cliente\20191023_173123/cucumber_report/1571869886330'...&#xD;
+&#xD;
+2019-10-23 17:31:26 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Consulta cliente existente correctamente: SCENARIO Consulta cliente existente correctamente&#xD;
+&#xD;
+2019-10-23 17:31:26 - [TEST_STEP][PASSED] - El usuario ingresa en la pagina principal: El usuario ingresa en la pagina principal&#xD;
+&#xD;
+2019-10-23 17:31:26 - [MESSAGE][INFO] - Starting 'Chrome' driver&#xD;
+&#xD;
+2019-10-23 17:31:27 - [MESSAGE][INFO] - Action delay is set to 0 seconds&#xD;
+&#xD;
+2019-10-23 17:31:30 - [MESSAGE][PASSED] - Browser is opened with url: ''&#xD;
+&#xD;
+2019-10-23 17:31:32 - [MESSAGE][PASSED] - Navigate to 'http://smdessc01:4800/CAF.Tesoreria.Web/' successfully&#xD;
+&#xD;
+2019-10-23 17:31:32 - [MESSAGE][PASSED] - El usuario ingresa en la pagina principal&#xD;
+&#xD;
+2019-10-23 17:31:32 - [TEST_STEP][PASSED] - El usuario seleccione la opcion cliente: El usuario seleccione la opcion cliente&#xD;
+&#xD;
+2019-10-23 17:31:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Clientes/a_Clientes' is clicked on&#xD;
+&#xD;
+2019-10-23 17:31:33 - [MESSAGE][PASSED] - El usuario seleccione la opcion cliente&#xD;
+&#xD;
+2019-10-23 17:31:33 - [TEST_STEP][PASSED] - El usuario ingrese el nombre del cliente BBVA en el campo de busqueda: El usuario ingrese el nombre del cliente BBVA en el campo de busqueda&#xD;
+&#xD;
+2019-10-23 17:31:33 - [MESSAGE][PASSED] - Text 'BBVA' is set on object 'Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'&#xD;
+&#xD;
+2019-10-23 17:31:33 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'&#xD;
+&#xD;
+2019-10-23 17:31:33 - [MESSAGE][PASSED] - El usuario ingrese el nombre del cliente BBVA en el campo de busqueda&#xD;
+&#xD;
+2019-10-23 17:31:33 - [TEST_STEP][PASSED] - Deberia visualizar en el resultado de la busqueda el nombre de BBVA: Deberia visualizar en el resultado de la busqueda el nombre de BBVA&#xD;
+&#xD;
+2019-10-23 17:31:34 - [MESSAGE][PASSED] - Object 'Object Repository/Clientes/ConsultaCliente/ConsultaCliente_Existente/td_BBVCOL' is present&#xD;
+&#xD;
+2019-10-23 17:31:34 - [MESSAGE][PASSED] - Browser is closed&#xD;
+&#xD;
+2019-10-23 17:31:34 - [MESSAGE][PASSED] - Deberia visualizar en el resultado de la busqueda el nombre de BBVA&#xD;
+&#xD;
+2019-10-23 17:31:34 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Consulta cliente no existente: SCENARIO Consulta cliente no existente&#xD;
+&#xD;
+2019-10-23 17:31:34 - [TEST_STEP][PASSED] - El usuario ingresa en la pagina principal: El usuario ingresa en la pagina principal&#xD;
+&#xD;
+2019-10-23 17:31:34 - [MESSAGE][INFO] - Starting 'Chrome' driver&#xD;
+&#xD;
+2019-10-23 17:31:37 - [MESSAGE][PASSED] - Browser is opened with url: ''&#xD;
+&#xD;
+2019-10-23 17:31:40 - [MESSAGE][PASSED] - Navigate to 'http://smdessc01:4800/CAF.Tesoreria.Web/' successfully&#xD;
+&#xD;
+2019-10-23 17:31:40 - [MESSAGE][PASSED] - El usuario ingresa en la pagina principal&#xD;
+&#xD;
+2019-10-23 17:31:40 - [TEST_STEP][PASSED] - El usuario seleccione la opcion cliente: El usuario seleccione la opcion cliente&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Clientes/a_Clientes' is clicked on&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - El usuario seleccione la opcion cliente&#xD;
+&#xD;
+2019-10-23 17:31:41 - [TEST_STEP][PASSED] - El usuario ingrese el nombre del cliente Andres en el campo de busqueda: El usuario ingrese el nombre del cliente Andres en el campo de busqueda&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - Text 'Andres' is set on object 'Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - El usuario ingrese el nombre del cliente Andres en el campo de busqueda&#xD;
+&#xD;
+2019-10-23 17:31:41 - [TEST_STEP][PASSED] - Deberia visualizar en el resultado de la busqueda cero registros &lt;Respuesta&gt;: Deberia visualizar en el resultado de la busqueda cero registros &lt;Respuesta&gt;&#xD;
+&#xD;
+2019-10-23 17:31:41 - [MESSAGE][PASSED] - Object 'Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos' is present&#xD;
+&#xD;
+2019-10-23 17:31:42 - [MESSAGE][PASSED] - Browser is closed&#xD;
+&#xD;
+2019-10-23 17:31:42 - [MESSAGE][PASSED] - Deberia visualizar en el resultado de la busqueda cero registros &lt;Respuesta&gt;&#xD;
+&#xD;
+2019-10-23 17:31:42 - [MESSAGE][PASSED] - Feature file: 'Include/features/Clientes/ConsultarCliente.feature' was passed</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-10-23 17:31:25 - [TEST_SUITE][INCOMPLETE] - Cliente: null</system-out>
+        <system-err>2019-10-23 17:31:25 - [TEST_SUITE][INCOMPLETE] - Cliente: null</system-err>
+    </testsuite>
+</testsuites>

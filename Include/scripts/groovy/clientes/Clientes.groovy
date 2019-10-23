@@ -48,10 +48,13 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class ConsultaCliente {
+class Clientes {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
+
+	
+//Consultar Cliente
 	
 	@Given("El usuario ingresa en la pagina principal")
 	def IngresarPaginaPrincipal() {
@@ -65,35 +68,40 @@ class ConsultaCliente {
 		println ("Seleccion Modulo Clientes")
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
-	
+
 
 	@And("El usuario ingrese el nombre del cliente (.*) en el campo de busqueda")
 	def BuscarCliente(String Informacion) {
 		println ("Ingresar Nombre de Busqueda")
-		
+
 		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Informacion)
 		WebUI.sendKeys(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Keys.chord(Keys.ENTER))
 	}
-	
-	
-	
+
+
+
 	@Then("Deberia visualizar en el resultado de la busqueda el nombre de (.*)")
 	def VisualizarRespuestaBusqueda(String Respuesta) {
 		println ("Visualizar Resultado Consulta")
-		
+
 		WebUI.verifyElementPresent(findTestObject('Clientes/ConsultaCliente/ConsultaCliente_Existente/td_BBVCOL'), 5)
 		WebUI.closeBrowser()
 	}
-	
-	
-	
+
+
+
 	@Then("Deberia visualizar en el resultado de la busqueda cero registros (.*)")
 	def VisualizarRespuestaBusquedaSinRegistro(String RespuestaSinRegistro) {
 		println ("Visualizar Resultado Consulta")
-		
+
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos'), 5)
 		WebUI.closeBrowser()
 	}
 	
-
+	
+// Crear Cliente 
+	
+	
+	//El usuario seleccione el link de Crear Cliente
+	
 }

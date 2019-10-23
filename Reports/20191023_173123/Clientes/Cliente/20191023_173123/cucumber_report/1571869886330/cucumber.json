@@ -1,0 +1,178 @@
+[
+  {
+    "line": 21,
+    "elements": [
+      {
+        "line": 32,
+        "name": "Consulta cliente existente correctamente",
+        "description": "",
+        "id": "usuario-que-ingresa-al-formulario-y-en-la-barra-de-busqueda-consulta-un-cliente.;consulta-cliente-existente-correctamente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5749085753,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "El usuario ingresa en la pagina principal",
+            "match": {
+              "location": "Clientes.IngresarPaginaPrincipal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 907618671,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "El usuario seleccione la opcion cliente",
+            "match": {
+              "location": "Clientes.SeleccionarOpcionCliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 467986816,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "El usuario ingrese el nombre del cliente BBVA en el campo de busqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BBVA",
+                  "offset": 41
+                }
+              ],
+              "location": "Clientes.BuscarCliente(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 878083501,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Deberia visualizar en el resultado de la busqueda el nombre de BBVA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BBVA",
+                  "offset": 63
+                }
+              ],
+              "location": "Clientes.VisualizarRespuestaBusqueda(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarCliente"
+          },
+          {
+            "name": "@ConsultaCliente_Existente"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Consulta cliente no existente",
+        "description": "",
+        "id": "usuario-que-ingresa-al-formulario-y-en-la-barra-de-busqueda-consulta-un-cliente.;consulta-cliente-no-existente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5807312988,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "El usuario ingresa en la pagina principal",
+            "match": {
+              "location": "Clientes.IngresarPaginaPrincipal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 773364819,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "El usuario seleccione la opcion cliente",
+            "match": {
+              "location": "Clientes.SeleccionarOpcionCliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 355872707,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "El usuario ingrese el nombre del cliente Andres en el campo de busqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Andres",
+                  "offset": 41
+                }
+              ],
+              "location": "Clientes.BuscarCliente(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 862620908,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Deberia visualizar en el resultado de la busqueda cero registros \u003cRespuesta\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cRespuesta\u003e",
+                  "offset": 65
+                }
+              ],
+              "location": "Clientes.VisualizarRespuestaBusquedaSinRegistro(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarCliente"
+          },
+          {
+            "name": "@ConsultaCliente_NoExistente"
+          }
+        ]
+      }
+    ],
+    "name": "Usuario que ingresa al formulario y en la barra de busqueda consulta un cliente.",
+    "description": "",
+    "id": "usuario-que-ingresa-al-formulario-y-en-la-barra-de-busqueda-consulta-un-cliente.",
+    "keyword": "Feature",
+    "uri": "E:/TORO/INTERGRUPO/AUTOMATIZACION_PROYECTOS/PROYECTOS/CAF/CAF/Include/features/Clientes/ConsultarCliente.feature",
+    "tags": [
+      {
+        "name": "@ConsultarCliente",
+        "type": "Tag",
+        "location": {
+          "line": 20,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

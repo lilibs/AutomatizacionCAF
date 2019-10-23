@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cliente,Chrome 77.0.3865.120,,,2019-10-23 17:31:25,2019-10-23 17:31:42,16.854s,INCOMPLETE
+,,,,,,,
+Test Cases/Clientes/ConsultaCliente,Chrome 77.0.3865.120,,,2019-10-23 17:31:26,2019-10-23 17:31:42,16.649s,PASSED
+"runFeatureFile(""Include/features/Clientes/ConsultarCliente.feature"")",Chrome 77.0.3865.120,,,2019-10-23 17:31:26,2019-10-23 17:31:42,16.403s,PASSED
