@@ -16,17 +16,32 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+@ConsultarCliente
+Feature: Usuario que ingresa al formulario y en la barra de busqueda consulta un cliente.
+
+  @ConsultaCliente_Existente
+  Scenario Outline: Consulta cliente existente correctamente
+    Given El usuario ingresa en la pagina principal 
+    When El usuario seleccione la opcion cliente
+    And El usuario ingrese el nombre del cliente <Informacion> en el campo de busqueda
+    Then Deberia visualizar en el resultado de la busqueda el nombre de <Respuesta>
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | Informacion | Respuesta  | 
+      | BBVA 				| BBVA 			 | 
+
+
+  @ConsultaCliente_NoExistente
+  Scenario Outline: Consulta cliente no existente 
+    Given El usuario ingresa en la pagina principal 
+    When El usuario seleccione la opcion cliente
+    And El usuario ingrese el nombre del cliente <InformacionNo> en el campo de busqueda
+    Then Deberia visualizar en el resultado de la busqueda cero registros <Respuesta>
+
+    Examples: 
+      | InformacionNo | RespuestaNo 				 | 
+      | Andres			  | No hay datos   			 | 
+  
+  
+      
