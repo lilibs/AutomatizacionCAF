@@ -16,6 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+
 @CrearCliente
 Feature: Creacion de clientes con validaciones implementadas
 
@@ -43,6 +44,8 @@ Feature: Creacion de clientes con validaciones implementadas
     When El usuario selecciona la opcion cliente
     And El usuario selecciona el link de Crear Cliente
     And El usuario ingresa los campos de <NombreCliente> y <IdBBG>
+    And El usuario selecciona la Modalidad de Cliente Disponible
+    And El usuario selecciona la Modalidad de Productos Disponible
     Then Deberia visualizar el mensaje de confirmacion
 
     Examples: 

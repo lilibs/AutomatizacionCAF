@@ -77,6 +77,28 @@ class Clientes {
 		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Informacion)
 		WebUI.sendKeys(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Keys.chord(Keys.ENTER))
 	}
+	
+	
+	@And("El usuario selecciona la Modalidad de Cliente Disponible")
+	def SeleccionarModalidadClienteDisponible() {
+		println ("Seleccionar modalidad Cliente Disponible")
+		
+		WebUI.click(findTestObject('Page_Crear Cliente - Contactos de Tesorera/li_Activo'))
+		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Modalidades Cliente Disponibles_k-button k-button-icon'))	
+		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/li_Activo_1'))
+		
+	}
+	
+	
+	@And("El usuario selecciona la Modalidad de Productos Disponible")
+	def SeleccionarModalidadProductoDisponible() {
+		println ("Seleccionar modalidad Producto Disponible")
+		
+		WebUI.click(findTestObject('Page_Crear Cliente - Contactos de Tesorera/li_Act- Time Deposit'))
+		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Productos Disponibles_k-button k-button-icon'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/li_Act- Time Deposit_1'))
+		
+	}
 
 
 
@@ -105,7 +127,7 @@ class Clientes {
 	def SeleccionarLinkCrearCliente() {
 		println ("Seleccionar Boton crear Cliente")
 		
-		
+		WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/a_Crear Cliente'))
 
 	}
 	
@@ -113,44 +135,53 @@ class Clientes {
 	def SeleccionarBotonRegresar() {
 		println ("Seleccionar Boton Regresar")
 		
-		
+		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Regresar'))
 
 	}
 	
 	@Then("Deberia visualizar nuevamente la pagina principal")
 	def VisualizarPaginaPrincipal() {
 		println ("Visualizar de Nuevo la página principal")
+		
+		WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))
 
 	}
+	
 
 	@And("El usuario selecciona el boton de Guardar")
 	def SeleccionarBotonGuardar() {
 		println ("Seleccionar Boton Guardar")
 		
-		
+		WebUI.click(findTestObject('Object Repository/CrearCliente/input_Campo Opcional_btnGuardar'))
 
 	}
+	
 	
 	@Then("Deberia visualizar los mensajes de validacion")
 	def VisualizarMensajesValidacion() {
 		println ("Visualizar mensajes de Validacion")
 		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/span_Debe ingresar un nombre'), 5)
 		
-
 	}
+	
 	
 	@And("El usuario ingresa los campos de (.*) y (.*)")
 	def IngresarInformacion(String NombreCliente, String IdBBG) {
 		println ("Ingresar información")
 		
 		
+		WebUI.setText(findTestObject('Object Repository/CrearCliente/input_Nombre Cliente_Nombre'), NombreCliente)
+		WebUI.setText(findTestObject('Object Repository/CrearCliente/input_BBG Broker ID_Sigla'), IdBBG)
 
 	}
+	
 	
 	@Then("Deberia visualizar el mensaje de confirmacion")
 	def VisualizarMensajesConfirmacionRegistro() {
 		println ("Visualizar mensajes de Confirmacion")
-
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/div_xito                El cliente fue guardado exitosamente'))
 		
 	}
 	
