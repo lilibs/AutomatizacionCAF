@@ -53,9 +53,9 @@ class Clientes {
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
 
-	
-//Consultar Cliente
-	
+
+	//Consultar Cliente
+
 	@Given("El usuario ingresa en la pagina principal")
 	def IngresarPaginaPrincipal() {
 		println ("Ingreso Pagina Principal")
@@ -63,7 +63,7 @@ class Clientes {
 		WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 	}
 
-	@When("El usuario seleccione la opcion cliente")
+	@When("El usuario selecciona la opcion cliente")
 	def SeleccionarOpcionCliente() {
 		println ("Seleccion Modulo Clientes")
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
@@ -97,11 +97,62 @@ class Clientes {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos'), 5)
 		WebUI.closeBrowser()
 	}
+
+
+	// Crear Cliente
+
+	@And("El usuario selecciona el link de Crear Cliente")
+	def SeleccionarLinkCrearCliente() {
+		println ("Seleccionar Boton crear Cliente")
+		
+		
+
+	}
 	
+	@And("El usuario seleccione el boton Regresar")
+	def SeleccionarBotonRegresar() {
+		println ("Seleccionar Boton Regresar")
+		
+		
+
+	}
 	
-// Crear Cliente 
+	@Then("Deberia visualizar nuevamente la pagina principal")
+	def VisualizarPaginaPrincipal() {
+		println ("Visualizar de Nuevo la página principal")
+
+	}
+
+	@And("El usuario selecciona el boton de Guardar")
+	def SeleccionarBotonGuardar() {
+		println ("Seleccionar Boton Guardar")
+		
+		
+
+	}
 	
+	@Then("Deberia visualizar los mensajes de validacion")
+	def VisualizarMensajesValidacion() {
+		println ("Visualizar mensajes de Validacion")
+		
+		
+
+	}
 	
-	//El usuario seleccione el link de Crear Cliente
+	@And("El usuario ingresa los campos de (.*) y (.*)")
+	def IngresarInformacion(String NombreCliente, String IdBBG) {
+		println ("Ingresar información")
+		
+		
+
+	}
+	
+	@Then("Deberia visualizar el mensaje de confirmacion")
+	def VisualizarMensajesConfirmacionRegistro() {
+		println ("Visualizar mensajes de Confirmacion")
+
+		
+	}
+	
 	
 }

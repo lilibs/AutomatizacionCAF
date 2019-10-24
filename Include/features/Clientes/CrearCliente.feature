@@ -16,18 +16,16 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
-
 @CrearCliente
 Feature: Creacion de clientes con validaciones implementadas
 
   @CancelarCreacionCliente
   Scenario Outline: El usuario selecciona el boton Regresar
     Given El usuario ingresa en la pagina principal
-    When El usuario seleccione la opcion cliente
-    And El usuario seleccione el link de Crear Cliente
-    And El usuario seleccione el boton Regresar
-    Then Debería visualizar la pagina principal
+    When El usuario selecciona la opcion cliente
+    And El usuario selecciona el link de Crear Cliente
+    And El usuario selecciona el boton Regresar
+    Then Deberia visualizar nuevamente la pagina principal
 
 
   @ValidarCamposRequeridos
@@ -45,11 +43,8 @@ Feature: Creacion de clientes con validaciones implementadas
     When El usuario selecciona la opcion cliente
     And El usuario selecciona el link de Crear Cliente
     And El usuario ingresa los campos de <NombreCliente> y <IdBBG>
-    And El usuario arrastra el campo de <ModalidadClienteDisponible> a <ModalidadClienteAsociado>
-    And El cliente arrastra el campo de <ProductosDisponibles> a <ProductosAsociados>
     Then Deberia visualizar el mensaje de confirmacion
 
     Examples: 
-      | NombreCliente  | IdBBG | ModalidadClienteDisponible  | ModalidadClienteAsociado | ProductosDisponibles | ProductosAsociados  |
- 
-
+      | NombreCliente | IdBBG  |
+      | Andres lopera | 123456 |
