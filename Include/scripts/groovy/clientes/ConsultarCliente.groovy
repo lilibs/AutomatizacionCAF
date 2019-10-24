@@ -48,60 +48,60 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class Clientes {
+class ConsultarCliente {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
 
-	
-//Consultar Cliente
-	
-	@Given("El usuario ingresa en la pagina principal")
-	def IngresarPaginaPrincipal() {
+
+	//Consultar Cliente existente
+
+	@Given("El usuario ingresa a la página principal")
+	def El_usuario_ingresa_a_la_pagina_principal() {
 		println ("Ingreso Pagina Principal")
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 	}
 
-	@When("El usuario seleccione la opcion cliente")
-	def SeleccionarOpcionCliente() {
+	@And("se ubica en la opción clientes")
+	def se_ubica_en_la_opcion_clientes() {
 		println ("Seleccion Modulo Clientes")
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
 
 
-	@And("El usuario ingrese el nombre del cliente (.*) en el campo de busqueda")
-	def BuscarCliente(String Informacion) {
+	@When("digita el nombre del cliente (.*) en el campo búsqueda")
+	def digita_el_nombre_del_cliente_en_el_campo_busqueda(String nombreCliente) {
 		println ("Ingresar Nombre de Busqueda")
 
-		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Informacion)
+		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), nombreCliente)
+
+	}
+
+	@And("presiona la tecla enter")
+	def presiona_la_tecla_enter() {
 		WebUI.sendKeys(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Keys.chord(Keys.ENTER))
 	}
 
 
-
-	@Then("Deberia visualizar en el resultado de la busqueda el nombre de (.*)")
-	def VisualizarRespuestaBusqueda(String Respuesta) {
+	@Then("se visualiza el nombre del cliente (.*) en el resultado de la búsqueda")
+	def se_visualiza_el_nombre_del_cliente_en_el_resultado_de_la_busqueda(String nombreCliente) {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyElementPresent(findTestObject('Clientes/ConsultaCliente/ConsultaCliente_Existente/td_BBVCOL'), 5)
 		WebUI.closeBrowser()
 	}
 
-
-
-	@Then("Deberia visualizar en el resultado de la busqueda cero registros (.*)")
-	def VisualizarRespuestaBusquedaSinRegistro(String RespuestaSinRegistro) {
+	//Consultar Cliente inexistente
+	
+	@Then("se visualiza el mensaje (.*)")
+	def se_visualiza_el_mensaje(string) {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos'), 5)
 		WebUI.closeBrowser()
 	}
-	
-	
-// Crear Cliente 
-	
-	
-	//El usuario seleccione el link de Crear Cliente
-	
+
+
+
 }

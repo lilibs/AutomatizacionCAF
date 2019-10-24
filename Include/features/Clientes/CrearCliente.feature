@@ -39,17 +39,27 @@ Feature: Creacion de clientes con validaciones implementadas
     Then Deberia visualizar los mensajes de validacion
 
 
-  @CrearCliente_Correctamente
-  Scenario Outline: El usuario crea un nuevo cliente
-    Given El usuario ingresa en la pagina principal
-    When El usuario selecciona la opcion cliente
-    And El usuario selecciona el link de Crear Cliente
-    And El usuario ingresa los campos de <NombreCliente> y <IdBBG>
-    And El usuario arrastra el campo de <ModalidadClienteDisponible> a <ModalidadClienteAsociado>
-    And El cliente arrastra el campo de <ProductosDisponibles> a <ProductosAsociados>
-    Then Deberia visualizar el mensaje de confirmacion
+  @IrCrearCliente
+  Scenario Outline: Ir a crear cliente
+    Given El usuario ingresa a la página principal
+    And se ubica en la opción clientes
+    When da clic en el link Crear cliente
+    Then el sistema muestra el formulario Crear Cliente
+    
+   
+   @CrearCliente
+   Scenario Outline: Crear cliente
+    Given El usuario se encuentra en el formulario Crear Cliente
+    When digita el nombre del cliente <NombreCliente> 
+    And digita el BBG Broker ID <IdBBG>
+    And selecciona la modalidad cliente disponible el item <itemModalidad>
+    And se da clic en el botón transfer to modalidad
+    And selecciona en productos disponibles el item <itemProducto>
+    And se da clic en el botón transfer to productos
+    And se da clic en el botón Guardar
+    Then el sistema muestra un mensaje de éxito 
 
     Examples: 
-      | NombreCliente  | IdBBG | ModalidadClienteDisponible  | ModalidadClienteAsociado | ProductosDisponibles | ProductosAsociados  |
+      | NombreCliente  | IdBBG | itemModalidad  | itemProducto | 
  
 
