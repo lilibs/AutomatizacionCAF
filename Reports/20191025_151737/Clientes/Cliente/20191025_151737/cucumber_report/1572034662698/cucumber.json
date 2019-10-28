@@ -1,0 +1,202 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Consultar cliente existente",
+        "description": "",
+        "id": "consultar-cliente;consultar-cliente-existente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11978277780,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "ConsultarCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1361235624,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252059632,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "digita el nombre del cliente BBVA en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BBVA",
+                  "offset": 29
+                }
+              ],
+              "location": "ConsultarCliente.digita_el_nombre_del_cliente_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 191141292,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "presiona la tecla enter",
+            "match": {
+              "location": "ConsultarCliente.presiona_la_tecla_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 886833097,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se visualiza el nombre del cliente BBVA en el resultado de la búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BBVA",
+                  "offset": 35
+                }
+              ],
+              "location": "ConsultarCliente.se_visualiza_el_nombre_del_cliente_en_el_resultado_de_la_busqueda(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarCliente"
+          },
+          {
+            "name": "@ConsultaCliente_Existente"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Consultar cliente no existente",
+        "description": "",
+        "id": "consultar-cliente;consultar-cliente-no-existente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7879607636,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "ConsultarCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 942863117,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194795102,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "digita el nombre del cliente Juan en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Juan",
+                  "offset": 29
+                }
+              ],
+              "location": "ConsultarCliente.digita_el_nombre_del_cliente_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160021143,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "presiona la tecla enter",
+            "match": {
+              "location": "ConsultarCliente.presiona_la_tecla_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1380162655,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "se visualiza el mensaje No hay datos.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No hay datos.",
+                  "offset": 24
+                }
+              ],
+              "location": "ConsultarCliente.se_visualiza_el_mensaje(Object)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarCliente"
+          },
+          {
+            "name": "@ConsultaCliente_NoExistente"
+          }
+        ]
+      }
+    ],
+    "name": "Consultar Cliente",
+    "description": "",
+    "id": "consultar-cliente",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Clientes/ConsultarCliente.feature",
+    "tags": [
+      {
+        "name": "@ConsultarCliente",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

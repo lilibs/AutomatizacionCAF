@@ -1,42 +1,17 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
+#Author: lsepulvedap@intergrupo.com
 
 
 @CrearCliente
-Feature: Creacion de clientes con validaciones implementadas
+Feature: Creación de clientes con validaciones implementadas
 
-  @CancelarCreacionCliente
-  Scenario Outline: El usuario selecciona el boton Regresar
-    Given El usuario ingresa en la pagina principal
-    When El usuario seleccione la opcion cliente
-    And El usuario seleccione el link de Crear Cliente
-    And El usuario seleccione el boton Regresar
-    Then Debería visualizar la pagina principal
-
-
+  
   @ValidarCamposRequeridos
-  Scenario Outline: El usuario selecciona el boton de Guardar sin ingresar informacion
-    Given El usuario ingresa en la pagina principal
-    When El usuario selecciona la opcion cliente
-    And El usuario selecciona el link de Crear Cliente
-    And El usuario selecciona el boton de Guardar
-    Then Deberia visualizar los mensajes de validacion
+  Scenario Outline: Validación campos requeridos
+    Given El usuario ingresa a la página principal
+    And se ubica en la opción clientes
+    When da clic en el link Crear cliente
+    And presiona el botón Guardar
+    Then Se visualizan los mensajes de validación
 
 
   @IrCrearCliente
@@ -49,7 +24,7 @@ Feature: Creacion de clientes con validaciones implementadas
    
    @CrearCliente
    Scenario Outline: Crear cliente
-    Given El usuario se encuentra en el formulario Crear Cliente
+    Given El usuario ingresa a la opción Crear Cliente
     When digita el nombre del cliente <NombreCliente> 
     And digita el BBG Broker ID <IdBBG>
     And selecciona la modalidad cliente disponible el item <itemModalidad>
@@ -59,7 +34,15 @@ Feature: Creacion de clientes con validaciones implementadas
     And se da clic en el botón Guardar
     Then el sistema muestra un mensaje de éxito 
 
-    Examples: 
-      | NombreCliente  | IdBBG | itemModalidad  | itemProducto | 
+  Examples: 
+      | NombreCliente  | IdBBG | itemModalidad  | itemProducto 			| 
+ 			| Liliana  			 | 5 	   | Activo  				| Act- Time Deposit | 
  
 
+@CancelarCreacionCliente
+  Scenario Outline: Cancelar la creación de un cliente
+    Given El usuario ingresa a la página principal
+    And se ubica en la opción clientes
+    When da clic en el link Crear cliente
+    And presiona el botón Regresar
+    Then se visualiza nuevamente la página principal

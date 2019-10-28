@@ -1,32 +1,39 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+#Author: lsepulvedap@intergrupo.com
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+
+@ModificarClientes
+Feature: Modificación de clientes
+ 
+
+	@ConsultaCliente
+  	Scenario Outline: Consultar cliente existente
+    Given El usuario ingresa a la página principal 
+    And se ubica en la opción clientes
+    When digita el nombre del cliente <nombreCliente> en el campo búsqueda
+    And presiona la tecla enter
+    Then se visualiza el nombre del cliente <nombreCliente> en el resultado de la búsqueda 
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      |nombreCliente  |
+      | BBVA 			  	|  
+      
+      
+   @ModificarCliente
+   Scenario Outline: Modificar cliente
+    Given El usuario da clic sobre el nombre del cliente
+    When da clic sobre la opción Modificar
+    And actualiza el nombre del cliente <nombreCliente1>
+    And digita el correo <correo>
+    And da clic en el botón Agregar correo
+    And digita un tag <tag>
+    And da clic en el botón Agregar tag 
+    And digita la dirección <direccion>
+    And da clic en el botón Guardar
+    Then el sistema muestra un mensaje de éxito 
+
+  Examples: 
+      | NombreCliente1|  correo 										| tag  | direccion 			 | 
+ 			| BBVA1  			 	| lilibs633@hotmail.com 	   	| tag  | dirección CR 70 | 
+ 			
+ 		
+ 

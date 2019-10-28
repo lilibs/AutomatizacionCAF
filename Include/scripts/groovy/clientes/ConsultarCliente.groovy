@@ -56,13 +56,13 @@ class ConsultarCliente {
 
 	//Consultar Cliente existente
 
-	@Given("El usuario ingresa a la página principal")
-	def El_usuario_ingresa_a_la_pagina_principal() {
-		println ("Ingreso Pagina Principal")
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
-	}
-
+	/*@Given("El usuario ingresa a la página principal")
+	 def El_usuario_ingresa_a_la_pagina_principal() {
+	 println ("Ingreso Pagina Principal")
+	 WebUI.openBrowser('')
+	 WebUI.navigateToUrl(GlobalVariable.url)
+	 }
+	 */
 	@And("se ubica en la opción clientes")
 	def se_ubica_en_la_opcion_clientes() {
 		println ("Seleccion Modulo Clientes")
@@ -93,7 +93,7 @@ class ConsultarCliente {
 	}
 
 	//Consultar Cliente inexistente
-	
+
 	@Then("se visualiza el mensaje (.*)")
 	def se_visualiza_el_mensaje(string) {
 		println ("Visualizar Resultado Consulta")

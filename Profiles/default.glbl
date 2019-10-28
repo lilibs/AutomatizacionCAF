@@ -4,4 +4,29 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://smdessc01:4800/CAF.Tesoreria.Web/'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WebUI.openBrowser(\'\')'</initValue>
+      <name>abrirNavegador</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Screenshots/'</initValue>
+      <name>screenshotDir</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'image/png'</initValue>
+      <name>ContentTypeImage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'.png'</initValue>
+      <name>ImageExt</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

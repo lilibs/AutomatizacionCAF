@@ -48,21 +48,54 @@ import cucumber.api.java.en.When
 
 
 class ModificarCliente {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+
+	@Given("El usuario da clic sobre el nombre del cliente")
+	def El_usuario_da_clic_sobre_el_nombre_del_cliente() {
+		println "Seleccionar cliente"
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("da clic sobre la opción Modificar")
+	def da_clic_sobre_la_opción_Modificar () {
+		println "Opción Modificar"
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@And("actualiza el nombre del cliente (.*)")
+	def actualiza_el_nombre_del_cliente (String nombreCliente1) {
+		println "Modifica nombre cliente"
 	}
+
+	@And("digita el correo (.*)")
+	def digita_el_correo (String correo) {
+		println "Modifica correo"
+	}
+
+	@And("da clic en el botón Agregar correo")
+	def da_clic_en_el_boton_Agregar_correo() {
+		println "agregar opción"
+	}
+
+	@And("digita un tag (.*)")
+	def digita_un_tag (String tag) {
+		println "Modifica tag"
+	}
+
+	@And("da clic en el botón Agregar tag")
+	def da_clic_en_el_boton_Agregar_tag () {
+		println "agregar opción"
+	}
+
+	@And("digita la dirección (.*)")
+	def digita_la_direccion (String direccion) {
+		println "Modifica dirección"
+	}
+
+	@And("da clic en el botón Guardar")
+	def da_clic_en_el_boton_Guardar () {
+		println "Guarda la modificación de los datos del cliente"
+	}
+
+	/*@And("el sistema muestra un mensaje de éxito")
+	def el_sistema_muestra_un_mensaje_de_exito () {
+		println "Muestra mensaje de éxito"
+	}*/
 }

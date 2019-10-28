@@ -13,7 +13,7 @@ Feature: Consultar Cliente
     Then se visualiza el nombre del cliente <nombreCliente> en el resultado de la búsqueda 
 
     Examples: 
-      |nombreCliente |
+      |nombreCliente  |
       | BBVA 			  	|  
 
 
@@ -27,7 +27,7 @@ Feature: Consultar Cliente
 
     Examples: 
       | nombreCliente |  
-      | Andres			  |  
+      | Juan			  |  
   
   
       
