@@ -75,6 +75,4 @@ class PasosComunesCliente {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/div_xito El cliente fue guardado exitosamente'))
 		WebUI.closeBrowser()
 	}
-	
-		
-	}
+}

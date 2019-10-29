@@ -50,23 +50,25 @@ import cucumber.api.java.en.When
 class CrearCliente {
 
 
-	/* @Given("El usuario ingresa a la página principal")
+	/*@Given("El usuario ingresa a la página principal")
 	 def El_usuario_ingresa_a_la_pagina_principal() {
 	 println ("Ingreso Pagina Principal")
 	 WebUI.openBrowser('')
 	 WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 	 }
-	 */
+	*/
+	
 	@Given("El usuario ingresa a la opción Crear Cliente")
 	def El_usuario_ingresa_a_la_opcion_Crear_Cliente() {
 		println "Ingresar a Crear Cliente"
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
 
-	@When("digita el nombre del cliente(.*)")
-	def digita_el_nombre_del_cliente (String NombreCliente) {
+	@When("digita el nombre del cliente (.*)")
+	def digita_el_nombre_del_cliente (String nombreCliente) {
 		println ("Ingresar Nombre del cliente")
-		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), NombreCliente)
+		
+		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), nombreCliente)
 		WebUI.sendKeys(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Keys.chord(Keys.ENTER))
 	}
 

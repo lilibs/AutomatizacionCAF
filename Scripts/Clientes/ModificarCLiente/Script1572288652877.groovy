@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+/*WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
@@ -46,3 +46,6 @@ WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Mo
 
 WebUI.closeBrowser()
 
+*/
+
+CucumberKW.runFeatureFile('Include/features/Clientes/ModificarCliente.feature')
