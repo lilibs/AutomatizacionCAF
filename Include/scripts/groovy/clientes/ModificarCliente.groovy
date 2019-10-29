@@ -53,7 +53,7 @@ class ModificarCliente {
 	def El_usuario_da_clic_sobre_el_nombre_del_cliente() {
 		println "Seleccionar cliente"
 
-	//	WebUI.verifyElementPresent(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), 5)
+		//	WebUI.verifyElementPresent(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), 5)
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_BandejaClientesContactosTesorera/a_BBVA Colombia'))
 	}
 
@@ -124,6 +124,5 @@ class ModificarCliente {
 
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/BotonGuardar_Registro'))
 		WebUI.delay(15)
-		
 	}
 }
