@@ -20,11 +20,11 @@ WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
 WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Contactos Tesorera - Contactos de Tesorera/a_Clientes'))
 
-WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Clientes - Contactos de Tesorera/a_BBVA Colombia'))
+WebUI.click(findTestObject('ModificarCliente/Page_BandejaClientesContactosTesorera/a_BBVA Colombia'))
 
 WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
 
-WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), 
+WebUI.setText(findTestObject('ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), 
     'BBVA Colombia1')
 
 WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtCorreo'), 

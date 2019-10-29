@@ -68,10 +68,13 @@ class PasosComunesCliente {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(GlobalVariable.url)
 	}
+	
+	
 
 	@Then("el sistema muestra un mensaje de éxito")
 	def el_sistema_muestra_un_mensaje_de_exito() {
 		println ("Visualizar mensajes de éxito")
+		
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/div_xito El cliente fue guardado exitosamente'))
 		WebUI.closeBrowser()
 	}

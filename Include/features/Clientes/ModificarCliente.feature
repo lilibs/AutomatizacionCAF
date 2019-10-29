@@ -3,26 +3,15 @@
 
 @ModificarClientes
 Feature: Modificación de clientes
- 
-
-	@ConsultaCliente
-  	Scenario Outline: Consultar cliente existente
-    Given El usuario ingresa a la página principal 
-    And se ubica en la opción clientes
-    When digita el nombre del cliente <nombreCliente> en el campo búsqueda
-    And presiona la tecla enter
-    Then se visualiza el nombre del cliente <nombreCliente> en el resultado de la búsqueda 
-
-    Examples: 
-      |nombreCliente  |
-      | BBVA 			  	|  
-      
+       
       
    @ModificarCliente
    Scenario Outline: Modificar cliente
-    Given El usuario da clic sobre el nombre del cliente
+    Given El usuario ingresa a la página principal 
+    And se ubica en la opción clientes
+    And El usuario da clic sobre el nombre del cliente
     When da clic sobre la opción Modificar
-    And actualiza el nombre del cliente <nombreCliente1>
+    And actualiza el nombre del cliente <NombreCliente1>
     And digita el correo <correo>
     And da clic en el botón Agregar correo
     And digita un tag <tag>
