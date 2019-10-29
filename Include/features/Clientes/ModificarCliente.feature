@@ -11,7 +11,7 @@ Feature: Modificación de clientes
     And se ubica en la opción clientes
     And El usuario da clic sobre el nombre del cliente
     When da clic sobre la opción Modificar
-    And actualiza el nombre del cliente <nombreCliente1>
+    And actualiza el nombre del cliente <NombreCliente1>
     And digita el correo <correo>
     And da clic en el botón Agregar correo
     And digita un tag <tag>
