@@ -70,11 +70,12 @@ class ConsultarCliente {
 	}
 
 
-	@When("digita el nombre del cliente (.*) en el campo búsqueda")
-	def digita_el_nombre_del_cliente_en_el_campo_busqueda(String nombreCliente) {
+	@When("digita el nombre del cliente a consultar (.*) en el campo búsqueda")
+	def digita_el_nombre_del_cliente_a_consultar_en_el_campo_busqueda(String consultarNombreCliente) {
 		println ("Ingresar Nombre de Busqueda")
-
-		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), nombreCliente)
+		
+		WebUI.click(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'))
+		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), consultarNombreCliente)
 
 	}
 
@@ -85,7 +86,7 @@ class ConsultarCliente {
 
 
 	@Then("se visualiza el nombre del cliente (.*) en el resultado de la búsqueda")
-	def se_visualiza_el_nombre_del_cliente_en_el_resultado_de_la_busqueda(String nombreCliente) {
+	def se_visualiza_el_nombre_del_cliente_en_el_resultado_de_la_busqueda(String consultarNombreCliente) {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyElementPresent(findTestObject('Clientes/ConsultaCliente/ConsultaCliente_Existente/td_BBVCOL'), 5)
