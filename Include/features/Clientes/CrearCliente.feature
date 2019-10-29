@@ -5,7 +5,7 @@
 Feature: Creación de clientes con validaciones implementadas
 
 	@IrCrearCliente
-  Scenario Outline: Ir a crear cliente
+  Scenario: Ir a crear cliente
     Given El usuario ingresa a la página principal
     And se ubica en la opción clientes
     When da clic en el link Crear cliente
@@ -29,7 +29,7 @@ Feature: Creación de clientes con validaciones implementadas
  
 
 @CancelarCreacionCliente
-  Scenario Outline: Cancelar la creación de un cliente
+  Scenario: Cancelar la creación de un cliente
     Given El usuario ingresa a la página principal
     And se ubica en la opción clientes
     When da clic en el link Crear cliente
@@ -37,7 +37,7 @@ Feature: Creación de clientes con validaciones implementadas
     Then se visualiza nuevamente la página principal
   
  @ValidarCamposRequeridos
-  Scenario Outline: Validación campos requeridos
+  Scenario: Validación campos requeridos
     Given El usuario ingresa a la página principal
     And se ubica en la opción clientes
     When da clic en el link Crear cliente

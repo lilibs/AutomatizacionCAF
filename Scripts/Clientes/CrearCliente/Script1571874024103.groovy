@@ -18,3 +18,20 @@ CucumberKW.runFeatureFile('Include/features/Clientes/CrearCliente.feature')
 
 WebUI.waitForPageLoad(30)
 
+/*
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
+
+WebUI.click(findTestObject('Page_Contactos Tesorera - Contactos de Tesorera/i_Clientes_fas fa-users'))
+
+WebUI.click(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))
+
+WebUI.click(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/a_Crear Cliente'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'), 
+    0)
+
+WebUI.closeBrowser()
+*/

@@ -140,7 +140,21 @@ class CrearCliente {
 		println ("Visualizar mensajes de Validacion")
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/span_Debe ingresar un nombre'), 5)
 	}
-}
+
+	@Then("el sistema muestra el formulario Crear Cliente")
+	def el_sistema_muestra_el_formulario_Crear_Cliente() {
+		println ("Visualizar formulario crear cliente")
+	WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
+		0)
+	
+	
+		}
+	
+	
+	
+	
+	
+	}
 
 
 
