@@ -95,7 +95,7 @@ class ModificarCliente {
 	}
 
 	/*@And("el sistema muestra un mensaje de éxito")
-	def el_sistema_muestra_un_mensaje_de_exito () {
-		println "Muestra mensaje de éxito"
-	}*/
+	 def el_sistema_muestra_un_mensaje_de_exito () {
+	 println "Muestra mensaje de éxito"
+	 }*/
 }
