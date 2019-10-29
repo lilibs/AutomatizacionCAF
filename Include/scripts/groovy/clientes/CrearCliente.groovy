@@ -146,7 +146,7 @@ class CrearCliente {
 		println ("Visualizar formulario crear cliente")
 	WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
 		0)
-	//hola
+
 	
 		}
 	
