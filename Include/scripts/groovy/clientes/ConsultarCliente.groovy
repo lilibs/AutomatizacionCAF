@@ -73,7 +73,7 @@ class ConsultarCliente {
 	@When("digita el nombre del cliente a consultar (.*) en el campo búsqueda")
 	def digita_el_nombre_del_cliente_a_consultar_en_el_campo_busqueda(String consultarNombreCliente) {
 		println ("Ingresar Nombre de Busqueda")
-		
+
 		WebUI.click(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'))
 		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), consultarNombreCliente)
 

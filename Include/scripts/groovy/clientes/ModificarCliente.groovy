@@ -122,14 +122,9 @@ class ModificarCliente {
 	def da_clic_en_el_boton_Guardar () {
 		println "Guarda la modificación de los datos del cliente"
 
-<<<<<<< HEAD
-	/*@And("el sistema muestra un mensaje de éxito")
-	 def el_sistema_muestra_un_mensaje_de_exito () {
-	 println "Muestra mensaje de éxito"
-	 }*/
-=======
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/BotonGuardar_Registro'))
 		WebUI.delay(15)
+					
 	}
->>>>>>> branch 'master' of https://github.com/lilibs/AutomatizacionCAF.git
+	
 }

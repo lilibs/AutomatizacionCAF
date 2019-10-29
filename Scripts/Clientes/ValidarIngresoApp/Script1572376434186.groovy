@@ -14,14 +14,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/Clientes/CrearCliente.feature')
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
+WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
-WebUI.waitForPageLoad(30)
+WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'), 0)
 
-WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
-
-WebUI.verifyElementText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
-    '')
+WebUI.closeBrowser()
 
