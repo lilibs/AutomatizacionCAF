@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Nombre Cliente_Nombre</name>
+   <name>input_NombreCliente_Nombre</name>
    <tag></tag>
    <elementGuidId>75a25819-f199-4119-b885-6c5fdccd325e</elementGuidId>
    <selectorCollection>

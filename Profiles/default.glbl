@@ -11,11 +11,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'WebUI.openBrowser(\'\')'</initValue>
-      <name>abrirNavegador</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'Screenshots/'</initValue>
       <name>screenshotDir</name>
    </GlobalVariableEntity>
