@@ -24,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>k-item k-state-selected</value>
+      <value>k-item</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,21 +38,21 @@
       <matchCondition>equals</matchCondition>
       <name>aria-selected</name>
       <type>Main</type>
-      <value>true</value>
+      <value>false</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-uid</name>
       <type>Main</type>
-      <value>ae82085c-fe08-4dc8-a6ec-3933ecde26e0</value>
+      <value>a29f8f9c-2f8c-4b31-a07a-25103dc649e1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ae82085c-fe08-4dc8-a6ec-3933ecde26e0</value>
+      <value>a29f8f9c-2f8c-4b31-a07a-25103dc649e1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,14 +66,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ae82085c-fe08-4dc8-a6ec-3933ecde26e0&quot;)</value>
+      <value>id(&quot;a29f8f9c-2f8c-4b31-a07a-25103dc649e1&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//li[@id='ae82085c-fe08-4dc8-a6ec-3933ecde26e0']</value>
+      <value>//li[@id='a29f8f9c-2f8c-4b31-a07a-25103dc649e1']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,5 +116,12 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/ul/li</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ae82085c-fe08-4dc8-a6ec-3933ecde26e0']</value>
    </webElementXpaths>
 </WebElementEntity>

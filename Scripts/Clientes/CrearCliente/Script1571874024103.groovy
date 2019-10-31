@@ -14,14 +14,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+/*WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Contactos Tesorera - Contactos de Tesorera/i_Clientes_fas fa-users'))
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Bandeja de Clientes - Contactos de Tesorera/a_Crear Cliente'))
+
+WebUI.setText(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), 
+    'cliente')
+
+WebUI.setText(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_BBG Broker ID_Sigla'), 
+    '5')
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/a_Modalidades Cliente Disponibles_k-button k-button-icon'))
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/span_Productos Disponibles_k-icon k-i-arrow-double-60-right'))
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
+
+WebUI.delay(50)
+
+not_run: WebUI.closeBrowser()*/
+
 CucumberKW.runFeatureFile('Include/features/Clientes/CrearCliente.feature')
-
-WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
-
-WebUI.waitForPageLoad(30)
-
-WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
-
-WebUI.verifyElementText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
-    '')
-

@@ -19,7 +19,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
-
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
@@ -49,19 +48,19 @@ import cucumber.api.java.en.When
 
 class ModificarCliente {
 
-	@Given("El usuario da clic sobre el nombre del cliente")
+	@And("El usuario da clic sobre el nombre del cliente")
 	def El_usuario_da_clic_sobre_el_nombre_del_cliente() {
 		println "Seleccionar cliente"
 
-		//	WebUI.verifyElementPresent(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), 5)
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_BandejaClientesContactosTesorera/a_BBVA Colombia'))
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Clientes - Contactos de Tesorera/a_Liliana'))
 	}
 
 	@When("da clic sobre la opción Modificar")
 	def da_clic_sobre_la_opcion_Modificar () {
 		println "Opción Modificar"
 
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
+		WebUI.click(findTestObject('Object Repository/Nuevo/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
+		
 	}
 
 
@@ -69,16 +68,16 @@ class ModificarCliente {
 	def actualiza_el_nombre_del_cliente (String NombreCliente1) {
 		println "Modifica nombre cliente"
 
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'))
-		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), NombreCliente1)
-	}
+		
+		WebUI.setText(findTestObject('Object Repository/Nuevo/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), NombreCliente1)
+	
+		}
 
 
 	@And("digita el correo (.*)")
 	def digita_el_correo (String correo) {
 		println "Modifica correo"
 
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtCorreo'))
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtCorreo'), correo)
 	}
 
@@ -95,16 +94,11 @@ class ModificarCliente {
 	def digita_un_tag (String tag) {
 		println "Modifica tag"
 
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtTag'))
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtTag'), tag)
 	}
 
-
-
 	@And("da clic en el botón Agregar tag")
 	def da_clic_en_el_boton_Agregar_tag () {
-		println "agregar opción"
-
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/button_Agregar'))
 	}
 
@@ -112,19 +106,25 @@ class ModificarCliente {
 	def digita_la_direccion (String direccion) {
 		println "Modifica dirección"
 
-		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/textarea_Campo Opcional_InformacionDireccion'))
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/textarea_Campo Opcional_InformacionDireccion'), direccion)
 	}
-
-
 
 	@And("da clic en el botón Guardar")
 	def da_clic_en_el_boton_Guardar () {
 		println "Guarda la modificación de los datos del cliente"
 
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/BotonGuardar_Registro'))
-		WebUI.delay(15)
+		
 					
+	}
+	
+	@Then("el sistema muestra un mensaje de confirmación")
+	def el_sistema_muestra_un_mensaje_de_confirmacion() {
+		println ("Visualizar mensajes de éxito")
+
+		/*WebUI.verifyElementPresent(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/p_El cliente fue guardado exitosamente'))*/
+		WebUI.delay(5)
+		WebUI.closeBrowser()
 	}
 	
 }

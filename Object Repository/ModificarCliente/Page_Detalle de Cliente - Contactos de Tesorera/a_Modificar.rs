@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>/CAF.Tesoreria.Web/Cliente/Modificar/7</value>
+      <value>/CAF.Tesoreria.Web/Cliente/Modificar/66</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/7')]</value>
+      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/66')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,5 +102,12 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/7')]</value>
    </webElementXpaths>
 </WebElementEntity>

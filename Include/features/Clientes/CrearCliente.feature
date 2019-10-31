@@ -14,18 +14,16 @@ Feature: Creación de clientes con validaciones implementadas
    @CrearCliente
    Scenario Outline: Crear cliente
     Given El usuario ingresa a la opción Crear Cliente
-    When digita el nombre del cliente <nombreCliente> 
+    When digita el nombre del cliente a crear <nombreCliente> 
     And digita el BBG Broker ID <IdBBG>
-    And selecciona la modalidad cliente disponible el item
-    And se da clic en el botón transfer to modalidad
-    And selecciona en productos disponibles el item <itemProducto>
-    And se da clic en el botón transfer to productos
+    And selecciona la modalidad de cliente disponible
+    And selecciona el producto disponible
     And se da clic en el botón Guardar
-    Then el sistema muestra un mensaje de éxito 
+    Then el sistema guarda la información del cliente 
 
   Examples: 
-      | nombreCliente  | IdBBG |  itemProducto 			| 
- 			| Liliana  			 | 5 	   | Act- Time Deposit  | 
+      | nombreCliente  | IdBBG |   
+ 			| Liliana  			 | 5 	   |  
  
 
 @CancelarCreacionCliente

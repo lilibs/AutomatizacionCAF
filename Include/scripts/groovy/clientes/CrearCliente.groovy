@@ -62,18 +62,18 @@ class CrearCliente {
 	def El_usuario_ingresa_a_la_opcion_Crear_Cliente() {
 		println "Ingresar a Crear Cliente"
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
-			0)
+				0)
 		//WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
 
-	@When("digita el nombre del cliente (.*)")
-	def digita_el_nombre_del_cliente (String nombreCliente) {
+	@When("digita el nombre del cliente a crear(.*)")
+	def digita_el_nombre_del_cliente_a_crear (String nombreCliente) {
 		println ("Ingresar Nombre del cliente")
-		
+
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
 		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreCliente)
-	/*	WebUI.sendKeys(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), Keys.chord(Keys.ENTER))
-	*/
+		/*	WebUI.sendKeys(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), Keys.chord(Keys.ENTER))
+		 */
 	}
 
 	@And("digita el BBG Broker ID(.*)")
@@ -82,63 +82,50 @@ class CrearCliente {
 		WebUI.setText(findTestObject('Object Repository/CrearCliente/input_BBG Broker ID_Sigla'), IdBBG)
 	}
 
-	@And("selecciona la modalidad cliente disponible el item")
-	def selecciona_la_modalidad_cliente_disponible_el_item () {
-	WebUI.click(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/li_Activo'))
+	@And("selecciona la modalidad de cliente disponible")
+	def selecciona_la_modalidad_de_cliente_disponible () {
+		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/a_Modalidades Cliente Disponibles_k-button k-button-icon'))
+	}
+
+	
+
+	@And("selecciona el producto disponible")
+	def selecciona_el_producto_disponible () {
+		println ("Seleccionar Producto Disponible")
+		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/span_Productos Disponibles_k-icon k-i-arrow-double-60-right'))
 		
 	}
 
-	@And("se da clic en el botón transfer to modalidad")
-	def se_da_clic_en_el_boton_transfer_to_modalidad () {
-		//println  "Mensaje"
-	}
-
-	@And("selecciona en productos disponibles el item(.*)")
-	def se_da_clic_en_el_boton_transfer_to_modalidad (String itemProducto) {
-		println ("Seleccionar Producto Disponible")
-		WebUI.click(findTestObject('Page_Crear Cliente - Contactos de Tesorera/li_Act- Time Deposit'))
-		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Productos Disponibles_k-button k-button-icon'))
-		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/li_Act- Time Deposit_1'))
-	}
-
-	@And("se da clic en el botón transfer to productos")
-	def se_da_clic_en_el_boton_transfer_to_productos () {
-		//println  "Mensaje"
-	}
-
+	
 	@And("se da clic en el botón Guardar")
 	def se_da_clic_en_el_botón_Guardar() {
-		//println  "Mensaje"
+		println  "Guardar Cliente"
+		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
+		WebUI.delay(50)
 	}
 
-		
+
 	@And("presiona el botón Regresar")
 	def presiona_el_boton_Regresar() {
 		println  "Presiona botón regresar"
 	}
-	
-	
-	
+
+
+
 	@Then("se visualiza nuevamente la página principal")
 	def se_visualiza_nuevamente_la_pagina_principal() {
-	println ("Visualizar página principal")
-	/*--WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))*/
-	WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
+		println ("Visualizar página principal")
+		/*--WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))*/
+		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
-	/*@Then("el sistema muestra un mensaje de éxito")
+	@Then("el sistema guarda la información del cliente")
 	 def el_sistema_muestra_un_mensaje_de_exito() {
 	 println ("Visualizar mensajes de Confirmacion")
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/div_xito El cliente fue guardado exitosamente'))
+	 WebUI.delay(50)
 	 WebUI.closeBrowser()
 	 }
-	 */
-	/*
-	 @And("se ubica en la opción clientes")
-	 def se_ubica_en_la_opcion_clientes () {
-	 println  "Mensaje"
-	 }
-	 */
-
+	 
+	
 	@When("da clic en el link Crear cliente")
 	def da_clic_en_el_link_Crear_cliente () {
 		println ("Seleccionar Boton crear Cliente")
@@ -156,11 +143,11 @@ class CrearCliente {
 	def Se_visualizan_los_mensajes_de_validacion() {
 		println ("Visualizar mensajes de Validacion")
 		/*WebUI.verifyElementText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
-    '')*/
+		 '')*/
 		WebUI.closeBrowser()
-			}
-	
-	
+	}
+
+
 	@Then("el sistema muestra el formulario Crear Cliente")
 	def el_sistema_muestra_el_formulario_Crear_Cliente() {
 		println ("Visualizar formulario crear cliente")

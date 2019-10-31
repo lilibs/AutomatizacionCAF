@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cliente,Chrome 77.0.3865.120,,,2019-10-31 17:55:05,2019-10-31 17:57:30,"2m - 24,482s",INCOMPLETE
+,,,,,,,
+Test Cases/Clientes/ConsultaCliente,Chrome 77.0.3865.120,,,2019-10-31 17:55:05,2019-10-31 17:55:21,"16,110s",PASSED
+"runFeatureFile(""Include/features/Clientes/ConsultarCliente.feature"")",Chrome 77.0.3865.120,,,2019-10-31 17:55:06,2019-10-31 17:55:21,"15,757s",PASSED
+,,,,,,,
+Test Cases/Clientes/CrearCliente,Chrome 77.0.3865.120,,,2019-10-31 17:55:21,2019-10-31 17:57:23,"2m - 1,874s",PASSED
+"runFeatureFile(""Include/features/Clientes/CrearCliente.feature"")",Chrome 77.0.3865.120,,,2019-10-31 17:55:22,2019-10-31 17:57:23,"2m - 1,684s",PASSED
+,,,,,,,
+Test Cases/Clientes/ModificarCLiente,Chrome 77.0.3865.120,,,2019-10-31 17:57:23,2019-10-31 17:57:30,"6,188s",FAILED
+"runFeatureFile(""Include/features/Clientes/ModificarCliente.feature"")",Chrome 77.0.3865.120,,,2019-10-31 17:57:24,2019-10-31 17:57:30,"5,984s",FAILED

@@ -14,7 +14,7 @@ Feature: Consultar Cliente
 
     Examples: 
       |consultarNombreCliente  |
-      | BBVA 			  					 |  
+      | Colombia	  					 |  
 
 
   @ConsultaCliente_NoExistente

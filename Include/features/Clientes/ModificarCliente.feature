@@ -18,11 +18,11 @@ Feature: Modificación de clientes
     And da clic en el botón Agregar tag 
     And digita la dirección <direccion>
     And da clic en el botón Guardar
-    Then el sistema muestra un mensaje de éxito 
+    Then el sistema muestra un mensaje de confirmación
 
   Examples: 
-      | NombreCliente1|  correo 										| tag  | direccion 			 | 
- 			| BBVA1  			 	| lilibs633@hotmail.com 	   	| tag  | dirección CR 70 | 
+      | NombreCliente1| correo 										| tag  | direccion 			 | 
+ 			| Liliana			 	| lilibs633@hotmail.com    	| tag  | dirección			 | 
  			
  		
  
