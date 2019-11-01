@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.380287">
+<testcase classname="Modificación de clientes" name="Modificar cliente" time="16.380287">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción clientes..........................................passed
+And El usuario da clic sobre el nombre del cliente..........................passed
+When da clic sobre la opción Modificar......................................passed
+And actualiza el nombre del cliente Liliana.................................passed
+And digita el correo lilibs633@hotmail.com..................................passed
+And da clic en el botón Agregar correo......................................passed
+And digita un tag tag.......................................................passed
+And da clic en el botón Agregar tag.........................................passed
+And digita la dirección dirección...........................................passed
+And da clic en el botón Guardar.............................................passed
+Then el sistema muestra un mensaje de confirmación..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

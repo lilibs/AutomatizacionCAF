@@ -54,9 +54,8 @@ class ValidarIngresoApp {
 	@When("se ubica en la opción de Inicio")
 	def se_ubica_en_la_opcion_de_Inicio() {
 		println 'Se ubica en la opción Inicio'
-		
+
 		WebUI.click(findTestObject('Object Repository/Nuevo/Page_Contactos Tesorera - Contactos de Tesorera/i_Inicio_fas fa-home'))
-		
 	}
 
 	@Then("se presenta un mensaje de Bienvenida a contactos Tesorería")
@@ -64,6 +63,5 @@ class ValidarIngresoApp {
 		println 'Mensaje de bienvenida'
 		WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'), 0)
 		WebUI.closeBrowser()
-		
 	}
 }

@@ -66,6 +66,7 @@ class PasosComunesCliente {
 	def El_usuario_ingresa_a_la_pagina_principal() {
 		println ("Ingreso Pagina Principal")
 		WebUI.openBrowser('')
+		WebUI.maximizeWindow()
 		WebUI.navigateToUrl(GlobalVariable.url)
 	}
 

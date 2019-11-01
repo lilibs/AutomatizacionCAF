@@ -63,7 +63,7 @@ class CrearCliente {
 		println "Ingresar a Crear Cliente"
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
 				0)
-		//WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
+		
 	}
 
 	@When("digita el nombre del cliente a crear(.*)")
@@ -72,8 +72,7 @@ class CrearCliente {
 
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
 		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreCliente)
-		/*	WebUI.sendKeys(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), Keys.chord(Keys.ENTER))
-		 */
+		
 	}
 
 	@And("digita el BBG Broker ID(.*)")
@@ -87,27 +86,28 @@ class CrearCliente {
 		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/a_Modalidades Cliente Disponibles_k-button k-button-icon'))
 	}
 
-	
+
 
 	@And("selecciona el producto disponible")
 	def selecciona_el_producto_disponible () {
 		println ("Seleccionar Producto Disponible")
 		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/span_Productos Disponibles_k-icon k-i-arrow-double-60-right'))
-		
 	}
 
-	
+
 	@And("se da clic en el botón Guardar")
 	def se_da_clic_en_el_botón_Guardar() {
 		println  "Guardar Cliente"
 		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
-		WebUI.delay(50)
+		WebUI.delay(5)
 	}
 
 
 	@And("presiona el botón Regresar")
 	def presiona_el_boton_Regresar() {
 		println  "Presiona botón regresar"
+		
+		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Regresar'))
 	}
 
 
@@ -119,13 +119,13 @@ class CrearCliente {
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 	}
 	@Then("el sistema guarda la información del cliente")
-	 def el_sistema_muestra_un_mensaje_de_exito() {
-	 println ("Visualizar mensajes de Confirmacion")
-	 WebUI.delay(50)
-	 WebUI.closeBrowser()
-	 }
-	 
-	
+	def el_sistema_muestra_un_mensaje_de_exito() {
+		println ("Visualizar mensajes de Confirmacion")
+		WebUI.delay(10)
+		WebUI.closeBrowser()
+	}
+
+
 	@When("da clic en el link Crear cliente")
 	def da_clic_en_el_link_Crear_cliente () {
 		println ("Seleccionar Boton crear Cliente")

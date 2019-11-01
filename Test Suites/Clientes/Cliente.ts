@@ -17,6 +17,12 @@
       <testCaseId>Test Cases/Clientes/ValidarIngresoApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>4cd8b613-91c1-45f2-9607-20fe6ac76c73</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Clientes/ConsultaCliente</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>35935ed9-74a1-440f-a0b2-38365d5aa443</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -27,11 +33,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Clientes/ModificarCLiente</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4cd8b613-91c1-45f2-9607-20fe6ac76c73</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Clientes/ConsultaCliente</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

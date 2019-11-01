@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="40.047567">
+<testcase classname="Creación de clientes con validaciones implementadas" name="Ir a crear cliente" time="6.541261">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción clientes..........................................passed
+When da clic en el link Crear cliente.......................................passed
+Then el sistema muestra el formulario Crear Cliente.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creación de clientes con validaciones implementadas" name="Crear cliente" time="17.112244">
+<system-out><![CDATA[Given El usuario ingresa a la opción Crear Cliente..........................passed
+When digita el nombre del cliente a crear Liliana...........................passed
+And digita el BBG Broker ID 5...............................................passed
+And selecciona la modalidad de cliente disponible...........................passed
+And selecciona el producto disponible.......................................passed
+And se da clic en el botón Guardar..........................................passed
+Then el sistema guarda la información del cliente...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creación de clientes con validaciones implementadas" name="Cancelar la creación de un cliente" time="8.571288">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción clientes..........................................passed
+When da clic en el link Crear cliente.......................................passed
+And presiona el botón Regresar..............................................passed
+Then se visualiza nuevamente la página principal............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creación de clientes con validaciones implementadas" name="Validación campos requeridos" time="7.822774">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción clientes..........................................passed
+When da clic en el link Crear cliente.......................................passed
+And presiona el botón Guardar...............................................passed
+Then Se visualizan los mensajes de validación...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,356 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Ir a crear cliente",
+        "description": "",
+        "id": "creación-de-clientes-con-validaciones-implementadas;ir-a-crear-cliente",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4229133580,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 607476734,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 693916029,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "da clic en el link Crear cliente",
+            "match": {
+              "location": "CrearCliente.da_clic_en_el_link_Crear_cliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105613157,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "el sistema muestra el formulario Crear Cliente",
+            "match": {
+              "location": "CrearCliente.el_sistema_muestra_el_formulario_Crear_Cliente()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreacionCliente"
+          },
+          {
+            "name": "@IrCrearCliente"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Crear cliente",
+        "description": "",
+        "id": "creación-de-clientes-con-validaciones-implementadas;crear-cliente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76276894,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "El usuario ingresa a la opción Crear Cliente",
+            "match": {
+              "location": "CrearCliente.El_usuario_ingresa_a_la_opcion_Crear_Cliente()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 280117661,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "digita el nombre del cliente a crear Liliana",
+            "match": {
+              "arguments": [
+                {
+                  "val": " Liliana",
+                  "offset": 36
+                }
+              ],
+              "location": "CrearCliente.digita_el_nombre_del_cliente_a_crear(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137574649,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "digita el BBG Broker ID 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": " 5",
+                  "offset": 23
+                }
+              ],
+              "location": "CrearCliente.digita_el_BBG_Broker_ID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 227589825,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "selecciona la modalidad de cliente disponible",
+            "match": {
+              "location": "CrearCliente.selecciona_la_modalidad_de_cliente_disponible()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169336560,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selecciona el producto disponible",
+            "match": {
+              "location": "CrearCliente.selecciona_el_producto_disponible()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5224464235,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "se da clic en el botón Guardar",
+            "match": {
+              "location": "CrearCliente.se_da_clic_en_el_botón_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10770628052,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "el sistema guarda la información del cliente",
+            "match": {
+              "location": "CrearCliente.el_sistema_muestra_un_mensaje_de_exito()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreacionCliente"
+          },
+          {
+            "name": "@CrearCliente"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Cancelar la creación de un cliente",
+        "description": "",
+        "id": "creación-de-clientes-con-validaciones-implementadas;cancelar-la-creación-de-un-cliente",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4289842818,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 705858437,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 795423676,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "da clic en el link Crear cliente",
+            "match": {
+              "location": "CrearCliente.da_clic_en_el_link_Crear_cliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 457272781,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "presiona el botón Regresar",
+            "match": {
+              "location": "CrearCliente.presiona_el_boton_Regresar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 470338977,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "se visualiza nuevamente la página principal",
+            "match": {
+              "location": "CrearCliente.se_visualiza_nuevamente_la_pagina_principal()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreacionCliente"
+          },
+          {
+            "name": "@CancelarCreacionCliente"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Validación campos requeridos",
+        "description": "",
+        "id": "creación-de-clientes-con-validaciones-implementadas;validación-campos-requeridos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5353314452,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to click on object \u0027Object Repository/Clientes/a_Clientes\u0027\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)\r\n\tat clientes.ConsultarCliente.se_ubica_en_la_opcion_clientes(ConsultarCliente.groovy:69)\r\n\tat ✽.se ubica en la opción clientes(E:/CAF/Automatizacion/CAF1/Include/features/Clientes/CrearCliente.feature:40)\r\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027Object Repository/Clientes/a_Clientes\u0027 located by \u0027By.xpath: //div[@id\u003d\u0027wrapper\u0027]/nav/div[4]/ul/li[2]/a\u0027 not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)\r\n\tat clientes.ConsultarCliente.se_ubica_en_la_opcion_clientes(ConsultarCliente.groovy:69)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\r\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:55)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:42)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\r\n\tat cucumber.runtime.Runtime.runFeature(Runtime.java:120)\r\n\tat cucumber.runtime.Runtime.run(Runtime.java:106)\r\n\tat cucumber.api.cli.Main.run(Main.java:35)\r\n\tat cucumber.api.cli.Main$run.call(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:76)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:46)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:101)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)\r\n\tat CrearCliente.run(CrearCliente:41)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1572614529021.run(TempTestSuite1572614529021.groovy:35)\r\n",
+              "duration": 32156538352,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "da clic en el link Crear cliente",
+            "match": {
+              "location": "CrearCliente.da_clic_en_el_link_Crear_cliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "presiona el botón Guardar",
+            "match": {
+              "location": "CrearCliente.presiona_el_boton_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "Se visualizan los mensajes de validación",
+            "match": {
+              "location": "CrearCliente.Se_visualizan_los_mensajes_de_validacion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreacionCliente"
+          },
+          {
+            "name": "@ValidarCamposRequeridos"
+          }
+        ]
+      }
+    ],
+    "name": "Creación de clientes con validaciones implementadas",
+    "description": "",
+    "id": "creación-de-clientes-con-validaciones-implementadas",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Clientes/CrearCliente.feature",
+    "tags": [
+      {
+        "name": "@CreacionCliente",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
