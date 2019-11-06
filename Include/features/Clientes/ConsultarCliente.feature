@@ -14,7 +14,7 @@ Feature: Consultar Cliente
 
     Examples: 
       |consultarNombreCliente  |
-      | Colombia	  					 |  
+      | finlandia	  					 |  
 
 
   @ConsultaCliente_NoExistente

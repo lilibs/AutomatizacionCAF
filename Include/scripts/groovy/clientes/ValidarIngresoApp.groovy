@@ -64,4 +64,12 @@ class ValidarIngresoApp {
 		WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'), 0)
 		WebUI.closeBrowser()
 	}
+	
+	@Then("se presenta un mensaje de error")
+	def se_presenta_un_mensaje_de_error() {
+		println 'Mensaje de error'
+		/*WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'), 0)*/
+		WebUI.closeBrowser()
+	}
+		
 }
