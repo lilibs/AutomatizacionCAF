@@ -63,7 +63,6 @@ class CrearCliente {
 		println "Ingresar a Crear Cliente"
 		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
 				0)
-		
 	}
 
 	@When("digita el nombre del cliente a crear(.*)")
@@ -72,7 +71,6 @@ class CrearCliente {
 
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
 		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreCliente)
-		
 	}
 
 	@And("digita el BBG Broker ID(.*)")
@@ -106,7 +104,7 @@ class CrearCliente {
 	@And("presiona el botón Regresar")
 	def presiona_el_boton_Regresar() {
 		println  "Presiona botón regresar"
-		
+
 		WebUI.click(findTestObject('Object Repository/CrearCliente/a_Regresar'))
 	}
 

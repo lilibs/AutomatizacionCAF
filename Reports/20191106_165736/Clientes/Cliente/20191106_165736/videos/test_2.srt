@@ -1,0 +1,4 @@
+1
+00:00:00,213 --> 00:00:00,215
+1. runFeatureFile("Include/features/Clientes/ConsultarCliente.feature")
+

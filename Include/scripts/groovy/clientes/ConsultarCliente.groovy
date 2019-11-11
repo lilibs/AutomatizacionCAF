@@ -95,8 +95,8 @@ class ConsultarCliente {
 
 	//Consultar Cliente inexistente
 
-	@Then("se visualiza el mensaje (.*)")
-	def se_visualiza_el_mensaje(string) {
+	@Then("se visualiza el mensaje sin registros")
+	def se_visualiza_el_mensaje_sin_registros() {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos'), 5)

@@ -16,11 +16,5 @@ import org.openqa.selenium.Keys as Keys
 
 CucumberKW.runFeatureFile('Include/features/Clientes/ConsultarCliente.feature')
 
-/*CucumberKW.runFeatureFile('Include/features/Clientes/ConsultarCliente.feature')
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
-
-WebUI.click(findTestObject('Object Repository/Clientes/ConsultaCliente/Page_Contactos Tesorera - Contactos de Tesorera/i_Clientes_fas fa-users'))
-*/

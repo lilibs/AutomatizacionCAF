@@ -14,7 +14,7 @@ Feature: Consultar Cliente
 
     Examples: 
       |consultarNombreCliente  |
-      | finlandia	  					 |  
+      | liliana  					 |  
 
 
   @ConsultaCliente_NoExistente
@@ -23,7 +23,7 @@ Feature: Consultar Cliente
     And se ubica en la opción clientes
     When digita el nombre del cliente a consultar <consultarNombreCliente> en el campo búsqueda
     And presiona la tecla enter
-    Then se visualiza el mensaje No hay datos. 
+    Then se visualiza el mensaje sin registros 
 
     Examples: 
       | consultarNombreCliente |  
