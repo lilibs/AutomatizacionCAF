@@ -6,6 +6,10 @@
    <elementGuidId>3bf6d979-1c49-4aed-95d9-4a7c67417827</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = 'Crear Contactos' or . = 'Crear Contactos')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='wrapper']/div[2]/div/div[2]/div/a</value>
       </entry>
@@ -13,14 +17,14 @@
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>

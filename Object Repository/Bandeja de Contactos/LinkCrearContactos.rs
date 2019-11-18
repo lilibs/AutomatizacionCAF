@@ -6,6 +6,10 @@
    <elementGuidId>9c8a649c-d6e0-4deb-ab70-01206fd1ae38</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/CAF.Tesoreria.Web/Contacto/Crear' and (text() = 'Crear Contactos' or . = 'Crear Contactos')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='wrapper']/div[2]/div/div[2]/div/a</value>
       </entry>
@@ -13,7 +17,7 @@
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

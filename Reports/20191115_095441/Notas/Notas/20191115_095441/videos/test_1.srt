@@ -1,0 +1,32 @@
+1
+00:00:00,351 --> 00:00:00,358
+1. openBrowser("")
+
+2
+00:00:05,327 --> 00:00:05,329
+5. navigateToUrl("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+3
+00:00:08,842 --> 00:00:08,843
+9. click(findTestObject("Notas/Notas"))
+
+4
+00:00:09,856 --> 00:00:09,857
+13. setText(findTestObject("Notas/TextoParaBusqueda"), "BMW")
+
+5
+00:00:10,176 --> 00:00:10,177
+17. sendKeys(findTestObject("Notas/TextoParaBusqueda"), Keys.chord(ENTER))
+
+6
+00:00:10,341 --> 00:00:10,342
+21. verifyElementPresent(findTestObject("Notas/IDBBG"), 2)
+
+7
+00:00:10,525 --> 00:00:10,526
+25. takeScreenshot()
+
+8
+00:00:10,867 --> 00:00:10,867
+29. closeBrowser()
+

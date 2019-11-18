@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths k-webkit k-webkit78 js&quot;]/body[@class=&quot;k-state-border-down&quot;]/div[@class=&quot;k-animation-container _ce63e134-960f-47d6-834b-47093b6da1ee&quot;]/div[@class=&quot;k-widget k-popup k-notification k-notification-success k-notification-button k-state-border-up&quot;]/div[1]/p[1]</value>
+      <value>/html[@class=&quot;js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths k-webkit k-webkit78 js&quot;]/body[@class=&quot;k-state-border-down&quot;]/div[@class=&quot;k-animation-container _5216b12b-be37-4969-9e26-80f4539dad3b&quot;]/div[@class=&quot;k-widget k-popup k-notification k-notification-success k-notification-button k-state-border-up&quot;]/div[1]/p[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

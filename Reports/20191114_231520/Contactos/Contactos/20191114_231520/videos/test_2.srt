@@ -1,0 +1,44 @@
+1
+00:00:00,214 --> 00:00:00,215
+1. openBrowser("")
+
+2
+00:00:03,432 --> 00:00:03,433
+5. navigateToUrl("http://smdessc01:4800/CAF.Tesoreria.Web/Contacto")
+
+3
+00:00:10,560 --> 00:00:10,561
+9. click(findTestObject("ActivarInactivarContacto/Activo_button"))
+
+4
+00:00:10,755 --> 00:00:10,756
+13. click(findTestObject("ActivarInactivarContacto/Fecha de Baja_btnActivo"))
+
+5
+00:00:11,473 --> 00:00:11,475
+17. click(findTestObject("ActivarInactivarContacto/p_La operacin se realiz exitosamente"))
+
+6
+00:00:12,152 --> 00:00:12,154
+21. closeBrowser()
+
+7
+00:00:12,929 --> 00:00:12,930
+25. openBrowser("http://smdessc01:4800/CAF.Tesoreria.Web/Contacto")
+
+8
+00:00:19,869 --> 00:00:19,871
+29. click(findTestObject("ActivarInactivarContacto/Inactivo_button"))
+
+9
+00:00:20,112 --> 00:00:20,113
+35. Get text alert on the alert when it's shown
+
+10
+00:00:20,153 --> 00:00:20,156
+41. Verify text alert is correct or not
+
+11
+00:00:20,175 --> 00:00:20,176
+45. delay(10)
+

@@ -10,7 +10,7 @@
          <value>//div[@id='wrapper']/div[2]/div/div[2]/div/span/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +20,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>/CAF.Tesoreria.Web/Cliente/Modificar/66</value>
+      <value>/CAF.Tesoreria.Web/Cliente/Modificar/33</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/66')]</value>
+      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/33')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,13 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/CAF.Tesoreria.Web/Cliente/Modificar/66')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

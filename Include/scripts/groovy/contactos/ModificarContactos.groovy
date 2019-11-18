@@ -48,28 +48,43 @@ import cucumber.api.java.en.When
 
 
 class ModificarContactos {
-		
-	@When("El usuario da clic sobre el nombre del contacto")
-	def El_usuario_da_clic_sobre_el_nombre_del_contacto() {
-		println "Clic sobre el nombre del contacto"
+
+	@When("se ubica en la bandeja de contactos")
+	def se_ubica_en_la_bandeja_de_contactos() {
+		println "Se ubica en la bandeja de contactos"
+
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos'))
 	}
 
-	@And("actualiza el nombre del contacto (.*)")
-	def actualiza_el_nombre_del_contacto(String nombreContacto) {
-		println nombreContacto
+	@And("se selecciona el contacto a modificar")
+	def se_selecciona_el_contacto_a_modificar() {
+		println "Se selecciona el contacto"
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/a_Aegon Targaryen'))
 	}
 
-	@And("actualiza el apellido del contacto (.*)")
-	def actualiza_el_apellido_del_contacto(String apellidosContacto) {
-		println apellidosContacto
+	@And("se modifica el contacto")
+	def se_modifica_el_contacto() {
+		println "se modifica el contacto"
+
+		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/textarea_Otros Alias Jon Snow Jon NieveParece que no sabe nada'),
+				'Otros Alias: Jon Snow, Jon Nieve\n\nParece que no sabe nada.observaciones')
 	}
-	
-	
-	@And("digita el cargo corporativo (.*)")
-	def digita_el_cargo_corporativo(String cargo) {
-		println cargo
+
+
+	@And("se guarda la información modificada")
+	def se_guarda_la_informacion_modificada() {
+		println "se presiona el botón guardar"
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/input_Elementos mostrados  1 - 3 de 3_btn btn-primary orange-button no-margin-top'))
 	}
-	
-	
-	
+
+
+	@Then("el sistema presenta un mensaje de confirmación")
+	def el_sistema_presenta_un_mensaje_de_confirmacion() {
+		println "se muestra mensaje de confirmación"
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/p_La operacin se realiz exitosamente'))
+
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos'))
+
+		WebUI.closeBrowser()
+	}
 }

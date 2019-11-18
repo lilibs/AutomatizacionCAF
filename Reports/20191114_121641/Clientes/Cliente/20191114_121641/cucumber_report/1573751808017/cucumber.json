@@ -1,0 +1,130 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Validación ingreso a la aplicación",
+        "description": "",
+        "id": "ingreso-a-la-aplicación;validación-ingreso-a-la-aplicación",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14986850939,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 967736669,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción de Inicio",
+            "match": {
+              "location": "ValidarIngresoApp.se_ubica_en_la_opcion_de_Inicio()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 841695746,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se presenta un mensaje de Bienvenida a contactos Tesorería",
+            "match": {
+              "location": "ValidarIngresoApp.se_presenta_un_mensaje_de_Bienvenida_a_contactos_Tesoreria()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@IngresoApp"
+          },
+          {
+            "name": "@ValidarIngresoConPermiso"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Validación ingreso a la aplicación al ingresar con un usuario que no tiene permisos en la aplicación",
+        "description": "",
+        "id": "ingreso-a-la-aplicación;validación-ingreso-a-la-aplicación-al-ingresar-con-un-usuario-que-no-tiene-permisos-en-la-aplicación",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10763442790,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 962647005,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "se ubica en la opción de Inicio",
+            "match": {
+              "location": "ValidarIngresoApp.se_ubica_en_la_opcion_de_Inicio()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 786738031,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "se presenta un mensaje de error",
+            "match": {
+              "location": "ValidarIngresoApp.se_presenta_un_mensaje_de_error()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@IngresoApp"
+          },
+          {
+            "name": "@ValidarIngresoSinPermiso"
+          }
+        ]
+      }
+    ],
+    "name": "Ingreso a la aplicación",
+    "description": "  Yo como usuario deseo ingresar a la aplicación de Tesorería",
+    "id": "ingreso-a-la-aplicación",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Clientes/ValidarIngresoApp.feature",
+    "tags": [
+      {
+        "name": "@IngresoApp",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

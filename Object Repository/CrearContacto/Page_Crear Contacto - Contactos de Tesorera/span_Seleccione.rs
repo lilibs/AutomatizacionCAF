@@ -6,11 +6,19 @@
    <elementGuidId>6b116a17-89a9-467d-9ddc-2fe48b9cced0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'k-icon k-i-arrow-60-down']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//form[@id='frmCrearContacto']/div[2]/div[3]/div/div/span/span/span</value>
+         <value>//*[@id=&quot;520f93f9-a350-4423-ae16-e67a720f1a85&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,13 +37,6 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>k-input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Seleccione...</value>
@@ -46,6 +47,13 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmCrearContacto&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;row padding&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;col-lg-6&quot;]/span[@class=&quot;k-widget k-dropdown form-control&quot;]/span[@class=&quot;k-dropdown-wrap k-state-default k-state-focused k-state-hover&quot;]/span[@class=&quot;k-input&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>k-icon k-i-arrow-60-down</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

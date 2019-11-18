@@ -22,7 +22,10 @@ WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Contactos Te
 
 WebUI.click(findTestObject('ModificarCliente/Page_BandejaClientesContactosTesorera/a_BBVA Colombia'))
 
-WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
+WebUI.verifyElementPresent(findTestObject('ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'), 
+    5)
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
+	}
 
 WebUI.setText(findTestObject('ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_NombreCliente_Nombre'), 
     'BBVA Colombia1')
@@ -47,5 +50,7 @@ WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Mo
 WebUI.closeBrowser()
 
 */
-
 CucumberKW.runFeatureFile('Include/features/Clientes/ModificarCliente.feature')
+
+
+

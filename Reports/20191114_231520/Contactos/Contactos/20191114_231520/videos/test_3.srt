@@ -1,0 +1,42 @@
+1
+00:00:00,208 --> 00:00:00,210
+1. openBrowser("")
+
+2
+00:00:03,858 --> 00:00:03,858
+5. navigateToUrl("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+3
+00:00:08,031 --> 00:00:08,032
+9. click(findTestObject("Object Repository/ModificarCliente/Page_Contactos Tesorera - Contactos de Tesorera/i_Contactos_fas fa-id-card"))
+
+4
+00:00:10,593 --> 00:00:10,594
+13. click(findTestObject("Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos"))
+
+5
+00:00:10,839 --> 00:00:10,840
+17. click(findTestObject("Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/a_Aegon Targaryen"))
+
+6
+00:00:12,315 --> 00:00:12,317
+21. setText(findTestObject("Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/textarea_Otros Alias Jon Snow Jon NieveParece que no sabe nada"), "Otros Alias: Jon Snow, Jon Nieve
+
+Parece que no sabe nada.observaciones")
+
+7
+00:00:12,890 --> 00:00:12,891
+25. click(findTestObject("Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/input_Elementos mostrados  1 - 3 de 3_btn btn-primary orange-button no-margin-top"))
+
+8
+00:00:13,111 --> 00:00:13,112
+29. click(findTestObject("Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/p_La operacin se realiz exitosamente"))
+
+9
+00:00:14,791 --> 00:00:14,792
+33. click(findTestObject("Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos"))
+
+10
+00:00:15,008 --> 00:00:15,009
+37. closeBrowser()
+

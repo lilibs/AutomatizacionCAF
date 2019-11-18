@@ -1,0 +1,52 @@
+1
+00:00:00,214 --> 00:00:00,214
+1. openBrowser("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+2
+00:00:04,037 --> 00:00:04,038
+5. click(findTestObject("Notas/Notas"))
+
+3
+00:00:04,736 --> 00:00:04,737
+9. click(findTestObject("Notas/a_Crear Notas"))
+
+4
+00:00:05,415 --> 00:00:05,417
+13. verifyElementPresent(findTestObject("Notas/FormCrearNotas"), 2)
+
+5
+00:00:07,834 --> 00:00:07,835
+17. verifyElementPresent(findTestObject("Notas/span_Seleccione cliente"), 5)
+
+6
+00:00:13,330 --> 00:00:13,331
+21. click(findTestObject("Notas/span_Seleccione cliente"))
+
+7
+00:00:44,746 --> 00:00:44,746
+25. click(findTestObject("Notas/li_Liliana"))
+
+8
+00:01:16,038 --> 00:01:16,038
+29. setText(findTestObject("Notas/input_Ttulo_Titulo"), "TITULO DE LA NOTA")
+
+9
+00:01:47,378 --> 00:01:47,379
+33. setText(findTestObject("Notas/textarea_Contenido_Contenido"), "CONTENIDO")
+
+10
+00:02:18,693 --> 00:02:18,694
+37. click(findTestObject("Notas/btnGuardar"))
+
+11
+00:02:18,696 --> 00:02:18,697
+41. click(findTestObject("Notas/p_La nota fue guardada exitosamente"))
+
+12
+00:02:18,698 --> 00:02:18,698
+45. takeScreenshot()
+
+13
+00:02:18,975 --> 00:02:18,975
+49. closeBrowser()
+

@@ -1,0 +1,44 @@
+1
+00:00:00,280 --> 00:00:00,280
+1. openBrowser("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+2
+00:00:04,159 --> 00:00:04,160
+5. click(findTestObject("Notas/Notas"))
+
+3
+00:00:04,996 --> 00:00:04,997
+9. verifyElementPresent(findTestObject("Notas/a_Modificar"), 5)
+
+4
+00:00:05,121 --> 00:00:05,123
+13. click(findTestObject("Notas/a_Modificar"))
+
+5
+00:00:05,992 --> 00:00:05,993
+17. setText(findTestObject("Notas/input_Ttulo_Titulo"), "NOTA DE PRUEBA MODIFICADA")
+
+6
+00:00:06,336 --> 00:00:06,337
+21. click(findTestObject("Notas/div_NotasCrearNotaModNota"))
+
+7
+00:00:06,339 --> 00:00:06,340
+25. setText(findTestObject("Notas/input_Ttulo_Titulo"), "MODIFICADO")
+
+8
+00:00:06,348 --> 00:00:06,349
+29. click(findTestObject("Notas/input_Fecha baja_btn"))
+
+9
+00:00:06,555 --> 00:00:06,557
+33. click(findTestObject("Notas/p_La nota fue guardada exitosamente (1)"))
+
+10
+00:00:06,704 --> 00:00:06,705
+37. verifyElementPresent(findTestObject("Notas/Bandeja de Notas"), 2)
+
+11
+00:00:09,177 --> 00:00:09,178
+41. closeBrowser()
+

@@ -1,0 +1,32 @@
+1
+00:00:00,396 --> 00:00:00,402
+1. openBrowser("")
+
+2
+00:00:05,670 --> 00:00:05,672
+5. navigateToUrl("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+3
+00:00:14,378 --> 00:00:14,381
+9. click(findTestObject("Bandeja de Contactos/Contactos"))
+
+4
+00:00:16,155 --> 00:00:16,156
+13. setText(findTestObject("Bandeja de Contactos/txtBuscarContacto"), "Simpson")
+
+5
+00:00:16,513 --> 00:00:16,515
+17. sendKeys(findTestObject("Bandeja de Contactos/txtBuscarContacto"), Keys.chord(ENTER))
+
+6
+00:00:16,676 --> 00:00:16,679
+21. verifyTextPresent("Bartolomeo J Simpson", false)
+
+7
+00:00:16,984 --> 00:00:16,985
+25. delay(10)
+
+8
+00:00:27,017 --> 00:00:27,018
+29. closeBrowser()
+

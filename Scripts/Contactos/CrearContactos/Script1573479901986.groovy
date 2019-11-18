@@ -14,28 +14,41 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/Contacto/Crear')
+WebUI.click(findTestObject('Object Repository/CrearCliente/Page_Contactos Tesorera - Contactos de Tesorera/a_Contactos'))
 
-WebUI.setText(findTestObject('Page_Crear Contacto - Contactos de Tesorera/input_Nombre_Nombre'), 'nombre')
+WebUI.click(findTestObject('Page_Bandeja de Contactos - Contactos de Tesorera/a_Crear Contactos'))
 
-WebUI.setText(findTestObject('Page_Crear Contacto - Contactos de Tesorera/input_Apellidos_Apellidos'), 'apellido')
+WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/span_Seleccione'))
 
-WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/span_Seleccione'), 
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/CrearCliente/Page_Crear Contacto - Contactos de Tesorera/li_Chorizo con papas'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Bandeja de Contactos/SpanFuncion'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))
+
+WebUI.setText(findTestObject('Bandeja de Contactos/NombreContacto'), 'Luis')
+
+WebUI.setText(findTestObject('Bandeja de Contactos/ApellidosContacto'), 'Trujillo')
+
+not_run: WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/btnGuardar'), 
     5)
 
-WebUI.click(findTestObject('Object Repository/CrearContacto/Page_Crear Contacto - Contactos de Tesorera/span_Seleccione'))
+WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Bandeja de Contactos/textboxClienteRepresenta'), 5)
+WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/btnGuardar'))
 
-WebUI.click(findTestObject('Bandeja de Contactos/textboxClienteRepresenta'))
+not_run: WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/p_El usuario fue guardado exitosamente'), 
+    2)
 
-WebUI.setText(findTestObject('Bandeja de Contactos/textboxClienteRepresenta'), 'liliana')
-
-WebUI.sendKeys(findTestObject('Bandeja de Contactos/textboxClienteRepresenta'), Keys.chord(Keys.ENTER))
-
-WebUI.closeBrowser()
+WebUI.delay(5)
 

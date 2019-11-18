@@ -22,7 +22,7 @@ Feature: Modificación de clientes
 
   Examples: 
       | NombreCliente1| correo 										| tag  | direccion 			 | 
- 			| Liliana			 	| lilibs633@hotmail.com    	| tag  | dirección			 | 
+ 			| Liliana  		 	| lilibs633@hotmail.com    	| tag  | Cr 52 N 78 33			 | 
  			
  		
  

@@ -6,11 +6,15 @@
    <elementGuidId>19e0ce46-a583-467e-8773-0c94e0bc26fd</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'txtBuscar' and @type = 'text' and @placeholder = 'Buscar']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='txtBuscar']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -73,7 +73,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-activedescendant</name>
       <type>Main</type>
-      <value>f50b20c1-c42d-4aa3-8c74-4b70e1db328a</value>
+      <value>b7601112-9e22-487f-a371-abeb743c1c4b</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -51,7 +51,7 @@ class ActivarInactivarContactos {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	
+
 	@When("consulta un contacto con estado (.*) inactivo")
 	def consulta_un_contacto_con_estado_inactivo(String estado) {
 		println estado
@@ -60,34 +60,45 @@ class ActivarInactivarContactos {
 	@And("da clic sobre el botón activar")
 	def da_clic_sobre_el_boton_activar() {
 		println "Da clic en el botón Activar"
+		WebUI.click(findTestObject('ActivarInactivarContacto/Activo_button'))
+
+		WebUI.click(findTestObject('ActivarInactivarContacto/Fecha de Baja_btnActivo'))
 	}
-	
-	
-	
+
+
+
 	@Then("El sistema muestra mensaje de confirmación")
 	def El_sistema_muestra_mensaje_de_confirmacion() {
 		println "Mensaje de confirmación para activar el contacto"
+
+		WebUI.click(findTestObject('ActivarInactivarContacto/p_La operacin se realiz exitosamente'))
 	}
-	
+
 	@And("se da clic en el botón Aceptar")
 	def se_da_clic_en_el_boton_Aceptar() {
 		println "Clic botón Aceptar"
 	}
-	
+
 	@When("consulta un contacto con estado (.*) activo")
 	def consulta_un_contacto_con_estado_activo(String estado) {
 		println estado
 	}
-	
+
 	@And("da clic sobre el botón Inactivar")
 	def da_clic_sobre_el_boton_Inactivar() {
 		println "Dar clic en el botón inactivar"
+
+		WebUI.click(findTestObject('ActivarInactivarContacto/Inactivo_button'))
 	}
-	
+
 	@Then("El sistema muestra ventana para inactivar el contacto")
 	def El_sistema_muestra_ventana_para_inactivar_el_contacto() {
 		println "Ventana con información para inactivar contacto"
+
+		'Get text alert on the alert when it\'s shown'
+		alertText = WebUI.getAlertText()
+
+		'Verify text alert is correct or not'
+		WebUI.verifyMatch(alertText, '¿Está seguro de activar el contacto?', false)
 	}
-	
-		
 }

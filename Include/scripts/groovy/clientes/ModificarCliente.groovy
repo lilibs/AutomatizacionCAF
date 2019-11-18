@@ -59,8 +59,9 @@ class ModificarCliente {
 	def da_clic_sobre_la_opcion_Modificar () {
 		println "Opción Modificar"
 
-		WebUI.click(findTestObject('Object Repository/Nuevo/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
-		
+		WebUI.verifyElementPresent(findTestObject('ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'),
+				5)
+		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
 	}
 
 
@@ -68,10 +69,9 @@ class ModificarCliente {
 	def actualiza_el_nombre_del_cliente (String NombreCliente1) {
 		println "Modifica nombre cliente"
 
-		
+
 		WebUI.setText(findTestObject('Object Repository/Nuevo/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), NombreCliente1)
-	
-		}
+	}
 
 
 	@And("digita el correo (.*)")
@@ -114,10 +114,8 @@ class ModificarCliente {
 		println "Guarda la modificación de los datos del cliente"
 
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/BotonGuardar_Registro'))
-		
-					
 	}
-	
+
 	@Then("el sistema muestra un mensaje de confirmación")
 	def el_sistema_muestra_un_mensaje_de_confirmacion() {
 		println ("Visualizar mensajes de éxito")
@@ -126,5 +124,4 @@ class ModificarCliente {
 		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
-	
 }
