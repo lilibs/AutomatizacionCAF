@@ -45,6 +45,7 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import org.openqa.selenium.Keys as Keys
 
 
 class ActivarInactivarContactos {
@@ -55,23 +56,34 @@ class ActivarInactivarContactos {
 	@When("consulta un contacto con estado (.*) inactivo")
 	def consulta_un_contacto_con_estado_inactivo(String estado) {
 		println estado
+		WebUI.click(findTestObject('Bandeja de Contactos/txtBuscarContacto'))
+		WebUI.setText(findTestObject('Bandeja de Contactos/txtBuscarContacto'), estado)
+		WebUI.sendKeys(findTestObject('Bandeja de Contactos/txtBuscarContacto'), Keys.chord(Keys.ENTER))
+		WebUI.delay(5)
 	}
 
 	@And("da clic sobre el botón activar")
 	def da_clic_sobre_el_boton_activar() {
 		println "Da clic en el botón Activar"
-		WebUI.click(findTestObject('ActivarInactivarContacto/Activo_button'))
-
-		WebUI.click(findTestObject('ActivarInactivarContacto/Fecha de Baja_btnActivo'))
+		WebUI.click(findTestObject('Object Repository/ActivarInactivarContacto/Activar_button'))
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 
 
-	@Then("El sistema muestra mensaje de confirmación")
-	def El_sistema_muestra_mensaje_de_confirmacion() {
+	@Then("El sistema muestra mensaje para activar el contacto")
+	def El_sistema_muestra_mensaje_para_activar_el_contacto() {
 		println "Mensaje de confirmación para activar el contacto"
 
-		WebUI.click(findTestObject('ActivarInactivarContacto/p_La operacin se realiz exitosamente'))
+		/*'Get text alert on the alert when it\'s shown'
+		 alertText = WebUI.getAlertText()
+		 'Verify text alert is correct or not'
+		 WebUI.verifyMatch(alertText, '¿Está seguro de activar el contacto?', false)*/
+
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+
+		WebUI.acceptAlert()
+		WebUI.closeBrowser()
 	}
 
 	@And("se da clic en el botón Aceptar")
@@ -82,23 +94,48 @@ class ActivarInactivarContactos {
 	@When("consulta un contacto con estado (.*) activo")
 	def consulta_un_contacto_con_estado_activo(String estado) {
 		println estado
+
+		WebUI.click(findTestObject('Bandeja de Contactos/txtBuscarContacto'))
+		WebUI.setText(findTestObject('Bandeja de Contactos/txtBuscarContacto'), estado)
+		WebUI.sendKeys(findTestObject('Bandeja de Contactos/txtBuscarContacto'), Keys.chord(Keys.ENTER))
+		WebUI.delay(5)
 	}
 
 	@And("da clic sobre el botón Inactivar")
 	def da_clic_sobre_el_boton_Inactivar() {
 		println "Dar clic en el botón inactivar"
 
-		WebUI.click(findTestObject('ActivarInactivarContacto/Inactivo_button'))
+		WebUI.click(findTestObject('Object Repository/ActivarInactivarContacto/Inactivar_button'))
+		WebUI.click(findTestObject('ActivarInactivarContacto/Fecha de Baja_btnActivo'))
+		WebUI.waitForElementPresent(findTestObject('ActivarInactivarContacto/p_La operacin se realiz exitosamente'), 5)
 	}
 
 	@Then("El sistema muestra ventana para inactivar el contacto")
 	def El_sistema_muestra_ventana_para_inactivar_el_contacto() {
 		println "Ventana con información para inactivar contacto"
 
-		'Get text alert on the alert when it\'s shown'
-		alertText = WebUI.getAlertText()
+		/*	'Get text alert on the alert when it\'s shown'
+		 alertText = WebUI.getAlertText()
+		 WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+		 'Verify text alert is correct or not'
+		 WebUI.verifyMatch(alertText, '¿Está seguro de activar el contacto?', false)
+		 WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)*/
+	}
 
-		'Verify text alert is correct or not'
-		WebUI.verifyMatch(alertText, '¿Está seguro de activar el contacto?', false)
+
+
+
+
+	@And("se da clic en Guardar para inactivar el contacto")
+	def se_da_clic_en_Guardar_para_inactivar_el_contacto() {
+		println "Dar clic en el botón inactivar"
+	}
+
+	@And("se presenta mensaje confirmando la inactivación del contacto")
+	def se_presenta_mensaje_confirmando_la_inactivacion_del_contacto() {
+		println "Mensaje de confirmación"
+		WebUI.click(findTestObject('ActivarInactivarContacto/p_La operacin se realiz exitosamente'))
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.closeBrowser()
 	}
 }

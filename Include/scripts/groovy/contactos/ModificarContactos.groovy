@@ -62,12 +62,12 @@ class ModificarContactos {
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/a_Aegon Targaryen'))
 	}
 
-	@And("se modifica el contacto")
-	def se_modifica_el_contacto() {
+	@And("se modifican las observaciones (.*) del contacto")
+	def se_modifican_las_observaciones_del_contacto(String Observaciones) {
 		println "se modifica el contacto"
 
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/textarea_Otros Alias Jon Snow Jon NieveParece que no sabe nada'),
-				'Otros Alias: Jon Snow, Jon Nieve\n\nParece que no sabe nada.observaciones')
+				Observaciones)
 	}
 
 

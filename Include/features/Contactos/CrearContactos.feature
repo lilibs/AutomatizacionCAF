@@ -4,19 +4,16 @@
 Feature: Creación de contactos con validaciones
   Yo como usuario quiero crear contactos
 
-  @IrCrearContactos
-  Scenario: Ir a crear contactos
-    Given El usuario ingresa a la página principal
-    And se ubica en la opción contactos
-    When da clic en el link Crear contactos
-    Then el sistema muestra el formulario Crear Contactos
-
-    @CancelarCreacionContacto
+  @CancelarCreacionContacto
   Scenario: Cancelar la creación de un contacto
-    Given El usuario ingresa a la opción Crear Contactos
+  	Given El usuario ingresa a la página principal 
+    And se ubica en la opción contactos
+    And da clic en el link Crear contactos
     And se ubica en el formulario de crear contactos 
     When presiona el botón Regresar de contactos
     Then se visualiza nuevamente la página principal de contactos
+    
+      
 
     @CrearContactos
   Scenario Outline: Crear contactos

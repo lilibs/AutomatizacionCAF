@@ -33,4 +33,4 @@ Feature: Creación de notas
 
     Examples: 
       | tituloNota | contenidoNota |
-      | Nombre1        | Apellido1         |
+      | Titulo de la nota      | Contenido de la nota        |

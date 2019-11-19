@@ -25,5 +25,5 @@ WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos 
 WebUI.closeBrowser()*/
 CucumberKW.runFeatureFile('Include/features/Clientes/ValidarIngresoApp.feature')
 
-WebUI.takeScreenshot()
+WebUI.verifyTextPresent('', false)
 

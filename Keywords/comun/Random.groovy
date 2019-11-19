@@ -1,4 +1,4 @@
-package contactos
+package comun
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -40,58 +40,64 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import org.apache.commons.lang.RandomStringUtils
 
-import cucumber.api.java.en.And
-import cucumber.api.java.en.Given
-import cucumber.api.java.en.Then
-import cucumber.api.java.en.When
-import org.openqa.selenium.Keys as Keys
 
-class ConsultarContactos {
-	@And("se ubica en la opción contactos")
-	def se_ubica_en_la_opcion_contactos() {
-		println ("Seleccion Modulo Contactos")
-		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/Contactos'))
+class Random {
+	
+	//random mail generator
+	/*	@Keyword
+		public String getEmail(String suffix,String prefix){
+			int randomNo = (int)(Math.random() * 100000);
+			return suffix + randomNo + "@" + prefix;
+		}
+	}
+	*/
+	/*@Keyword
+	def randomEngagementNameGenerator() {
+		Date today = new Date()
+
+		String todaysDate = today.format(‘MMddyy-hhmm’)
+
+		String engagementName = 'auto_eng’ + todaysDate
+
+		WebUI.comment(engagementName)
 	}
 
-
-	@When("digita el nombre del contacto a consultar (.*) en el campo búsqueda")
-	def digita_el_nombre_del_contacto_a_consultar_en_el_campo_busqueda(String consultarNombreContacto) {
-		println ("Ingresar Nombre contacto en la búsqueda")
-
-		WebUI.click(findTestObject('Bandeja de Contactos/txtBuscarContacto'))
-		WebUI.setText(findTestObject('Bandeja de Contactos/txtBuscarContacto'), consultarNombreContacto)
+	//in the test case
+	
+	String mail = CustomKeywords.'mubasher.help_keyword_RandomEmail.getEmail'('opps'(suffix is here), 'mailinator.com' (prefix is here))
+	
+	
+	
+	/**
+	 * Click element
+	 * @param to Katalon test object
+	 */
+	/*@Keyword
+	def clickElement(TestObject to) {
+		try {
+			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
+			KeywordUtil.logInfo("Clicking element")
+			element.click()
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
 	}
 
-	@And("presiona la tecla enter en el campo de búsqueda del contacto")
-	def presiona_la_tecla_enter_en_el_campo_de_busqueda_del_contacto() {
-
-		WebUI.sendKeys(findTestObject('Bandeja de Contactos/txtBuscarContacto'), Keys.chord(Keys.ENTER))
-		WebUI.delay(5)
-	}
-
-
-	@Then("se visualiza el nombre del contacto en el resultado de la búsqueda")
-	def se_visualiza_el_nombre_del_contacto_en_el_resultado_de_la_busqueda() {
-		println ("Visualizar Resultado Consulta")
-
-		WebUI.verifyTextPresent('Activo', false)
-		WebUI.delay(5)
-		WebUI.closeBrowser()
-	}
-
-
-
-	//Consultar Cliente inexistente
-
-	@Then("se visualiza el mensaje No hay datos")
-	def se_visualiza_el_mensaje_no_hay_datos() {
-		println ("Visualizar Resultado Consulta No hay datos")
-
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/MensajeNohaydatos'), 5)
-		WebUI.closeBrowser()
-	}
-
-
+	/**
+	 * Get all rows of HTML table
+	 * @param table Katalon test object represent for HTML table
+	 * @param outerTagName outer tag name of TR tag, usually is TBODY
+	 * @return All rows inside HTML table
+	 */
+	/*@Keyword
+	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
+		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
+		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
+		return selectedRows
+	}*/
 }
-

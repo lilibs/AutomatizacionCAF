@@ -76,12 +76,14 @@ class ConsultarCliente {
 
 		WebUI.click(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'))
 		WebUI.setText(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), consultarNombreCliente)
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 	}
 
 	@And("presiona la tecla enter")
 	def presiona_la_tecla_enter() {
 		WebUI.sendKeys(findTestObject('Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar'), Keys.chord(Keys.ENTER))
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 
@@ -100,6 +102,7 @@ class ConsultarCliente {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Clientes/ConsultaCliente/ConsultaCliente_NoExitoso/span_No hay datos'), 5)
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.closeBrowser()
 	}
 

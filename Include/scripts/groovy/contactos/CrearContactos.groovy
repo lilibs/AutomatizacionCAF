@@ -49,7 +49,7 @@ import cucumber.api.java.en.When
 
 class CrearContactos {
 
-	@When("da clic en el link Crear contactos")
+	@And("da clic en el link Crear contactos")
 	def da_clic_en_el_link_Crear_contactos() {
 		println "Opción crear contactos"
 

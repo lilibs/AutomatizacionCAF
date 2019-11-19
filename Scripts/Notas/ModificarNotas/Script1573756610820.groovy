@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web/')
+/*WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
 WebUI.click(findTestObject('Notas/Notas'))
 
@@ -34,4 +34,6 @@ WebUI.click(findTestObject('Notas/p_La nota fue guardada exitosamente (1)'))
 WebUI.verifyElementPresent(findTestObject('Notas/Bandeja de Notas'), 2)
 
 WebUI.closeBrowser()
+*/
 
+CucumberKW.runFeatureFile('Include/features/Notas/ModificarNotas.feature')

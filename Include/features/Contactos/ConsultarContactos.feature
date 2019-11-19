@@ -15,7 +15,7 @@ Feature: Escenario para realizar la consulta de los contactos
     Examples: 
       |consultarNombreContacto  |
       | Simpson  					 |  
-      | Liliana  					 |
+    
       
       
    @ConsultaContactos_NoExistente
@@ -28,7 +28,7 @@ Feature: Escenario para realizar la consulta de los contactos
 
     Examples: 
       | consultarNombreContacto |  
-      | Luis			  					 |  
+      | Jennifer			  					 |  
       | María			  					 |
   
   

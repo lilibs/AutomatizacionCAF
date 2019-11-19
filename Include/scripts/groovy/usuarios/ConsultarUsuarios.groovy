@@ -1,4 +1,4 @@
-package contactos
+package usuarios
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -45,53 +45,34 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-import org.openqa.selenium.Keys as Keys
 
-class ConsultarContactos {
-	@And("se ubica en la opción contactos")
-	def se_ubica_en_la_opcion_contactos() {
-		println ("Seleccion Modulo Contactos")
-		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/Contactos'))
+
+class ConsultarUsuarios {
+	/**
+	 * The step definitions below match with Katalon sample Gherkin steps
+	 */
+	@And("se ubica en la opción administración")
+	def se_ubica_en_la_opcion_administracion() {
+		println ("Seleccion Modulo de administración")
+		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin'))
 	}
+	
+	@When("digita el nombre del usuario a consultar (.*) en el campo búsqueda")
+	def digita_el_nombre_del_usuario_a_consultar_en_el_campo_busqueda(String consultarUsuario) {
+		println ("Ingresar Nombre usuario en la búsqueda")
 
-
-	@When("digita el nombre del contacto a consultar (.*) en el campo búsqueda")
-	def digita_el_nombre_del_contacto_a_consultar_en_el_campo_busqueda(String consultarNombreContacto) {
-		println ("Ingresar Nombre contacto en la búsqueda")
-
-		WebUI.click(findTestObject('Bandeja de Contactos/txtBuscarContacto'))
-		WebUI.setText(findTestObject('Bandeja de Contactos/txtBuscarContacto'), consultarNombreContacto)
+		WebUI.click(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'))
+		WebUI.setText(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'), consultarUsuario)
 	}
-
-	@And("presiona la tecla enter en el campo de búsqueda del contacto")
-	def presiona_la_tecla_enter_en_el_campo_de_busqueda_del_contacto() {
-
-		WebUI.sendKeys(findTestObject('Bandeja de Contactos/txtBuscarContacto'), Keys.chord(Keys.ENTER))
-		WebUI.delay(5)
-	}
-
-
-	@Then("se visualiza el nombre del contacto en el resultado de la búsqueda")
-	def se_visualiza_el_nombre_del_contacto_en_el_resultado_de_la_busqueda() {
+	
+	@Then("se visualiza el nombre del usuario (.*) en el resultado de la búsqueda")
+	def se_visualiza_el_nombre_del_usuario_en_el_resultado_de_la_busqueda(String consultarUsuario) {
 		println ("Visualizar Resultado Consulta")
 
 		WebUI.verifyTextPresent('Activo', false)
 		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
-
-
-
-	//Consultar Cliente inexistente
-
-	@Then("se visualiza el mensaje No hay datos")
-	def se_visualiza_el_mensaje_no_hay_datos() {
-		println ("Visualizar Resultado Consulta No hay datos")
-
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/MensajeNohaydatos'), 5)
-		WebUI.closeBrowser()
-	}
-
-
+	
+	
 }
-

@@ -63,7 +63,8 @@ class CrearNotas {
 
 	@Then("el sistema muestra el formulario Crear Notas")
 	def el_sistema_muestra_el_formulario_Crear_Notas() {
-		WebUI.verifyElementPresent(findTestObject('Notas/FormCrearNotas'), 2)
+		WebUI.verifyElementPresent(findTestObject('Notas/FormCrearNotas'), 5)
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 
@@ -76,7 +77,9 @@ class CrearNotas {
 	@Then("se visualiza nuevamente la página principal de notas")
 	def se_visualiza_nuevamente_la_pagina_principal_de_notas() {
 
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Notas/Bandeja de Notas'), 2)
+		
 	}
 
 	@And("selecciona el cliente")
@@ -91,24 +94,31 @@ class CrearNotas {
 	def digita_el_titulo_de_la_nota(String tituloNota) {
 
 		WebUI.setText(findTestObject('Notas/input_Ttulo_Titulo'), tituloNota)
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 	@And("digita el contenido (.*)")
 	def digita_el_contenido(String contenidoNota) {
 
 		WebUI.setText(findTestObject('Notas/textarea_Contenido_Contenido'), contenidoNota)
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 	@And("se guarda la información de la nota")
 	def se_guarda_la_información_de_la_nota() {
 
-		not_run: WebUI.click(findTestObject('Notas/btnGuardar'))
+		WebUI.click(findTestObject('Notas/btnGuardar'))
+		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 	@Then("el sistema muestra mensaje confirmando el guardado de la nota")
 	def el_sistema_muestra_mensaje_confirmando_el_guardado_de_la_nota() {
 
-		not_run: WebUI.click(findTestObject('Notas/p_La nota fue guardada exitosamente'))
+		WebUI.waitForElementPresent(findTestObject('Notas/p_La nota fue guardada exitosamente'), 5)
+		WebUI.verifyTextPresent('La nota fue guardada exitosamente', false)
+		
+		/*WebUI.click(findTestObject('Notas/p_La nota fue guardada exitosamente'))*/
+		
 
 		WebUI.takeScreenshot()
 

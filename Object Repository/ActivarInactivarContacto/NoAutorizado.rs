@@ -6,15 +6,19 @@
    <elementGuidId>5091a0b9-196d-4438-b9e6-f2ec31f73ac8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>xpath1573760814143</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>.content-container > fieldset:nth-child(1) > h3:nth-child(2)</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[2]/div/fieldset/h2</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

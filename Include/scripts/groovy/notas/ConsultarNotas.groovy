@@ -68,7 +68,7 @@ class ConsultarNotas {
 	@Then("se visualiza el registro de la nota en el resultado de la búsqueda")
 	def se_visualiza_el_registro_de_la_nota_en_el_resultado_de_la_busqueda() {
 
-		WebUI.verifyElementPresent(findTestObject('Notas/IDBBG'), 2)
+		WebUI.verifyElementPresent(findTestObject('Notas/IDBBG'), 5)
 		WebUI.takeScreenshot()
 		WebUI.closeBrowser()
 	}

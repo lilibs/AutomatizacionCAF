@@ -16,5 +16,3 @@ import org.openqa.selenium.Keys as Keys
 
 CucumberKW.runFeatureFile('Include/features/Clientes/ConsultarCliente.feature')
 
-
-

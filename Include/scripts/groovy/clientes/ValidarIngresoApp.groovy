@@ -68,8 +68,7 @@ class ValidarIngresoApp {
 	@Then("se presenta un mensaje de error")
 	def se_presenta_un_mensaje_de_error() {
 		println 'Mensaje de error'
-		WebUI.verifyElementPresent(findTestObject('Object Repository/ActivarInactivarContacto/NoAutorizado'), 5)
-		/*WebUI.verifyElementPresent(findTestObject('Object Repository/ActivarInactivarContacto/SinAcceso'), 5)*/
+		WebUI.verifyTextPresent('401 - Unauthorized: Access is denied due to invalid credentials.', false)
 		WebUI.closeBrowser()
 		}
 }

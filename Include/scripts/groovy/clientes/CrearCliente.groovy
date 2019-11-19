@@ -45,7 +45,8 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-
+import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang.RandomStringUtils as RandStr
 
 class CrearCliente {
 
@@ -66,13 +67,19 @@ class CrearCliente {
 	}
 
 	@When("digita el nombre del cliente a crear(.*)")
-	def digita_el_nombre_del_cliente_a_crear (String nombreCliente) {
+	def digita_el_nombre_del_cliente_a_crear (String nombreClientes) {
 		println ("Ingresar Nombre del cliente")
 
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
-		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreCliente)
-	}
+		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreClientes)
+		
+		}
 
+	
+	
+	
+	
+	
 	@And("digita el BBG Broker ID(.*)")
 	def digita_el_BBG_Broker_ID (String IdBBG) {
 		println ("Ingresar BBG Broker ID")
@@ -96,9 +103,14 @@ class CrearCliente {
 	@And("se da clic en el botón Guardar")
 	def se_da_clic_en_el_botón_Guardar() {
 		println  "Guardar Cliente"
+		
 		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
-		WebUI.delay(5)
+		//WebUI.verifyTextPresent("El nombre del cliente ya existe")
+		//WebUI.closeBrowser()
+		
 	}
+	 /* WebUI.comment("El cliente fue guardado exitosamente")*/
+	  
 
 
 	@And("presiona el botón Regresar")
@@ -113,13 +125,19 @@ class CrearCliente {
 	@Then("se visualiza nuevamente la página principal")
 	def se_visualiza_nuevamente_la_pagina_principal() {
 		println ("Visualizar página principal")
-		/*--WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))*/
+		WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
+		WebUI.closeBrowser()
 	}
-	@Then("el sistema guarda la información del cliente")
-	def el_sistema_muestra_un_mensaje_de_exito() {
+	
+	
+
+	@Then("el sistema muestra el mensaje de acuerdo a la acción realizada")
+	def el_sistema_muestra_el_mensaje_de_acuerdo_a_la_accion_realizada() {
 		println ("Visualizar mensajes de Confirmacion")
-		WebUI.delay(10)
+		//WebUI.comment("El nombre del cliente ya existe")
+		//WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'))
+		//WebUI.click(findTestObject('Object Repository/CrearCliente/a_Regresar'))
 		WebUI.closeBrowser()
 	}
 
@@ -129,6 +147,8 @@ class CrearCliente {
 		println ("Seleccionar Boton crear Cliente")
 		WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/a_Crear Cliente'))
 	}
+	
+	
 
 	@And("presiona el botón Guardar")
 	def presiona_el_boton_Guardar () {
@@ -136,15 +156,14 @@ class CrearCliente {
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
 	}
 
-
-	@Then("Se visualizan los mensajes de validación")
+	@Then ("Se visualizan los mensajes de validación")
 	def Se_visualizan_los_mensajes_de_validacion() {
 		println ("Visualizar mensajes de Validacion")
-		/*WebUI.verifyElementText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
-		 '')*/
+		WebUI.verifyElementPresent(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
+		 0)
 		WebUI.closeBrowser()
 	}
-
+ 
 
 	@Then("el sistema muestra el formulario Crear Cliente")
 	def el_sistema_muestra_el_formulario_Crear_Cliente() {
@@ -153,22 +172,5 @@ class CrearCliente {
 				0)
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

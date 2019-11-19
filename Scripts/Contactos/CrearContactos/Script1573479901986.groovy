@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web/')
+/*WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
 WebUI.maximizeWindow()
 
@@ -50,5 +50,7 @@ WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tes
 not_run: WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/p_El usuario fue guardado exitosamente'), 
     2)
 
-WebUI.delay(5)
+WebUI.delay(5)*/
+
+CucumberKW.runFeatureFile('Include/features/Contactos/CrearContactos.feature')
 
