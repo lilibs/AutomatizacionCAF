@@ -14,7 +14,7 @@ Feature: Consultar Usuario
 
     Examples: 
       |consultarUsuario  |
-      | liliana  					 |  
+      | liliana  				 |  
 
 
   @ConsultaUsuario_NoExistente
@@ -23,11 +23,11 @@ Feature: Consultar Usuario
     And se ubica en la opción administración
     When digita el nombre del usuario a consultar <consultarUsuario> en el campo búsqueda
     And presiona la tecla enter
-    Then se visualiza el mensaje sin registros 
+    Then se visualiza el resultado sin registros 
 
     Examples: 
       | consultarUsuario |  
-      | Sandra		  					 |  
+      | Sandra		  		 |  
   
   
       

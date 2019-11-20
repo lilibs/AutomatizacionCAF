@@ -51,19 +51,10 @@ import org.apache.commons.lang.RandomStringUtils as RandStr
 class CrearCliente {
 
 
-	/*@Given("El usuario ingresa a la página principal")
-	 def El_usuario_ingresa_a_la_pagina_principal() {
-	 println ("Ingreso Pagina Principal")
-	 WebUI.openBrowser('')
-	 WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
-	 }
-	 */
-
 	@Given("El usuario ingresa a la opción Crear Cliente")
 	def El_usuario_ingresa_a_la_opcion_Crear_Cliente() {
 		println "Ingresar a Crear Cliente"
-		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'),
-				0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/CrearCliente/Page_Crear Cliente - Contactos de Tesorera/h1_Crear Cliente'), 5)
 	}
 
 	@When("digita el nombre del cliente a crear(.*)")
@@ -72,14 +63,9 @@ class CrearCliente {
 
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
 		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreClientes)
-		
-		}
+			
+	}
 
-	
-	
-	
-	
-	
 	@And("digita el BBG Broker ID(.*)")
 	def digita_el_BBG_Broker_ID (String IdBBG) {
 		println ("Ingresar BBG Broker ID")
@@ -103,15 +89,14 @@ class CrearCliente {
 	@And("se da clic en el botón Guardar")
 	def se_da_clic_en_el_botón_Guardar() {
 		println  "Guardar Cliente"
-		
-		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
-		//WebUI.verifyTextPresent("El nombre del cliente ya existe")
-		//WebUI.closeBrowser()
-		
-	}
-	 /* WebUI.comment("El cliente fue guardado exitosamente")*/
-	  
 
+		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
+		WebUI.delay(5)
+		/*WebUI.verifyTextPresent("El nombre del cliente ya existe")*/
+		WebUI.closeBrowser()
+
+	}
+	
 
 	@And("presiona el botón Regresar")
 	def presiona_el_boton_Regresar() {
@@ -129,8 +114,8 @@ class CrearCliente {
 		WebUI.click(findTestObject('Object Repository/Clientes/a_Clientes'))
 		WebUI.closeBrowser()
 	}
-	
-	
+
+
 
 	@Then("el sistema muestra el mensaje de acuerdo a la acción realizada")
 	def el_sistema_muestra_el_mensaje_de_acuerdo_a_la_accion_realizada() {
@@ -147,8 +132,8 @@ class CrearCliente {
 		println ("Seleccionar Boton crear Cliente")
 		WebUI.click(findTestObject('Object Repository/Page_Bandeja de Clientes - Contactos de Tesorera/a_Crear Cliente'))
 	}
-	
-	
+
+
 
 	@And("presiona el botón Guardar")
 	def presiona_el_boton_Guardar () {
@@ -159,11 +144,11 @@ class CrearCliente {
 	@Then ("Se visualizan los mensajes de validación")
 	def Se_visualizan_los_mensajes_de_validacion() {
 		println ("Visualizar mensajes de Validacion")
-		WebUI.verifyElementPresent(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'), 
-		 0)
+		WebUI.verifyElementPresent(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/span_Debe ingresar un nombre'),
+				0)
 		WebUI.closeBrowser()
 	}
- 
+
 
 	@Then("el sistema muestra el formulario Crear Cliente")
 	def el_sistema_muestra_el_formulario_Crear_Cliente() {

@@ -45,41 +45,61 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import org.openqa.selenium.Keys as Keys
 
 
-class ConsultarUsuarios {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@And("se ubica en la opción administración")
-	def se_ubica_en_la_opcion_administracion() {
-		println ("Seleccion Modulo de administración")
-		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin'))
+
+class CrearUsuario {
+
+
+	@When("digita el login del usuario a validar (.*)")
+	def digita_el_login_del_usuario_a_validar(String consultarLogin) {
+
+		println ("Ingresar Login del usuario")
+		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin_fas fa-cog'))
+		WebUI.click(findTestObject('Object Repository/Administracion/a_Crear Usuarios'))
+		WebUI.click(findTestObject('Object Repository/Administracion/input_LoginUsuario'))
+		WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 5)
 	}
 
-	@When("digita el nombre del usuario a consultar (.*) en el campo búsqueda")
-	def digita_el_nombre_del_usuario_a_consultar_en_el_campo_busqueda(String consultarUsuario) {
-		println ("Ingresar Nombre usuario en la búsqueda")
+	@And("se presiona Buscar")
+	def se_presiona_Buscar() {
 
-		WebUI.click(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'))
-		WebUI.setText(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'), consultarUsuario)
+		WebUI.click(findTestObject('Administracion/btnBuscarLoginUsuario'))
+		WebUI.delay(5)
 	}
-
-	@Then("se visualiza el nombre del usuario (.*) en el resultado de la búsqueda")
-	def se_visualiza_el_nombre_del_usuario_en_el_resultado_de_la_busqueda(String consultarUsuario) {
-		println ("Visualizar Resultado Consulta")
-
-		WebUI.verifyTextPresent('Activo', false)
+	@Then("se visualiza mensaje de validación")
+	def se_visualiza_mensaje_de_validacion() {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'),
+				5)
 		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
+		
+	@And("se ingresa la información de los roles disponibles")
+	def se_ingresa_la_información_de_los_roles_disponibles() {
 
-	@Then("se visualiza el resultado sin registros")
-	def se_visualiza_el_resultado_sin_registros() {
-		println ("Visualizar Resultado Consulta")
+		WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponibles'))
+		WebUI.delay(5)
+	}
+	
+	@And("se da clic en Guardar Usuario")
+	def se_da_clic_en_Guardar_Usuario() {
 
-		WebUI.verifyTextPresent('No hay datos.', false)
-		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))
+		WebUI.delay(5)
+	}
+	
+	@Then("el sistema muestra mensaje de confirmación")
+	def el_sistema_muestra_mensaje_de_confirmacion() {
+
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario ya existe en el sistema'), 5)
+		WebUI.click(findTestObject('Object Repository/Administracion/a_Regresar'))
+		WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
 		WebUI.closeBrowser()
 	}
+	
+	
 }

@@ -47,39 +47,43 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class ConsultarUsuarios {
+class ModificarUsuario {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@And("se ubica en la opción administración")
-	def se_ubica_en_la_opcion_administracion() {
-		println ("Seleccion Modulo de administración")
-		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin'))
+	@When("se ubica en la bandeja de administración")
+	def se_ubica_en_la_bandeja_de_administracion() {
+	
+		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin_fas fa-cog'))
+								
 	}
 
-	@When("digita el nombre del usuario a consultar (.*) en el campo búsqueda")
-	def digita_el_nombre_del_usuario_a_consultar_en_el_campo_busqueda(String consultarUsuario) {
-		println ("Ingresar Nombre usuario en la búsqueda")
-
-		WebUI.click(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'))
-		WebUI.setText(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'), consultarUsuario)
-	}
-
-	@Then("se visualiza el nombre del usuario (.*) en el resultado de la búsqueda")
-	def se_visualiza_el_nombre_del_usuario_en_el_resultado_de_la_busqueda(String consultarUsuario) {
-		println ("Visualizar Resultado Consulta")
-
-		WebUI.verifyTextPresent('Activo', false)
+	@And("se selecciona el usuario a modificar")
+	def se_selecciona_el_usuario_a_modificar() {
+		WebUI.click(findTestObject('Object Repository/Administracion/button_Modificar'))
 		WebUI.delay(5)
+	}
+	
+	@And("se modifican los roles disponibles")
+	def se_modifican_los_roles_disponibles() {
+		
+		WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponibles_k-icon k-i-arrow-double-60-right'))
+		WebUI.click(findTestObject('Object Repository/Administracion/input_Off_btn btn-primary orange-button no-margin-top'))
+	}
+	
+	@And("se guarda la información del usuario modificada")
+	def se_guarda_la_informacion_del_usuario_modificada() {
+		
+		/*--WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))*/
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 5)
+		
+	}
+	
+	@And("se ubica en la bandeja de usuarios")
+	def se_ubica_en_la_bandeja_de_usuarios() {
+		
+		WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
 		WebUI.closeBrowser()
 	}
-
-	@Then("se visualiza el resultado sin registros")
-	def se_visualiza_el_resultado_sin_registros() {
-		println ("Visualizar Resultado Consulta")
-
-		WebUI.verifyTextPresent('No hay datos.', false)
-		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-		WebUI.closeBrowser()
-	}
+	
 }

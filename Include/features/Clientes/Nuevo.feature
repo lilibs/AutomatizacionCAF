@@ -22,28 +22,6 @@ Feature: Creación de clientes con validaciones implementadas
     Then el sistema muestra el mensaje de acuerdo a la acción realizada 
 
   Examples: 
-      | nombreClientes  		 | IdBBG |   
- 			| Liliana	Maria				 | 90	   |  
+      | nombreClientes  | IdBBG |   
+ 			| Julian Mateo	  | 95    |  
  
-
-@CancelarCreacionCliente
- Scenario: Cancelar la creación de un cliente
-    Given El usuario ingresa a la página principal
-    And se ubica en la opción clientes
-    When da clic en el link Crear cliente
-    And presiona el botón Regresar
-    Then se visualiza nuevamente la página principal
-  
- @ValidarCamposRequeridos
- Scenario: Validación campos requeridos
- 		Given El usuario ingresa a la página principal
-    And se ubica en la opción clientes
-    When da clic en el link Crear cliente
-    And presiona el botón Guardar
-   Then Se visualizan los mensajes de validación
-
-
-  
-    
-   
-  
