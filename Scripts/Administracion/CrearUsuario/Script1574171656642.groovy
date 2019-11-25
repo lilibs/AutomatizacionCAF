@@ -51,8 +51,15 @@ WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuar
 
 WebUI.closeBrowser()
 
+WebUI.verifyTextPresent('', false)
 
+WebUI.acceptAlert()
 
+WebUI.getCSSValue(findTestObject(null), '')
 
+WebUI.acceptAlert()
 
+WebUI.acceptAlert()
+
+WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', false)
 

@@ -60,7 +60,23 @@ class CrearUsuario {
 		WebUI.click(findTestObject('Object Repository/Administracion/a_Crear Usuarios'))
 		WebUI.click(findTestObject('Object Repository/Administracion/input_LoginUsuario'))
 		WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin)
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 5)
+		
+		WebUI.delay(2)
+
+	/*Boolean MG = WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', true)
+
+		/*WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 15);*/
+		/*if (MG) {
+
+			int RN;
+			RN = (int)(Math.random()*500)
+			WebUI.delay(3)
+			WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin+RN)
+			WebUI.sendKeys(findTestObject('Administracion/btnBuscarLoginUsuario'), Keys.chord(Keys.ENTER))
+		}
+		else {
+			WebUI.comment("El usuario fue guardado exitosamente");
+		}*/
 	}
 
 	@And("se presiona Buscar")
@@ -69,6 +85,9 @@ class CrearUsuario {
 		WebUI.click(findTestObject('Administracion/btnBuscarLoginUsuario'))
 		WebUI.delay(5)
 	}
+
+
+
 	@Then("se visualiza mensaje de validación")
 	def se_visualiza_mensaje_de_validacion() {
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'),
@@ -76,21 +95,21 @@ class CrearUsuario {
 		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
-		
+
 	@And("se ingresa la información de los roles disponibles")
 	def se_ingresa_la_información_de_los_roles_disponibles() {
 
 		WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponibles'))
 		WebUI.delay(5)
 	}
-	
+
 	@And("se da clic en Guardar Usuario")
 	def se_da_clic_en_Guardar_Usuario() {
 
 		WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))
 		WebUI.delay(5)
 	}
-	
+
 	@Then("el sistema muestra mensaje de confirmación")
 	def el_sistema_muestra_mensaje_de_confirmacion() {
 
@@ -100,6 +119,4 @@ class CrearUsuario {
 		WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
 		WebUI.closeBrowser()
 	}
-	
-	
 }

@@ -79,7 +79,7 @@ class CrearNotas {
 
 		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Notas/Bandeja de Notas'), 2)
-		
+		WebUI.closeBrowser()
 	}
 
 	@And("selecciona el cliente")
@@ -108,17 +108,16 @@ class CrearNotas {
 	def se_guarda_la_información_de_la_nota() {
 
 		WebUI.click(findTestObject('Notas/btnGuardar'))
-		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.delay(5)
 	}
 
 	@Then("el sistema muestra mensaje confirmando el guardado de la nota")
 	def el_sistema_muestra_mensaje_confirmando_el_guardado_de_la_nota() {
 
-		WebUI.waitForElementPresent(findTestObject('Notas/p_La nota fue guardada exitosamente'), 5)
-		WebUI.verifyTextPresent('La nota fue guardada exitosamente', false)
-		
+		WebUI.waitForElementPresent(findTestObject('Notas/p_La nota fue guardada exitosamente'), 20)
+	
 		/*WebUI.click(findTestObject('Notas/p_La nota fue guardada exitosamente'))*/
-		
+
 
 		WebUI.takeScreenshot()
 

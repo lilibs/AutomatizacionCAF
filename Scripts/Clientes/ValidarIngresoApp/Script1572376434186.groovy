@@ -23,7 +23,5 @@ WebUI.click(findTestObject('Object Repository/Nuevo/Page_Contactos Tesorera - Co
 WebUI.verifyElementPresent(findTestObject('Page_Bandeja de Clientes - Contactos de Tesorera/h1_Bandeja de Clientes'), 0)
 
 WebUI.closeBrowser()*/
-CucumberKW.runFeatureFile('Include/features/Clientes/ValidarIngresoApp.feature')
-
-WebUI.verifyTextPresent('', false)
+CucumberKW.runFeatureFile('Include/features/IngresoApp/ValidarIngresoAppConAcceso.feature')
 

@@ -1,0 +1,44 @@
+1
+00:00:00,208 --> 00:00:00,209
+1. openBrowser("")
+
+2
+00:00:02,603 --> 00:00:02,604
+5. navigateToUrl("http://smdessc01:4800/CAF.Tesoreria.Web/")
+
+3
+00:00:07,564 --> 00:00:07,565
+9. click(findTestObject("Object Repository/Administracion/Administracion/i_Administracin_fas fa-cog"))
+
+4
+00:00:08,613 --> 00:00:08,614
+13. click(findTestObject("Object Repository/Administracion/Administracion/button_Modificar"))
+
+5
+00:00:09,856 --> 00:00:09,857
+17. delay(5)
+
+6
+00:00:14,861 --> 00:00:14,863
+21. click(findTestObject("Object Repository/Administracion/li_AdministradorFuncional"))
+
+7
+00:00:15,007 --> 00:00:15,008
+25. click(findTestObject("Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/span_Roles Disponibles_k-icon k-i-arrow-60-left"))
+
+8
+00:00:15,501 --> 00:00:15,502
+29. click(findTestObject("Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/input_Off_btn btn-primary orange-button no-margin-top"))
+
+9
+00:00:15,646 --> 00:00:15,647
+33. click(findTestObject("Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/p_El usuario fue guardado exitosamente"))
+
+10
+00:00:16,986 --> 00:00:16,987
+37. click(findTestObject("Object Repository/Administracion/Page_Bandeja de Usuarios - Contactos de Tesorera/h1_Bandeja de Usuarios"))
+
+11
+00:00:17,156 --> 00:00:17,157
+41. closeBrowser()
+

@@ -6,19 +6,18 @@
    <elementGuidId>adbfe911-6798-4ffc-b49e-e5806ac32eec</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'El usuario no es válido o no existe, por favor verifique el usuario.' or . = 'El usuario no es válido o no existe, por favor verifique el usuario.')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/following::p[1]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'El usuario no es válido o no existe, por favor verifique el usuario.' or . = 'El usuario no es válido o no existe, por favor verifique el usuario.')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+/*WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
@@ -28,10 +28,31 @@ WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponib
 
 WebUI.click(findTestObject('Object Repository/Administracion/input_Off_btn btn-primary orange-button no-margin-top'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 
-    5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 5)
 
 WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
+
+WebUI.closeBrowser()*/
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
+
+WebUI.click(findTestObject('Object Repository/Administracion/Administracion/i_Administracin_fas fa-cog'))
+
+WebUI.click(findTestObject('Object Repository/Administracion/Administracion/button_Modificar'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Administracion/li_AdministradorFuncional'))
+
+WebUI.click(findTestObject('Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/span_Roles Disponibles_k-icon k-i-arrow-60-left'))
+
+WebUI.click(findTestObject('Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/input_Off_btn btn-primary orange-button no-margin-top'))
+
+WebUI.click(findTestObject('Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/p_El usuario fue guardado exitosamente'))
+
+WebUI.click(findTestObject('Object Repository/Administracion/Page_Bandeja de Usuarios - Contactos de Tesorera/h1_Bandeja de Usuarios'))
 
 WebUI.closeBrowser()
 

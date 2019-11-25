@@ -48,47 +48,44 @@ import cucumber.api.java.en.When
 
 
 class ModificarNotas {
-	
+
 	@And("se selecciona la nota a modificar")
 	def se_selecciona_la_nota_a_modificar() {
-		
-		
+
+
 		WebUI.click(findTestObject('Object Repository/Notas/IDBBG'))
-		
-		}
-	
+	}
+
 	@And("se da clic sobre la acción Modificar")
 	def se_da_clic_sobre_la_accion_Modificar() {
-		
+
 		WebUI.verifyElementPresent(findTestObject('Notas/a_Modificar'), 2)
 		WebUI.click(findTestObject('Notas/a_Modificar'))
 	}
-	
+
 	@And("se ubica en el formulario de modificar nota")
 	def se_ubica_en_el_formulario_de_modificar_nota() {
-		
 	}
-	
-	
+
+
 	@And("se modifica el titulo de la nota (.*)")
 	def se_modifica_el_titulo_de_la_nota(String tituloN) {
 		WebUI.setText(findTestObject('Notas/input_Ttulo_Titulo'), tituloN)
 	}
-	
+
 	@And("se modifica el contenido de la nota (.*)")
 	def se_modifica_el_contenido_de_la_nota(String contenidoN) {
-		
 	}
-	
-	
+
+
 
 	@Then("el sistema presenta un mensaje de confirmación de la modificación")
 	def el_sistema_presenta_un_mensaje_de_confirmacion_de_la_modificacion() {
-		
+
 		WebUI.click(findTestObject('Notas/p_La nota fue guardada exitosamente (1)'))
-		
+
 		WebUI.verifyElementPresent(findTestObject('Notas/Bandeja de Notas'), 5)
-		
+
 		WebUI.closeBrowser()
 	}
 }

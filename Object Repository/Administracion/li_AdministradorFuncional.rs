@@ -9,32 +9,36 @@
          <key>XPATH</key>
          <value>//li[@id='aba79ad3-548d-4452-9c6e-037551c1cbd3']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[@class = 'k-item' and @role = 'option' and @aria-selected = 'false' and (text() = 'AdministradorFuncional' or . = 'AdministradorFuncional')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>k-item</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
       <value>option</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-selected</name>
       <type>Main</type>
@@ -48,7 +52,7 @@
       <value>aba79ad3-548d-4452-9c6e-037551c1cbd3</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

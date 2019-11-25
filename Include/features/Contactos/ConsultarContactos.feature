@@ -16,8 +16,7 @@ Feature: Escenario para realizar la consulta de los contactos
       |consultarNombreContacto  |
       | Simpson  					 |  
     
-      
-      
+         
    @ConsultaContactos_NoExistente
    Scenario Outline: Consultar contactos no existentes 
     Given El usuario ingresa a la página principal

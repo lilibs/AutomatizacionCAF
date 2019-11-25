@@ -1,0 +1,262 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Crear contactos",
+        "description": "",
+        "id": "creación-de-contactos-con-validaciones;crear-contactos;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7183643648,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1227835023,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción contactos",
+            "match": {
+              "location": "ConsultarContactos.se_ubica_en_la_opcion_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1864290757,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "da clic en el link Crear contactos",
+            "match": {
+              "location": "CrearContactos.da_clic_en_el_link_Crear_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10330490300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selecciona el cliente que representa",
+            "match": {
+              "location": "CrearContactos.selecciona_el_cliente_que_representa()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5273285946,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "selecciona la función",
+            "match": {
+              "location": "CrearContactos.selecciona_la_funcion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3316496341,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "digita el nombre para el contacto a crear Contacto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Contacto",
+                  "offset": 42
+                }
+              ],
+              "location": "CrearContactos.digita_el_nombre_para_el_contacto_a_crear(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298802724,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "digita los apellidos del contacto Apellidos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Apellidos",
+                  "offset": 34
+                }
+              ],
+              "location": "CrearContactos.digita_los_apellidos_del_contacto(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5134310765,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "se presiona el botón Guardar",
+            "match": {
+              "location": "CrearContactos.se_presiona_el_boton_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3224000666,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "el sistema guarda la información del contacto",
+            "match": {
+              "location": "CrearContactos.el_sistema_guarda_la_informacion_del_contacto()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6696195756,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "muestra mensaje de confirmación de la creación",
+            "match": {
+              "location": "CrearContactos.muestra_mensaje_de_confirmacion_de_la_creacion()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CrearContacto"
+          },
+          {
+            "name": "@CrearContactos"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Cancelar la creación de un contacto",
+        "description": "",
+        "id": "creación-de-contactos-con-validaciones;cancelar-la-creación-de-un-contacto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7299922284,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1324744053,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "se ubica en la opción contactos",
+            "match": {
+              "location": "ConsultarContactos.se_ubica_en_la_opcion_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1388773309,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "da clic en el link Crear contactos",
+            "match": {
+              "location": "CrearContactos.da_clic_en_el_link_Crear_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149023357,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "se ubica en el formulario de crear contactos",
+            "match": {
+              "location": "CrearContactos.se_ubica_en_el_formulario_de_crear_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 979566196,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "presiona el botón Regresar de contactos",
+            "match": {
+              "location": "CrearContactos.presiona_el_boton_Regresar_de_contactos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 918811342,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "se visualiza nuevamente la página principal de contactos",
+            "match": {
+              "location": "CrearContactos.se_visualiza_nuevamente_la_pagina_principal_de_contactos()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CrearContacto"
+          },
+          {
+            "name": "@CancelarCreacionContacto"
+          }
+        ]
+      }
+    ],
+    "name": "Creación de contactos con validaciones",
+    "description": "  Yo como usuario quiero crear contactos",
+    "id": "creación-de-contactos-con-validaciones",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Contactos/CrearContactos.feature",
+    "tags": [
+      {
+        "name": "@CrearContacto",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

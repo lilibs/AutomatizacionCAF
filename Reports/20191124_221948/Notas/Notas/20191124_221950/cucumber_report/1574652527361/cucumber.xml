@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="82.216537">
+<testcase classname="Creación de notas" name="Ir a crear notas" time="15.391917">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+When da clic en el link Crear notas.........................................passed
+Then el sistema muestra el formulario Crear Notas...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creación de notas" name="Crear notas" time="49.100331">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+When da clic en el link Crear notas.........................................passed
+And selecciona el cliente...................................................passed
+And digita el titulo de la nota Titulo de la nota...........................passed
+And digita el contenido Contenido de la nota................................passed
+And se guarda la información de la nota.....................................passed
+Then el sistema muestra mensaje confirmando el guardado de la nota..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Creación de notas" name="Cancelar la creación de una nota" time="17.724289">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+When da clic en el link Crear notas.........................................passed
+And presiona el botón Regresar del formulario de notas......................passed
+Then se visualiza nuevamente la página principal de notas...................passed
+]]></system-out>
+</testcase>
+</testsuite>

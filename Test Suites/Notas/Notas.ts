@@ -17,15 +17,15 @@
       <testCaseId>Test Cases/Notas/ConsultarNotas</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3366c8b6-05fe-4dab-8a44-b7f795b71cc3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Notas/ModificarNotas</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>3073239c-9d6e-4adb-af3d-64add217b3d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notas/CrearNotas</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3366c8b6-05fe-4dab-8a44-b7f795b71cc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Notas/ModificarNotas</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

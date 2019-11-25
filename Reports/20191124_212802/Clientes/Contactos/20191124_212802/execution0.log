@@ -1,0 +1,4739 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886944</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Clientes/Contactos</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Contactos</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Clientes/Contactos</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886963</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = lsepulvedap - p-lsepulvedap.intergrupo.com</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">lsepulvedap - p-lsepulvedap.intergrupo.com</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886965</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886966</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 10.0.210.10</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">10.0.210.10</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886968</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.3.3.11</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.3.3.11</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886978</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start listener action : beforeExportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886991</millis>
+  <sequence>7</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>This Katalon Studio version has been deprecated. Please upgrade Katalon Studio to the latest version.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:06</date>
+  <millis>1574648886992</millis>
+  <sequence>9</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End listener action : beforeExportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:07</date>
+  <millis>1574648887247</millis>
+  <sequence>10</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Contactos/ActivarContacto</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Contactos/ActivarContacto</property>
+  <property name="description">Se realiza la grabaci\u00F3n de objetos desde firefox</property>
+  <property name="id">Test Cases/Contactos/ActivarContacto</property>
+  <property name="source">E:\\CAF\\Automatizacion\\CAF1\\Test Cases\\Contactos\\ActivarContacto.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:07</date>
+  <millis>1574648887866</millis>
+  <sequence>12</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : runFeatureFile(\&amp;quot;Include/features/Contactos/ActivarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">16</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:07</date>
+  <millis>1574648887948</millis>
+  <sequence>13</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting run keyword runFeatureFile: &amp;apos;Include/features/Contactos/ActivarContactos.feature&amp;apos; and extract report to folder: &amp;apos;E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802/cucumber_report/1574648887936&amp;apos;...</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:08</date>
+  <millis>1574648888962</millis>
+  <sequence>14</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Activar contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:08</date>
+  <millis>1574648888969</millis>
+  <sequence>15</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:09</date>
+  <millis>1574648889317</millis>
+  <sequence>17</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:09</date>
+  <millis>1574648889368</millis>
+  <sequence>19</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 0 seconds</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893159</millis>
+  <sequence>21</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 2a77825d22e30355448583bdcae47260</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">2a77825d22e30355448583bdcae47260</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893181</millis>
+  <sequence>22</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893182</millis>
+  <sequence>23</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893182</millis>
+  <sequence>24</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893183</millis>
+  <sequence>25</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:13</date>
+  <millis>1574648893184</millis>
+  <sequence>26</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:14</date>
+  <millis>1574648894351</millis>
+  <sequence>28</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:18</date>
+  <millis>1574648898824</millis>
+  <sequence>31</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:18</date>
+  <millis>1574648898827</millis>
+  <sequence>32</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:18</date>
+  <millis>1574648898828</millis>
+  <sequence>33</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:18</date>
+  <millis>1574648898829</millis>
+  <sequence>34</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900027</millis>
+  <sequence>41</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900028</millis>
+  <sequence>42</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900028</millis>
+  <sequence>43</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900029</millis>
+  <sequence>44</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : consulta un contacto con estado Inactivo inactivo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900257</millis>
+  <sequence>51</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900476</millis>
+  <sequence>60</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Inactivo&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:20</date>
+  <millis>1574648900618</millis>
+  <sequence>66</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Keys &amp;apos;ENTER + &amp;apos; sent to object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:25</date>
+  <millis>1574648905784</millis>
+  <sequence>68</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:25</date>
+  <millis>1574648905785</millis>
+  <sequence>69</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>consulta un contacto con estado Inactivo inactivo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:25</date>
+  <millis>1574648905785</millis>
+  <sequence>70</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : consulta un contacto con estado Inactivo inactivo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:25</date>
+  <millis>1574648905786</millis>
+  <sequence>71</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : da clic sobre el bot\u00F3n activar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:25</date>
+  <millis>1574648905975</millis>
+  <sequence>78</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ActivarInactivarContacto/Activar_button&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:30</date>
+  <millis>1574648910983</millis>
+  <sequence>80</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:30</date>
+  <millis>1574648910986</millis>
+  <sequence>81</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>da clic sobre el bot\u00F3n activar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:30</date>
+  <millis>1574648910987</millis>
+  <sequence>82</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : da clic sobre el bot\u00F3n activar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:30</date>
+  <millis>1574648910994</millis>
+  <sequence>83</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El sistema muestra mensaje para activar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:31</date>
+  <millis>1574648911000</millis>
+  <sequence>84</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El sistema muestra mensaje para activar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:31</date>
+  <millis>1574648911002</millis>
+  <sequence>85</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El sistema muestra mensaje para activar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:31</date>
+  <millis>1574648911011</millis>
+  <sequence>86</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se da clic en el bot\u00F3n Aceptar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916060</millis>
+  <sequence>88</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916785</millis>
+  <sequence>90</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916787</millis>
+  <sequence>91</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se da clic en el bot\u00F3n Aceptar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916789</millis>
+  <sequence>92</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se da clic en el bot\u00F3n Aceptar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916805</millis>
+  <sequence>93</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Activar contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916806</millis>
+  <sequence>94</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Activar contactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916878</millis>
+  <sequence>95</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Feature file: &amp;apos;Include/features/Contactos/ActivarContactos.feature&amp;apos; was passed</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916878</millis>
+  <sequence>96</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : runFeatureFile(\&amp;quot;Include/features/Contactos/ActivarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:36</date>
+  <millis>1574648916879</millis>
+  <sequence>97</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Contactos/ActivarContacto</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:38</date>
+  <millis>1574648918920</millis>
+  <sequence>98</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Contactos/ActivarContacto</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:38</date>
+  <millis>1574648918928</millis>
+  <sequence>99</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Contactos/InactivarContactos</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Contactos/InactivarContactos</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Contactos/InactivarContactos</property>
+  <property name="source">E:\\CAF\\Automatizacion\\CAF1\\Test Cases\\Contactos\\InactivarContactos.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:39</date>
+  <millis>1574648919226</millis>
+  <sequence>101</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : runFeatureFile(\&amp;quot;Include/features/Contactos/InactivarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">41</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:39</date>
+  <millis>1574648919235</millis>
+  <sequence>102</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting run keyword runFeatureFile: &amp;apos;Include/features/Contactos/InactivarContactos.feature&amp;apos; and extract report to folder: &amp;apos;E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802/cucumber_report/1574648919228&amp;apos;...</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:39</date>
+  <millis>1574648919538</millis>
+  <sequence>103</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Inactivar contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:39</date>
+  <millis>1574648919539</millis>
+  <sequence>104</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:39</date>
+  <millis>1574648919542</millis>
+  <sequence>106</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922030</millis>
+  <sequence>109</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = d25512a4f79da1a6aa6a47cb52e78036</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">d25512a4f79da1a6aa6a47cb52e78036</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922047</millis>
+  <sequence>110</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922047</millis>
+  <sequence>111</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922048</millis>
+  <sequence>112</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922048</millis>
+  <sequence>113</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:28:42</date>
+  <millis>1574648922049</millis>
+  <sequence>114</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:43</date>
+  <millis>1574648923203</millis>
+  <sequence>116</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:46</date>
+  <millis>1574648926578</millis>
+  <sequence>119</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:46</date>
+  <millis>1574648926578</millis>
+  <sequence>120</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:46</date>
+  <millis>1574648926579</millis>
+  <sequence>121</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:46</date>
+  <millis>1574648926579</millis>
+  <sequence>122</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928173</millis>
+  <sequence>129</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928174</millis>
+  <sequence>130</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928174</millis>
+  <sequence>131</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928174</millis>
+  <sequence>132</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : consulta un contacto con estado Activo activo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928377</millis>
+  <sequence>139</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928583</millis>
+  <sequence>148</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Activo&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:48</date>
+  <millis>1574648928705</millis>
+  <sequence>154</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Keys &amp;apos;ENTER + &amp;apos; sent to object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:53</date>
+  <millis>1574648933709</millis>
+  <sequence>156</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:53</date>
+  <millis>1574648933710</millis>
+  <sequence>157</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>consulta un contacto con estado Activo activo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:53</date>
+  <millis>1574648933710</millis>
+  <sequence>158</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : consulta un contacto con estado Activo activo</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:53</date>
+  <millis>1574648933710</millis>
+  <sequence>159</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : da clic sobre el bot\u00F3n Inactivar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:53</date>
+  <millis>1574648933892</millis>
+  <sequence>166</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ActivarInactivarContacto/Inactivar_button&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:54</date>
+  <millis>1574648934570</millis>
+  <sequence>173</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ActivarInactivarContacto/Fecha de Baja_btnActivo&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935180</millis>
+  <sequence>179</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/ActivarInactivarContacto/p_La operacin se realiz exitosamente&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935180</millis>
+  <sequence>180</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>da clic sobre el bot\u00F3n Inactivar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935181</millis>
+  <sequence>181</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : da clic sobre el bot\u00F3n Inactivar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935182</millis>
+  <sequence>182</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El sistema muestra ventana para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935182</millis>
+  <sequence>183</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El sistema muestra ventana para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935182</millis>
+  <sequence>184</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El sistema muestra ventana para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935183</millis>
+  <sequence>185</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se da clic en Guardar para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935184</millis>
+  <sequence>186</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se da clic en Guardar para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935184</millis>
+  <sequence>187</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se da clic en Guardar para inactivar el contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935184</millis>
+  <sequence>188</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se presenta mensaje confirmando la inactivaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:28:55</date>
+  <millis>1574648935334</millis>
+  <sequence>195</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ActivarInactivarContacto/p_La operacin se realiz exitosamente&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:00</date>
+  <millis>1574648940337</millis>
+  <sequence>197</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941100</millis>
+  <sequence>199</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941102</millis>
+  <sequence>200</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se presenta mensaje confirmando la inactivaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941102</millis>
+  <sequence>201</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se presenta mensaje confirmando la inactivaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941104</millis>
+  <sequence>202</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Inactivar contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941105</millis>
+  <sequence>203</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Inactivar contactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941119</millis>
+  <sequence>204</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Feature file: &amp;apos;Include/features/Contactos/InactivarContactos.feature&amp;apos; was passed</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941120</millis>
+  <sequence>205</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : runFeatureFile(\&amp;quot;Include/features/Contactos/InactivarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:01</date>
+  <millis>1574648941120</millis>
+  <sequence>206</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Contactos/InactivarContactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943160</millis>
+  <sequence>207</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Contactos/InactivarContactos</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943167</millis>
+  <sequence>208</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Contactos/ConsultarContactos</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Contactos/ConsultarContactos</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Contactos/ConsultarContactos</property>
+  <property name="source">E:\\CAF\\Automatizacion\\CAF1\\Test Cases\\Contactos\\ConsultarContactos.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943346</millis>
+  <sequence>210</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : runFeatureFile(\&amp;quot;Include/features/Contactos/ConsultarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">33</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943347</millis>
+  <sequence>211</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting run keyword runFeatureFile: &amp;apos;Include/features/Contactos/ConsultarContactos.feature&amp;apos; and extract report to folder: &amp;apos;E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802/cucumber_report/1574648943347&amp;apos;...</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943610</millis>
+  <sequence>212</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Consultar contactos existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943610</millis>
+  <sequence>213</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:03</date>
+  <millis>1574648943613</millis>
+  <sequence>215</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946091</millis>
+  <sequence>218</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 995898400fe1095184c785915da38a94</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">995898400fe1095184c785915da38a94</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946101</millis>
+  <sequence>219</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946102</millis>
+  <sequence>220</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946102</millis>
+  <sequence>221</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946103</millis>
+  <sequence>222</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:06</date>
+  <millis>1574648946103</millis>
+  <sequence>223</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:07</date>
+  <millis>1574648947250</millis>
+  <sequence>225</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:10</date>
+  <millis>1574648950976</millis>
+  <sequence>228</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:10</date>
+  <millis>1574648950977</millis>
+  <sequence>229</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:10</date>
+  <millis>1574648950978</millis>
+  <sequence>230</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:10</date>
+  <millis>1574648950978</millis>
+  <sequence>231</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952061</millis>
+  <sequence>238</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952061</millis>
+  <sequence>239</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952062</millis>
+  <sequence>240</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952062</millis>
+  <sequence>241</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : digita el nombre del contacto a consultar Simpson en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952217</millis>
+  <sequence>248</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952407</millis>
+  <sequence>257</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Simpson&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952408</millis>
+  <sequence>258</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>digita el nombre del contacto a consultar Simpson en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952408</millis>
+  <sequence>259</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : digita el nombre del contacto a consultar Simpson en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952409</millis>
+  <sequence>260</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : presiona la tecla enter en el campo de b\u00FAsqueda del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:12</date>
+  <millis>1574648952512</millis>
+  <sequence>266</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Keys &amp;apos;ENTER + &amp;apos; sent to object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:17</date>
+  <millis>1574648957515</millis>
+  <sequence>268</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:17</date>
+  <millis>1574648957515</millis>
+  <sequence>269</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>presiona la tecla enter en el campo de b\u00FAsqueda del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:17</date>
+  <millis>1574648957516</millis>
+  <sequence>270</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : presiona la tecla enter en el campo de b\u00FAsqueda del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:17</date>
+  <millis>1574648957516</millis>
+  <sequence>271</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se visualiza el nombre del contacto en el resultado de la b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:17</date>
+  <millis>1574648957625</millis>
+  <sequence>274</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Activo&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:22</date>
+  <millis>1574648962627</millis>
+  <sequence>276</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963530</millis>
+  <sequence>278</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963531</millis>
+  <sequence>279</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se visualiza el nombre del contacto en el resultado de la b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963532</millis>
+  <sequence>280</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se visualiza el nombre del contacto en el resultado de la b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963532</millis>
+  <sequence>281</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Consultar contactos existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963533</millis>
+  <sequence>282</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Consultar contactos existentes</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963537</millis>
+  <sequence>283</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963538</millis>
+  <sequence>284</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:23</date>
+  <millis>1574648963544</millis>
+  <sequence>286</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966042</millis>
+  <sequence>289</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = d45b870df73e661d99d037e8e1249f78</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">d45b870df73e661d99d037e8e1249f78</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966067</millis>
+  <sequence>290</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966067</millis>
+  <sequence>291</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966067</millis>
+  <sequence>292</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966068</millis>
+  <sequence>293</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:26</date>
+  <millis>1574648966068</millis>
+  <sequence>294</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:27</date>
+  <millis>1574648967215</millis>
+  <sequence>296</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:38</date>
+  <millis>1574648978113</millis>
+  <sequence>299</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:38</date>
+  <millis>1574648978114</millis>
+  <sequence>300</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:38</date>
+  <millis>1574648978114</millis>
+  <sequence>301</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:38</date>
+  <millis>1574648978115</millis>
+  <sequence>302</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979429</millis>
+  <sequence>309</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979430</millis>
+  <sequence>310</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979430</millis>
+  <sequence>311</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979431</millis>
+  <sequence>312</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : digita el nombre del contacto a consultar Jennifer en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979658</millis>
+  <sequence>319</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979834</millis>
+  <sequence>328</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Jennifer&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979835</millis>
+  <sequence>329</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>digita el nombre del contacto a consultar Jennifer en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979835</millis>
+  <sequence>330</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : digita el nombre del contacto a consultar Jennifer en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979836</millis>
+  <sequence>331</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:39</date>
+  <millis>1574648979944</millis>
+  <sequence>337</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Keys &amp;apos;ENTER + &amp;apos; sent to object: &amp;apos;Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:44</date>
+  <millis>1574648984947</millis>
+  <sequence>339</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:44</date>
+  <millis>1574648984948</millis>
+  <sequence>340</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:44</date>
+  <millis>1574648984948</millis>
+  <sequence>341</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:44</date>
+  <millis>1574648984949</millis>
+  <sequence>342</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985028</millis>
+  <sequence>348</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Bandeja de Contactos/MensajeNohaydatos&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985795</millis>
+  <sequence>350</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985796</millis>
+  <sequence>351</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985796</millis>
+  <sequence>352</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985797</millis>
+  <sequence>353</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985798</millis>
+  <sequence>354</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985799</millis>
+  <sequence>355</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985800</millis>
+  <sequence>356</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:45</date>
+  <millis>1574648985802</millis>
+  <sequence>358</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988237</millis>
+  <sequence>361</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 5c784ef7fc11808d91ad8ec4fe933f49</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">5c784ef7fc11808d91ad8ec4fe933f49</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988248</millis>
+  <sequence>362</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988249</millis>
+  <sequence>363</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988249</millis>
+  <sequence>364</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988249</millis>
+  <sequence>365</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:29:48</date>
+  <millis>1574648988250</millis>
+  <sequence>366</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:49</date>
+  <millis>1574648989385</millis>
+  <sequence>368</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:53</date>
+  <millis>1574648993769</millis>
+  <sequence>371</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:53</date>
+  <millis>1574648993770</millis>
+  <sequence>372</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:53</date>
+  <millis>1574648993770</millis>
+  <sequence>373</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:53</date>
+  <millis>1574648993771</millis>
+  <sequence>374</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:54</date>
+  <millis>1574648994941</millis>
+  <sequence>381</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:54</date>
+  <millis>1574648994942</millis>
+  <sequence>382</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:54</date>
+  <millis>1574648994943</millis>
+  <sequence>383</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:54</date>
+  <millis>1574648994943</millis>
+  <sequence>384</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : digita el nombre del contacto a consultar Mar\u00EDa en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995132</millis>
+  <sequence>391</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995309</millis>
+  <sequence>400</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Mar\u00EDa&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/txtBuscarContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995310</millis>
+  <sequence>401</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>digita el nombre del contacto a consultar Mar\u00EDa en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995310</millis>
+  <sequence>402</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : digita el nombre del contacto a consultar Mar\u00EDa en el campo b\u00FAsqueda</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995310</millis>
+  <sequence>403</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:29:55</date>
+  <millis>1574648995431</millis>
+  <sequence>409</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Keys &amp;apos;ENTER + &amp;apos; sent to object: &amp;apos;Object Repository/Clientes/ConsultaCliente/input_Crear Cliente_txtBuscar&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:00</date>
+  <millis>1574649000432</millis>
+  <sequence>411</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:00</date>
+  <millis>1574649000433</millis>
+  <sequence>412</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:00</date>
+  <millis>1574649000434</millis>
+  <sequence>413</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : presiona la tecla enter</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:00</date>
+  <millis>1574649000435</millis>
+  <sequence>414</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:00</date>
+  <millis>1574649000516</millis>
+  <sequence>420</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Bandeja de Contactos/MensajeNohaydatos&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001366</millis>
+  <sequence>422</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001368</millis>
+  <sequence>423</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001368</millis>
+  <sequence>424</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se visualiza el mensaje No hay datos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001369</millis>
+  <sequence>425</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001370</millis>
+  <sequence>426</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Consultar contactos no existentes</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001385</millis>
+  <sequence>427</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Feature file: &amp;apos;Include/features/Contactos/ConsultarContactos.feature&amp;apos; was passed</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001385</millis>
+  <sequence>428</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : runFeatureFile(\&amp;quot;Include/features/Contactos/ConsultarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:01</date>
+  <millis>1574649001385</millis>
+  <sequence>429</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Contactos/ConsultarContactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003446</millis>
+  <sequence>430</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Contactos/ConsultarContactos</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003451</millis>
+  <sequence>431</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Contactos/ModificarContacto</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Contactos/ModificarContacto</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Contactos/ModificarContacto</property>
+  <property name="source">E:\\CAF\\Automatizacion\\CAF1\\Test Cases\\Contactos\\ModificarContacto.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003632</millis>
+  <sequence>433</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : runFeatureFile(\&amp;quot;Include/features/Contactos/ModificarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">38</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003633</millis>
+  <sequence>434</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting run keyword runFeatureFile: &amp;apos;Include/features/Contactos/ModificarContactos.feature&amp;apos; and extract report to folder: &amp;apos;E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802/cucumber_report/1574649003633&amp;apos;...</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003934</millis>
+  <sequence>435</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO : Modificar contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003935</millis>
+  <sequence>436</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:03</date>
+  <millis>1574649003938</millis>
+  <sequence>438</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006402</millis>
+  <sequence>441</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 9b9edf923490b62b52ee6edb733a1877</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">9b9edf923490b62b52ee6edb733a1877</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006415</millis>
+  <sequence>442</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006415</millis>
+  <sequence>443</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006415</millis>
+  <sequence>444</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006415</millis>
+  <sequence>445</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:06</date>
+  <millis>1574649006416</millis>
+  <sequence>446</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:07</date>
+  <millis>1574649007569</millis>
+  <sequence>448</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:11</date>
+  <millis>1574649011827</millis>
+  <sequence>451</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:11</date>
+  <millis>1574649011829</millis>
+  <sequence>452</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:11</date>
+  <millis>1574649011829</millis>
+  <sequence>453</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:11</date>
+  <millis>1574649011830</millis>
+  <sequence>454</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013071</millis>
+  <sequence>461</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013071</millis>
+  <sequence>462</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013071</millis>
+  <sequence>463</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013072</millis>
+  <sequence>464</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013272</millis>
+  <sequence>471</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013272</millis>
+  <sequence>472</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013272</millis>
+  <sequence>473</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:13</date>
+  <millis>1574649013273</millis>
+  <sequence>474</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:14</date>
+  <millis>1574649014942</millis>
+  <sequence>481</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/a_Aegon Targaryen&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:14</date>
+  <millis>1574649014943</millis>
+  <sequence>482</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:14</date>
+  <millis>1574649014943</millis>
+  <sequence>483</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:14</date>
+  <millis>1574649014944</millis>
+  <sequence>484</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se modifican las observaciones Se escriben las obervaciones para modificar contacto 1 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015427</millis>
+  <sequence>493</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Se escriben las obervaciones para modificar contacto 1&amp;apos; is set on object &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/textarea_Otros Alias Jon Snow Jon NieveParece que no sabe nada&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015428</millis>
+  <sequence>494</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se modifican las observaciones Se escriben las obervaciones para modificar contacto 1 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015428</millis>
+  <sequence>495</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se modifican las observaciones Se escriben las obervaciones para modificar contacto 1 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015428</millis>
+  <sequence>496</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015608</millis>
+  <sequence>503</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/input_Elementos mostrados  1 - 3 de 3_btn btn-primary orange-button no-margin-top&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015609</millis>
+  <sequence>504</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015609</millis>
+  <sequence>505</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:15</date>
+  <millis>1574649015610</millis>
+  <sequence>506</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:17</date>
+  <millis>1574649017192</millis>
+  <sequence>513</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/p_La operacin se realiz exitosamente&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:17</date>
+  <millis>1574649017340</millis>
+  <sequence>520</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018150</millis>
+  <sequence>522</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018150</millis>
+  <sequence>523</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018151</millis>
+  <sequence>524</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018151</millis>
+  <sequence>525</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO : Modificar contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018151</millis>
+  <sequence>526</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO : Modificar contacto</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018152</millis>
+  <sequence>527</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO : Modificar contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018152</millis>
+  <sequence>528</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:18</date>
+  <millis>1574649018155</millis>
+  <sequence>530</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020649</millis>
+  <sequence>533</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 21932d1b73873b931e9461c6a61cc9d0</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">21932d1b73873b931e9461c6a61cc9d0</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020663</millis>
+  <sequence>534</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020663</millis>
+  <sequence>535</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020663</millis>
+  <sequence>536</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020664</millis>
+  <sequence>537</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:20</date>
+  <millis>1574649020664</millis>
+  <sequence>538</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:21</date>
+  <millis>1574649021807</millis>
+  <sequence>540</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:24</date>
+  <millis>1574649024982</millis>
+  <sequence>543</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:24</date>
+  <millis>1574649024982</millis>
+  <sequence>544</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:24</date>
+  <millis>1574649024982</millis>
+  <sequence>545</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:24</date>
+  <millis>1574649024983</millis>
+  <sequence>546</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:25</date>
+  <millis>1574649025993</millis>
+  <sequence>553</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:25</date>
+  <millis>1574649025994</millis>
+  <sequence>554</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:25</date>
+  <millis>1574649025994</millis>
+  <sequence>555</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:25</date>
+  <millis>1574649025995</millis>
+  <sequence>556</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:26</date>
+  <millis>1574649026144</millis>
+  <sequence>563</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:26</date>
+  <millis>1574649026145</millis>
+  <sequence>564</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:26</date>
+  <millis>1574649026145</millis>
+  <sequence>565</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la bandeja de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:26</date>
+  <millis>1574649026145</millis>
+  <sequence>566</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:27</date>
+  <millis>1574649027610</millis>
+  <sequence>573</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/a_Aegon Targaryen&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:27</date>
+  <millis>1574649027611</millis>
+  <sequence>574</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:27</date>
+  <millis>1574649027611</millis>
+  <sequence>575</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se selecciona el contacto a modificar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:27</date>
+  <millis>1574649027612</millis>
+  <sequence>576</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se modifican las observaciones Se escriben las obervaciones para modificar contacto 2 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028036</millis>
+  <sequence>585</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Se escriben las obervaciones para modificar contacto 2&amp;apos; is set on object &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/textarea_Otros Alias Jon Snow Jon NieveParece que no sabe nada&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028037</millis>
+  <sequence>586</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se modifican las observaciones Se escriben las obervaciones para modificar contacto 2 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028037</millis>
+  <sequence>587</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se modifican las observaciones Se escriben las obervaciones para modificar contacto 2 del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028038</millis>
+  <sequence>588</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028229</millis>
+  <sequence>595</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/input_Elementos mostrados  1 - 3 de 3_btn btn-primary orange-button no-margin-top&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028230</millis>
+  <sequence>596</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028230</millis>
+  <sequence>597</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se guarda la informaci\u00F3n modificada</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:28</date>
+  <millis>1574649028230</millis>
+  <sequence>598</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:29</date>
+  <millis>1574649029776</millis>
+  <sequence>605</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/p_La operacin se realiz exitosamente&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:29</date>
+  <millis>1574649029934</millis>
+  <sequence>612</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030693</millis>
+  <sequence>614</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030694</millis>
+  <sequence>615</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030694</millis>
+  <sequence>616</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : el sistema presenta un mensaje de confirmaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030695</millis>
+  <sequence>617</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO : Modificar contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030695</millis>
+  <sequence>618</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO : Modificar contacto</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030703</millis>
+  <sequence>619</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Feature file: &amp;apos;Include/features/Contactos/ModificarContactos.feature&amp;apos; was passed</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030703</millis>
+  <sequence>620</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : runFeatureFile(\&amp;quot;Include/features/Contactos/ModificarContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:30</date>
+  <millis>1574649030703</millis>
+  <sequence>621</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Contactos/ModificarContacto</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:32</date>
+  <millis>1574649032725</millis>
+  <sequence>622</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Contactos/ModificarContacto</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:32</date>
+  <millis>1574649032729</millis>
+  <sequence>623</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Contactos/CrearContactos</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Contactos/CrearContactos</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Contactos/CrearContactos</property>
+  <property name="source">E:\\CAF\\Automatizacion\\CAF1\\Test Cases\\Contactos\\CrearContactos.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:32</date>
+  <millis>1574649032915</millis>
+  <sequence>625</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : runFeatureFile(\&amp;quot;Include/features/Contactos/CrearContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">55</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:32</date>
+  <millis>1574649032916</millis>
+  <sequence>626</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting run keyword runFeatureFile: &amp;apos;Include/features/Contactos/CrearContactos.feature&amp;apos; and extract report to folder: &amp;apos;E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802/cucumber_report/1574649032916&amp;apos;...</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:33</date>
+  <millis>1574649033183</millis>
+  <sequence>627</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:33</date>
+  <millis>1574649033183</millis>
+  <sequence>628</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:33</date>
+  <millis>1574649033186</millis>
+  <sequence>630</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035731</millis>
+  <sequence>633</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 254e645c389479d611fa620b7e388622</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">254e645c389479d611fa620b7e388622</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035744</millis>
+  <sequence>634</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035744</millis>
+  <sequence>635</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035745</millis>
+  <sequence>636</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035746</millis>
+  <sequence>637</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:30:35</date>
+  <millis>1574649035747</millis>
+  <sequence>638</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:36</date>
+  <millis>1574649036889</millis>
+  <sequence>640</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:40</date>
+  <millis>1574649040366</millis>
+  <sequence>643</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:40</date>
+  <millis>1574649040366</millis>
+  <sequence>644</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:40</date>
+  <millis>1574649040367</millis>
+  <sequence>645</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:40</date>
+  <millis>1574649040367</millis>
+  <sequence>646</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:41</date>
+  <millis>1574649041595</millis>
+  <sequence>653</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:41</date>
+  <millis>1574649041595</millis>
+  <sequence>654</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:41</date>
+  <millis>1574649041596</millis>
+  <sequence>655</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:41</date>
+  <millis>1574649041597</millis>
+  <sequence>656</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:43</date>
+  <millis>1574649043460</millis>
+  <sequence>663</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Bandeja de Contactos - Contactos de Tesorera/a_Crear Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:43</date>
+  <millis>1574649043461</millis>
+  <sequence>664</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:43</date>
+  <millis>1574649043461</millis>
+  <sequence>665</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:43</date>
+  <millis>1574649043461</millis>
+  <sequence>666</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : selecciona el cliente que representa</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:43</date>
+  <millis>1574649043650</millis>
+  <sequence>673</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/SeleccioneLi&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:48</date>
+  <millis>1574649048652</millis>
+  <sequence>675</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:48</date>
+  <millis>1574649048789</millis>
+  <sequence>682</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/ClienteRepLili&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:53</date>
+  <millis>1574649053792</millis>
+  <sequence>684</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:53</date>
+  <millis>1574649053792</millis>
+  <sequence>685</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>selecciona el cliente que representa</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:53</date>
+  <millis>1574649053792</millis>
+  <sequence>686</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : selecciona el cliente que representa</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:53</date>
+  <millis>1574649053792</millis>
+  <sequence>687</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : selecciona la funci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:53</date>
+  <millis>1574649053953</millis>
+  <sequence>694</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/SpanFuncion&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:58</date>
+  <millis>1574649058955</millis>
+  <sequence>696</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059065</millis>
+  <sequence>703</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059066</millis>
+  <sequence>704</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>selecciona la funci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059066</millis>
+  <sequence>705</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : selecciona la funci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059066</millis>
+  <sequence>706</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : digita el nombre para el contacto a crear Contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059244</millis>
+  <sequence>713</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/NombreContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:30:59</date>
+  <millis>1574649059381</millis>
+  <sequence>722</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Contacto&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/NombreContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062382</millis>
+  <sequence>724</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 3 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062383</millis>
+  <sequence>725</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>digita el nombre para el contacto a crear Contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062383</millis>
+  <sequence>726</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : digita el nombre para el contacto a crear Contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062386</millis>
+  <sequence>727</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : digita los apellidos del contacto Apellidos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062519</millis>
+  <sequence>734</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/ApellidosContacto&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062682</millis>
+  <sequence>743</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Apellidos&amp;apos; is set on object &amp;apos;Object Repository/Bandeja de Contactos/ApellidosContacto&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062683</millis>
+  <sequence>744</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>digita los apellidos del contacto Apellidos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062683</millis>
+  <sequence>745</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : digita los apellidos del contacto Apellidos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062683</millis>
+  <sequence>746</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se presiona el bot\u00F3n Guardar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:02</date>
+  <millis>1574649062816</millis>
+  <sequence>753</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:07</date>
+  <millis>1574649067817</millis>
+  <sequence>755</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:07</date>
+  <millis>1574649067817</millis>
+  <sequence>756</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se presiona el bot\u00F3n Guardar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:07</date>
+  <millis>1574649067817</millis>
+  <sequence>757</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se presiona el bot\u00F3n Guardar</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:07</date>
+  <millis>1574649067818</millis>
+  <sequence>758</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : el sistema guarda la informaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:10</date>
+  <millis>1574649070821</millis>
+  <sequence>760</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 3 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:10</date>
+  <millis>1574649070920</millis>
+  <sequence>766</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/CrearContacto/Page_Crear Contacto - Contactos de Tesorera/btnGuardar&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:11</date>
+  <millis>1574649071042</millis>
+  <sequence>773</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/btnGuardar&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:11</date>
+  <millis>1574649071043</millis>
+  <sequence>774</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>el sistema guarda la informaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:11</date>
+  <millis>1574649071043</millis>
+  <sequence>775</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : el sistema guarda la informaci\u00F3n del contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:11</date>
+  <millis>1574649071044</millis>
+  <sequence>776</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : muestra mensaje de confirmaci\u00F3n de la creaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:11</date>
+  <millis>1574649071634</millis>
+  <sequence>782</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/CrearContacto/Page_Crear Contacto - Contactos de Tesorera/p_El usuario fue guardado exitosamente&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:16</date>
+  <millis>1574649076638</millis>
+  <sequence>784</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:16</date>
+  <millis>1574649076966</millis>
+  <sequence>785</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Taking screenshot successfully</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="attachment">E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802\\1574649076649.png</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077738</millis>
+  <sequence>787</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077739</millis>
+  <sequence>788</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>muestra mensaje de confirmaci\u00F3n de la creaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077739</millis>
+  <sequence>789</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : muestra mensaje de confirmaci\u00F3n de la creaci\u00F3n</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077740</millis>
+  <sequence>790</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077741</millis>
+  <sequence>791</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Crear contactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077743</millis>
+  <sequence>792</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : SCENARIO Cancelar la creaci\u00F3n de un contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077743</millis>
+  <sequence>793</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:17</date>
+  <millis>1574649077746</millis>
+  <sequence>795</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080233</millis>
+  <sequence>798</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = aa9738ca69d18e2d53c178520d59339f</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">aa9738ca69d18e2d53c178520d59339f</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080244</millis>
+  <sequence>799</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 78.0.3904.108</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 78.0.3904.108</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080244</millis>
+  <sequence>800</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080244</millis>
+  <sequence>801</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080245</millis>
+  <sequence>802</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-11-24T21:31:20</date>
+  <millis>1574649080245</millis>
+  <sequence>803</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:21</date>
+  <millis>1574649081393</millis>
+  <sequence>805</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:25</date>
+  <millis>1574649085043</millis>
+  <sequence>808</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Navigate to &amp;apos;http://smdessc01:4800/CAF.Tesoreria.Web/&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:25</date>
+  <millis>1574649085044</millis>
+  <sequence>809</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:25</date>
+  <millis>1574649085044</millis>
+  <sequence>810</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : El usuario ingresa a la p\u00E1gina principal</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:25</date>
+  <millis>1574649085044</millis>
+  <sequence>811</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:26</date>
+  <millis>1574649086368</millis>
+  <sequence>818</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:26</date>
+  <millis>1574649086369</millis>
+  <sequence>819</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:26</date>
+  <millis>1574649086369</millis>
+  <sequence>820</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en la opci\u00F3n contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:26</date>
+  <millis>1574649086369</millis>
+  <sequence>821</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087757</millis>
+  <sequence>828</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Bandeja de Contactos - Contactos de Tesorera/a_Crear Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087757</millis>
+  <sequence>829</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087758</millis>
+  <sequence>830</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : da clic en el link Crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087758</millis>
+  <sequence>831</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se ubica en el formulario de crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087907</millis>
+  <sequence>837</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Bandeja de Contactos/h1_Crear Contacto&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087907</millis>
+  <sequence>838</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se ubica en el formulario de crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087907</millis>
+  <sequence>839</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se ubica en el formulario de crear contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087908</millis>
+  <sequence>840</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : presiona el bot\u00F3n Regresar de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:27</date>
+  <millis>1574649087977</millis>
+  <sequence>846</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Bandeja de Contactos/a_Regresar&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:28</date>
+  <millis>1574649088886</millis>
+  <sequence>853</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/a_Regresar&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:28</date>
+  <millis>1574649088887</millis>
+  <sequence>854</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>presiona el bot\u00F3n Regresar de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:28</date>
+  <millis>1574649088887</millis>
+  <sequence>855</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : presiona el bot\u00F3n Regresar de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:28</date>
+  <millis>1574649088888</millis>
+  <sequence>856</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : se visualiza nuevamente la p\u00E1gina principal de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089036</millis>
+  <sequence>863</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Bandeja de Contactos/Bandeja de Contactos&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089806</millis>
+  <sequence>865</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089807</millis>
+  <sequence>866</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>se visualiza nuevamente la p\u00E1gina principal de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089808</millis>
+  <sequence>867</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End End action : se visualiza nuevamente la p\u00E1gina principal de contactos</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089811</millis>
+  <sequence>868</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>SCENARIO Cancelar la creaci\u00F3n de un contacto</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089811</millis>
+  <sequence>869</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : SCENARIO Cancelar la creaci\u00F3n de un contacto</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089832</millis>
+  <sequence>870</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Feature file: &amp;apos;Include/features/Contactos/CrearContactos.feature&amp;apos; was passed</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089832</millis>
+  <sequence>871</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : runFeatureFile(\&amp;quot;Include/features/Contactos/CrearContactos.feature\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:29</date>
+  <millis>1574649089832</millis>
+  <sequence>872</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Contactos/CrearContactos</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:31</date>
+  <millis>1574649091902</millis>
+  <sequence>873</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Contactos/CrearContactos</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:31</date>
+  <millis>1574649091902</millis>
+  <sequence>874</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:31</date>
+  <millis>1574649091902</millis>
+  <sequence>876</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>This Katalon Studio version has been deprecated. Please upgrade Katalon Studio to the latest version.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:32</date>
+  <millis>1574649092088</millis>
+  <sequence>1709</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating HTML report folder at: E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802...</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:32</date>
+  <millis>1574649092192</millis>
+  <sequence>1710</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>HTML report generated</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:32</date>
+  <millis>1574649092193</millis>
+  <sequence>1711</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating PDF report folder at: E:\\CAF\\Automatizacion\\CAF1\\Reports\\20191124_212802\\Clientes\\Contactos\\20191124_212802...</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:38</date>
+  <millis>1574649098337</millis>
+  <sequence>1712</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>PDF report generated</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:38</date>
+  <millis>1574649098337</millis>
+  <sequence>1714</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-11-24T21:31:38</date>
+  <millis>1574649098372</millis>
+  <sequence>1715</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Clientes/Contactos</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

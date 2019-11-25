@@ -12,14 +12,7 @@ Feature: Creación de notas
     When da clic en el link Crear notas
     Then el sistema muestra el formulario Crear Notas
 
-    @CancelarCreacionNota
-  Scenario: Cancelar la creación de una nota
-    Given El usuario ingresa a la página principal
-    And se ubica en la opción notas
-    When da clic en el link Crear notas
-    And presiona el botón Regresar del formulario de notas
-    Then se visualiza nuevamente la página principal de notas
-    
+       
     @CrearNota
   Scenario Outline: Crear notas
     Given El usuario ingresa a la página principal
@@ -34,3 +27,12 @@ Feature: Creación de notas
     Examples: 
       | tituloNota | contenidoNota |
       | Titulo de la nota      | Contenido de la nota        |
+      
+      @CancelarCreacionNota
+  
+  Scenario: Cancelar la creación de una nota
+    Given El usuario ingresa a la página principal
+    And se ubica en la opción notas
+    When da clic en el link Crear notas
+    And presiona el botón Regresar del formulario de notas
+    Then se visualiza nuevamente la página principal de notas

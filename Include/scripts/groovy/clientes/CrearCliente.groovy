@@ -18,6 +18,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
+
 import internal.GlobalVariable
 
 import MobileBuiltInKeywords as Mobile
@@ -48,6 +49,7 @@ import cucumber.api.java.en.When
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang.RandomStringUtils as RandStr
 
+
 class CrearCliente {
 
 
@@ -62,8 +64,26 @@ class CrearCliente {
 		println ("Ingresar Nombre del cliente")
 
 		WebUI.click(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'))
-		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreClientes)
-			
+		/*WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreClientes)
+		WebUI.delay(2)*/
+		
+			/*		Boolean MG = WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', true)
+		
+			WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 15);*/
+				/*if (MG) {*/
+		
+		int RN;
+		RN = (int)(Math.random()*500)
+		
+		WebUI.setText(findTestObject('CrearCliente/Page_Crear Cliente - Contactos de Tesorera/Page_Crear Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), nombreClientes+' '+RN)
+		WebUI.delay(3)
+		/*WebUI.sendKeys(findTestObject('Administracion/btnBuscarLoginUsuario'), Keys.chord(Keys.ENTER))*/
+				/*}
+				else {
+					WebUI.comment("El usuario fue guardado exitosamente");
+				}
+			}*/
+		
 	}
 
 	@And("digita el BBG Broker ID(.*)")
@@ -94,9 +114,8 @@ class CrearCliente {
 		WebUI.delay(5)
 		/*WebUI.verifyTextPresent("El nombre del cliente ya existe")*/
 		WebUI.closeBrowser()
-
 	}
-	
+
 
 	@And("presiona el botón Regresar")
 	def presiona_el_boton_Regresar() {

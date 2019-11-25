@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.480319">
+<testcase classname="Modificación de contactos" name=": Modificar contacto" time="14.742132">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When se ubica en la bandeja de contactos....................................passed
+And se selecciona el contacto a modificar...................................passed
+And se modifican las observaciones Se escriben las obervaciones para modificar contacto 1 del contacto.passed
+And se guarda la información modificada.....................................passed
+Then el sistema presenta un mensaje de confirmación.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Modificación de contactos" name=": Modificar contacto 2" time="15.738187">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When se ubica en la bandeja de contactos....................................passed
+And se selecciona el contacto a modificar...................................passed
+And se modifican las observaciones Se escriben las obervaciones para modificar contacto 2 del contacto.passed
+And se guarda la información modificada.....................................passed
+Then el sistema presenta un mensaje de confirmación.........................passed
+]]></system-out>
+</testcase>
+</testsuite>

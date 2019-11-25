@@ -53,9 +53,8 @@ class ModificarUsuario {
 	 */
 	@When("se ubica en la bandeja de administración")
 	def se_ubica_en_la_bandeja_de_administracion() {
-	
+
 		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin_fas fa-cog'))
-								
 	}
 
 	@And("se selecciona el usuario a modificar")
@@ -63,27 +62,25 @@ class ModificarUsuario {
 		WebUI.click(findTestObject('Object Repository/Administracion/button_Modificar'))
 		WebUI.delay(5)
 	}
-	
+
 	@And("se modifican los roles disponibles")
 	def se_modifican_los_roles_disponibles() {
-		
+
 		WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponibles_k-icon k-i-arrow-double-60-right'))
 		WebUI.click(findTestObject('Object Repository/Administracion/input_Off_btn btn-primary orange-button no-margin-top'))
 	}
-	
+
 	@And("se guarda la información del usuario modificada")
 	def se_guarda_la_informacion_del_usuario_modificada() {
-		
+
 		/*--WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))*/
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 5)
-		
 	}
-	
+
 	@And("se ubica en la bandeja de usuarios")
 	def se_ubica_en_la_bandeja_de_usuarios() {
-		
+
 		WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
 		WebUI.closeBrowser()
 	}
-	
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.569268">
+<testcase classname="Activar e inactivar contactos" name="Inactivar contactos" time="21.569268">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When consulta un contacto con estado Activo activo..........................passed
+And da clic sobre el botón Inactivar........................................passed
+Then El sistema muestra ventana para inactivar el contacto..................passed
+And se da clic en Guardar para inactivar el contacto........................passed
+And se presenta mensaje confirmando la inactivación del contacto............passed
+]]></system-out>
+</testcase>
+</testsuite>

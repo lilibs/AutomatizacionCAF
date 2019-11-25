@@ -4,6 +4,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.awt.Robot
+import java.awt.event.KeyEvent
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -75,20 +78,25 @@ class ActivarInactivarContactos {
 	def El_sistema_muestra_mensaje_para_activar_el_contacto() {
 		println "Mensaje de confirmación para activar el contacto"
 
+		
 		/*'Get text alert on the alert when it\'s shown'
 		 alertText = WebUI.getAlertText()
 		 'Verify text alert is correct or not'
 		 WebUI.verifyMatch(alertText, '¿Está seguro de activar el contacto?', false)*/
 
-		WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+		
 
-		WebUI.acceptAlert()
-		WebUI.closeBrowser()
+		
 	}
 
 	@And("se da clic en el botón Aceptar")
 	def se_da_clic_en_el_boton_Aceptar() {
 		println "Clic botón Aceptar"
+
+				Robot robot = new Robot()
+		robot.keyPress(KeyEvent.VK_ENTER)
+		WebUI.delay(5)
+		WebUI.closeBrowser()
 	}
 
 	@When("consulta un contacto con estado (.*) activo")

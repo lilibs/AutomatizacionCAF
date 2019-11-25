@@ -23,7 +23,7 @@ Feature: Creación de clientes con validaciones implementadas
 
   Examples: 
       | nombreClientes  		 | IdBBG |   
- 			| Liliana	Maria				 | 90	   |  
+ 			| Cliente				 | 90	   |  
  
 
 @CancelarCreacionCliente

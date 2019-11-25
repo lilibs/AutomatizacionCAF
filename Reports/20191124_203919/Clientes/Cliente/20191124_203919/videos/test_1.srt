@@ -1,0 +1,4 @@
+1
+00:00:00,400 --> 00:00:00,416
+1. runFeatureFile("Include/features/IngresoApp/ValidarIngresoAppConAcceso.feature")
+

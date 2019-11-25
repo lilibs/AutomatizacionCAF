@@ -1,0 +1,190 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Consultar notas existentes",
+        "description": "",
+        "id": "consultar-notas;consultar-notas-existentes;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12025377142,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1301637412,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción notas",
+            "match": {
+              "location": "CrearNotas.se_ubica_en_la_opcion_notas()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205409991,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "digita el nombre de la nota a consultar BMW en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BMW",
+                  "offset": 40
+                }
+              ],
+              "location": "ConsultarNotas.digita_el_nombre_de_la_nota_a_consultar_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154357747,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "presiona la tecla enter en el campo de búsqueda de la nota",
+            "match": {
+              "location": "ConsultarNotas.presion_la_tecla_enter_en_el_campo_de_busqueda_de_la_nota()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1354578626,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se visualiza el registro de la nota en el resultado de la búsqueda",
+            "match": {
+              "location": "ConsultarNotas.se_visualiza_el_registro_de_la_nota_en_el_resultado_de_la_busqueda()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Consultar"
+          },
+          {
+            "name": "@consultarNotas_existente"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Consultar notas no existentes",
+        "description": "",
+        "id": "consultar-notas;consultar-notas-no-existentes;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6922747606,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1120443748,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "se ubica en la opción notas",
+            "match": {
+              "location": "CrearNotas.se_ubica_en_la_opcion_notas()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 207446355,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "digita el nombre de la nota a consultar HOLA en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HOLA",
+                  "offset": 40
+                }
+              ],
+              "location": "ConsultarNotas.digita_el_nombre_de_la_nota_a_consultar_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108413866,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "presiona la tecla enter en el campo de búsqueda de la nota",
+            "match": {
+              "location": "ConsultarNotas.presion_la_tecla_enter_en_el_campo_de_busqueda_de_la_nota()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1215638000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "se visualiza el registro de la nota en el resultado de la búsqueda",
+            "match": {
+              "location": "ConsultarNotas.se_visualiza_el_registro_de_la_nota_en_el_resultado_de_la_busqueda()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Consultar"
+          },
+          {
+            "name": "@consultarNotas_Noexistente"
+          }
+        ]
+      }
+    ],
+    "name": "Consultar notas",
+    "description": "  Yo como usuario deseo consultar las notas existentes",
+    "id": "consultar-notas",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Notas/ConsultarNotas.feature",
+    "tags": [
+      {
+        "name": "@Consultar",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

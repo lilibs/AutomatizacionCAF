@@ -64,14 +64,7 @@ class CrearContactos {
 	}
 
 
-	@Given("El usuario ingresa a la opción Crear Contactos")
-	def El_usuario_ingresa_a_la_opcion_Crear_Contactos() {
-		println "Opción Crear Contactos"
-		WebUI.click(findTestObject('Page_Bandeja de Contactos - Contactos de Tesorera/a_Crear Contactos'))
-		
-
-	}
-
+	
 	@When("presiona el botón Regresar de contactos")
 	def presiona_el_boton_Regresar_de_contactos() {
 		println  "Presiona botón regresar"
@@ -85,41 +78,40 @@ class CrearContactos {
 	def se_visualiza_nuevamente_la_pagina_principal_de_contactos() {
 		println ("Visualizar página principal")
 		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/Bandeja de Contactos'))
+		WebUI.closeBrowser()
 	}
-	
-	
-	
+
+
+
 	@And("se ubica en el formulario de crear contactos")
 	def se_ubica_en_el_formulario_de_crear_contactos() {
 		println "Formulario de crear contactos"
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/h1_Crear Contacto'), 2)
 	}
 
-	
+
 	@When("selecciona el cliente que representa")
 	def selecciona_el_cliente_que_representa() {
 		println "Seleccionar cliente que representa"
-		
-		WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/span_Seleccione'))
-		
+
+		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/SeleccioneLi'))
+
 		WebUI.delay(5)
-		
-		WebUI.click(findTestObject('Object Repository/CrearCliente/Page_Crear Contacto - Contactos de Tesorera/li_Chorizo con papas'))
-		
+
+		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/ClienteRepLili'))
+
 		WebUI.delay(5)
-		
 	}
 
 	@And("selecciona la función")
 	def selecciona_la_funcion() {
 		println "Selecciona la función"
-		
+
 		WebUI.click(findTestObject('Bandeja de Contactos/SpanFuncion'))
-		
+
 		WebUI.delay(5)
-		
+
 		WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))
-		
 	}
 
 	@And("digita el nombre para el contacto a crear (.*)")
@@ -127,6 +119,7 @@ class CrearContactos {
 		println "Ingresar nombre del contacto"
 		WebUI.click(findTestObject('Bandeja de Contactos/NombreContacto'))
 		WebUI.setText(findTestObject('Bandeja de Contactos/NombreContacto'), nombreContacto)
+		WebUI.delay(3)
 	}
 
 	@And("digita los apellidos del contacto (.*)")
@@ -134,23 +127,34 @@ class CrearContactos {
 		println "Ingresar apellidos del contacto"
 		WebUI.click(findTestObject('Bandeja de Contactos/ApellidosContacto'))
 		WebUI.setText(findTestObject('Bandeja de Contactos/ApellidosContacto'), apellidosContacto)
+	
+	}
+
+	@And("se presiona el botón Guardar")
+	def se_presiona_el_boton_Guardar() {
+		println  "Guardar Cliente"
+
+		WebUI.click(findTestObject('Object Repository/CrearCliente/Create/Page_Crear Cliente - Contactos de Tesorera/input_Campo Opcional_btnGuardar'))
+		WebUI.delay(5)
+		/*WebUI.verifyTextPresent("El nombre del cliente ya existe")*/
+		/*WebUI.closeBrowser()*/
 	}
 
 	@Then("el sistema guarda la información del contacto")
 	def el_sistema_guarda_la_informacion_del_contacto() {
 		println "Se guarda la información"
-		WebUI.delay(5)
+		WebUI.delay(3)
+		WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/btnGuardar'), 5)
 		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/btnGuardar'))
 		/*WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cliente que representa'), 2)
-		WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cargo'), 2)*/
-		
+		 WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cargo'), 2)*/
 	}
 
 	@And("muestra mensaje de confirmación de la creación")
 	def muestra_mensaje_de_confirmacion_de_la_creacion() {
 		println "muestra mensaje de confirmación"
 		WebUI.verifyElementPresent(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/p_El usuario fue guardado exitosamente'),
-			2)
+				2)
 		WebUI.delay(5)
 		WebUI.takeScreenshot()
 		WebUI.closeBrowser()
@@ -159,14 +163,11 @@ class CrearContactos {
 
 
 	/*@And("muestra los campos faltantes por información")
-	def muestra_los_campos_faltantes_por_informacion() {
-		println "se muestra la información requerida"
-
-		WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cliente que representa'), 2)
-		WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cargo'), 2)
-		WebUI.takeScreenshot()
-		WebUI.closeBrowser()
-	}*/
-
-	
+	 def muestra_los_campos_faltantes_por_informacion() {
+	 println "se muestra la información requerida"
+	 WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cliente que representa'), 2)
+	 WebUI.verifyTextPresent(findTestObject('Object Repository/Bandeja de Contactos/span_Debe seleccionar el cargo'), 2)
+	 WebUI.takeScreenshot()
+	 WebUI.closeBrowser()
+	 }*/
 }
