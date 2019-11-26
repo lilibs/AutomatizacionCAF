@@ -9,18 +9,22 @@
          <key>XPATH</key>
          <value>//form[@id='frmCrearContacto']/div[3]/div/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmCrearContacto&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-5&quot;]/a[@class=&quot;padding-top&quot;][count(. | //a[@class = 'padding-top' and @href = '/CAF.Tesoreria.Web/Contacto' and (text() = 'Regresar' or . = 'Regresar')]) = count(//a[@class = 'padding-top' and @href = '/CAF.Tesoreria.Web/Contacto' and (text() = 'Regresar' or . = 'Regresar')])]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -41,7 +45,7 @@
       <value>Regresar</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

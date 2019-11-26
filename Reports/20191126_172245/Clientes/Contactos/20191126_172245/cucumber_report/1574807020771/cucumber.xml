@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="41.219982">
+<testcase classname="Escenario para realizar la consulta de los contactos" name="Consultar contactos existentes" time="17.156599">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When digita el nombre del contacto a consultar Simpson en el campo búsqueda.passed
+And presiona la tecla enter en el campo de búsqueda del contacto............passed
+Then se visualiza el nombre del contacto en el resultado de la búsqueda.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Escenario para realizar la consulta de los contactos" name="Consultar contactos no existentes" time="12.036085">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When digita el nombre del contacto a consultar Jennifer en el campo búsqueda.passed
+And presiona la tecla enter.................................................passed
+Then se visualiza el mensaje No hay datos...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Escenario para realizar la consulta de los contactos" name="Consultar contactos no existentes 2" time="12.027298">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+When digita el nombre del contacto a consultar María en el campo búsqueda...passed
+And presiona la tecla enter.................................................passed
+Then se visualiza el mensaje No hay datos...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

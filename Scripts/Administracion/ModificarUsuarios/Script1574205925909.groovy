@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuar
 
 WebUI.closeBrowser()*/
 
-WebUI.openBrowser('')
+/*WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://smdessc01:4800/CAF.Tesoreria.Web/')
 
@@ -54,5 +54,7 @@ WebUI.click(findTestObject('Object Repository/Administracion/Page_Modificar Role
 
 WebUI.click(findTestObject('Object Repository/Administracion/Page_Bandeja de Usuarios - Contactos de Tesorera/h1_Bandeja de Usuarios'))
 
-WebUI.closeBrowser()
+WebUI.closeBrowser()*/
+
+CucumberKW.runFeatureFile('Include/features/Administracion/ModificarUsuario.feature')
 

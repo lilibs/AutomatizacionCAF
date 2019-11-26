@@ -60,23 +60,21 @@ class CrearUsuario {
 		WebUI.click(findTestObject('Object Repository/Administracion/a_Crear Usuarios'))
 		WebUI.click(findTestObject('Object Repository/Administracion/input_LoginUsuario'))
 		WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin)
-		
+
 		WebUI.delay(2)
 
-	/*Boolean MG = WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', true)
-
-		/*WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 15);*/
+		/*Boolean MG = WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', true)
+		 /*WebUI.waitForElementPresent(findTestObject('Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario'), 15);*/
 		/*if (MG) {
-
-			int RN;
-			RN = (int)(Math.random()*500)
-			WebUI.delay(3)
-			WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin+RN)
-			WebUI.sendKeys(findTestObject('Administracion/btnBuscarLoginUsuario'), Keys.chord(Keys.ENTER))
-		}
-		else {
-			WebUI.comment("El usuario fue guardado exitosamente");
-		}*/
+		 int RN;
+		 RN = (int)(Math.random()*500)
+		 WebUI.delay(3)
+		 WebUI.setText(findTestObject('Object Repository/Administracion/input_LoginUsuario'), consultarLogin+RN)
+		 WebUI.sendKeys(findTestObject('Administracion/btnBuscarLoginUsuario'), Keys.chord(Keys.ENTER))
+		 }
+		 else {
+		 WebUI.comment("El usuario fue guardado exitosamente");
+		 }*/
 	}
 
 	@And("se presiona Buscar")

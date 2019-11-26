@@ -21,13 +21,5 @@ Feature: Creación de contactos con validaciones
       | nombreContacto | apellidosContacto |
       | Contacto        | Apellidos         |
       
-       @CancelarCreacionContacto
-  Scenario: Cancelar la creación de un contacto
-  	Given El usuario ingresa a la página principal 
-    And se ubica en la opción contactos
-    And da clic en el link Crear contactos
-    And se ubica en el formulario de crear contactos 
-    When presiona el botón Regresar de contactos
-    Then se visualiza nuevamente la página principal de contactos
-    
+         
       

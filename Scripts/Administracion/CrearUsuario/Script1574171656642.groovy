@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web')
+/*WebUI.openBrowser('http://smdessc01:4800/CAF.Tesoreria.Web')
 
 WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin_fas fa-cog'))
 
@@ -61,5 +61,7 @@ WebUI.acceptAlert()
 
 WebUI.acceptAlert()
 
-WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', false)
+WebUI.verifyTextPresent('El usuario no es válido o no existe, por favor verifique el usuario.', false)*/
+
+CucumberKW.runFeatureFile('Include/features/Administracion/CrearUsuario.feature')
 

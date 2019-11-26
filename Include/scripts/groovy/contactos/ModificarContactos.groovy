@@ -81,7 +81,7 @@ class ModificarContactos {
 	@Then("el sistema presenta un mensaje de confirmación")
 	def el_sistema_presenta_un_mensaje_de_confirmacion() {
 		println "se muestra mensaje de confirmación"
-		
+
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Contacto - Contactos de Tesorera/p_La operacin se realiz exitosamente'))
 
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Contactos - Contactos de Tesorera/h1_Bandeja de Contactos'))

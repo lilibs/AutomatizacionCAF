@@ -55,6 +55,7 @@ class ModificarUsuario {
 	def se_ubica_en_la_bandeja_de_administracion() {
 
 		WebUI.click(findTestObject('Object Repository/Administracion/i_Administracin_fas fa-cog'))
+		WebUI.delay(5)
 	}
 
 	@And("se selecciona el usuario a modificar")
@@ -67,19 +68,44 @@ class ModificarUsuario {
 	def se_modifican_los_roles_disponibles() {
 
 		WebUI.click(findTestObject('Object Repository/Administracion/span_Roles Disponibles_k-icon k-i-arrow-double-60-right'))
-		WebUI.click(findTestObject('Object Repository/Administracion/input_Off_btn btn-primary orange-button no-margin-top'))
+		/*WebUI.click(findTestObject('Object Repository/Administracion/input_Off_btn btn-primary orange-button no-margin-top'))*/
+		WebUI.delay(5)
 	}
+
+
+	@And("se modifican los roles de usuario disponibles")
+	def se_modifican_los_roles_de_usuario_disponibles() {
+
+		WebUI.click(findTestObject('Object Repository/Administracion/li_AdministradorFuncional'))
+		WebUI.click(findTestObject('Object Repository/Administracion/Page_Modificar Roles De Usuario - Contactos de Tesorera/span_Roles Disponibles_k-icon k-i-arrow-60-left'))
+		WebUI.delay(5)
+	}
+
+
+
+
 
 	@And("se guarda la información del usuario modificada")
 	def se_guarda_la_informacion_del_usuario_modificada() {
 
-		/*--WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))*/
+		/*WebUI.click(findTestObject('Object Repository/Administracion/btnGuardarUser'))*/
+		WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/Administracion/GuardarRolesUsuario'))
+
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 5)
+	}
+
+
+	@And("se guarda la información de los roles de usuario modificada")
+	def se_guarda_la_información_de_los_roles_de_usuario_modificada() {
+		WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/Administracion/GuardarRolesUsuario'))
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Administracion/p_El usuario fue guardado exitosamente'), 5)
 	}
 
 	@And("se ubica en la bandeja de usuarios")
 	def se_ubica_en_la_bandeja_de_usuarios() {
-
+		WebUI.delay(5)
 		WebUI.click(findTestObject('Object Repository/Administracion/h1_Bandeja de Usuarios'))
 		WebUI.closeBrowser()
 	}

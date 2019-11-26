@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="49.215925">
+<testcase classname="Modificación de permisos de usuarios" name="Modificar Roles usuario" time="25.386879">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción administración....................................passed
+When se ubica en la bandeja de administración...............................passed
+And se selecciona el usuario a modificar....................................passed
+And se modifican los roles de usuario disponibles...........................passed
+Then se guarda la información de los roles de usuario modificada............passed
+And se ubica en la bandeja de usuarios......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Modificación de permisos de usuarios" name="Modificar usuario" time="23.829046">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción administración....................................passed
+When se ubica en la bandeja de administración...............................passed
+And se selecciona el usuario a modificar....................................passed
+And se modifican los roles disponibles......................................passed
+Then se guarda la información del usuario modificada........................passed
+And se ubica en la bandeja de usuarios......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

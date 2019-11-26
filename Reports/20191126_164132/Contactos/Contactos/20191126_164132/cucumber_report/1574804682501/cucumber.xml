@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.328585">
+<testcase classname="Creación de contactos con validaciones" name="Crear contactos" time="35.328585">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción contactos.........................................passed
+And da clic en el link Crear contactos......................................passed
+When selecciona el cliente que representa...................................passed
+And selecciona la función...................................................passed
+And digita el nombre para el contacto a crear Contacto......................passed
+And digita los apellidos del contacto Apellidos.............................passed
+And se presiona el botón Guardar............................................passed
+Then el sistema guarda la información del contacto..........................passed
+And muestra mensaje de confirmación de la creación..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.371775">
+<testcase classname="Ingreso a la aplicación" name="Validación ingreso a la aplicación" time="16.371775">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+When se ubica en la opción de Inicio........................................passed
+Then se presenta un mensaje de Bienvenida a contactos Tesorería.............passed
+]]></system-out>
+</testcase>
+</testsuite>

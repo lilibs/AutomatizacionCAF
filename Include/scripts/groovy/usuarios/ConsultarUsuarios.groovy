@@ -62,6 +62,7 @@ class ConsultarUsuarios {
 		println ("Ingresar Nombre usuario en la búsqueda")
 
 		WebUI.click(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'))
+		WebUI.delay(5)
 		WebUI.setText(findTestObject('Object Repository/Administracion/Usuarios_txtBuscar'), consultarUsuario)
 	}
 

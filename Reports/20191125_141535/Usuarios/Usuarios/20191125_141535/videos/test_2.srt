@@ -1,0 +1,96 @@
+1
+00:00:00,378 --> 00:00:00,381
+1. openBrowser("http://smdessc01:4800/CAF.Tesoreria.Web")
+
+2
+00:00:05,601 --> 00:00:05,603
+5. click(findTestObject("Object Repository/Administracion/i_Administracin_fas fa-cog"))
+
+3
+00:00:06,675 --> 00:00:06,676
+9. click(findTestObject("Object Repository/Administracion/a_Crear Usuarios"))
+
+4
+00:00:07,387 --> 00:00:07,389
+13. setText(findTestObject("Object Repository/Administracion/input_LoginUsuario"), "login")
+
+5
+00:00:07,593 --> 00:00:07,594
+17. click(findTestObject("Administracion/btnBuscarLoginUsuario"))
+
+6
+00:00:07,845 --> 00:00:07,846
+21. delay(5)
+
+7
+00:00:12,879 --> 00:00:12,880
+25. waitForElementPresent(findTestObject("Object Repository/Administracion/p_El usuario no es vlido o no existe por favor verifique el usuario"), 5)
+
+8
+00:00:18,127 --> 00:00:18,128
+29. click(findTestObject("Object Repository/Administracion/div_Login Usuario"))
+
+9
+00:00:18,266 --> 00:00:18,267
+33. setText(findTestObject("Object Repository/Administracion/input_LoginUsuario"), loginUsuario)
+
+10
+00:00:18,535 --> 00:00:18,535
+37. delay(5)
+
+11
+00:00:23,538 --> 00:00:23,539
+41. click(findTestObject("Administracion/btnBuscarLoginUsuario"))
+
+12
+00:00:23,689 --> 00:00:23,690
+45. click(findTestObject("Object Repository/Administracion/span_Roles Disponibles"))
+
+13
+00:00:23,853 --> 00:00:23,855
+49. click(findTestObject("Object Repository/Administracion/btnGuardarUser"))
+
+14
+00:00:24,022 --> 00:00:24,023
+53. waitForElementPresent(findTestObject("Object Repository/Administracion/p_El usuario ya existe en el sistema"), 5)
+
+15
+00:00:24,141 --> 00:00:24,142
+57. click(findTestObject("Object Repository/Administracion/a_Regresar"))
+
+16
+00:00:24,837 --> 00:00:24,839
+61. delay(5)
+
+17
+00:00:29,846 --> 00:00:29,847
+65. click(findTestObject("Object Repository/Administracion/h1_Bandeja de Usuarios"))
+
+18
+00:00:29,993 --> 00:00:29,994
+69. closeBrowser()
+
+19
+00:00:30,756 --> 00:00:30,756
+73. verifyTextPresent("", false)
+
+20
+00:00:30,785 --> 00:00:30,787
+77. acceptAlert()
+
+21
+00:00:30,816 --> 00:00:30,818
+81. getCSSValue(findTestObject(null), "")
+
+22
+00:00:30,898 --> 00:00:30,900
+85. acceptAlert()
+
+23
+00:00:30,912 --> 00:00:30,914
+89. acceptAlert()
+
+24
+00:00:30,949 --> 00:00:30,950
+93. verifyTextPresent("El usuario no es válido o no existe, por favor verifique el usuario.", false)
+

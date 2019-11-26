@@ -27,7 +27,7 @@ import WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
-
+import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.webui.driver.DriverFactory
 
@@ -64,11 +64,14 @@ class CrearContactos {
 	}
 
 
-	
+
 	@When("presiona el botón Regresar de contactos")
 	def presiona_el_boton_Regresar_de_contactos() {
 		println  "Presiona botón regresar"
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/a_Regresar'), 5)
+
+		WebUI.delay(5)
+		WebUI.verifyTextPresent('Regresar', false)
+		/*	WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/a_Regresar'), 5)*/
 		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/a_Regresar'))
 	}
 
@@ -86,7 +89,7 @@ class CrearContactos {
 	@And("se ubica en el formulario de crear contactos")
 	def se_ubica_en_el_formulario_de_crear_contactos() {
 		println "Formulario de crear contactos"
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/h1_Crear Contacto'), 2)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Bandeja de Contactos/h1_Crear Contacto'), 1)
 	}
 
 
@@ -94,24 +97,37 @@ class CrearContactos {
 	def selecciona_el_cliente_que_representa() {
 		println "Seleccionar cliente que representa"
 
-		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/SeleccioneLi'))
+		WebUI.delay(5)
+		
+		(DriverFactory.getWebDriver() as JavascriptExecutor).executeScript('$("#ddlCliente").data("kendoDropDownList").select(3);')
+		
+	
+		
+		
+		/*WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/SeleccioneLi'))
 
 		WebUI.delay(5)
 
-		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/ClienteRepLili'))
+		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/ClienteRepLili'))*/
 
-		WebUI.delay(5)
+		
 	}
 
 	@And("selecciona la función")
 	def selecciona_la_funcion() {
 		println "Selecciona la función"
 
-		WebUI.click(findTestObject('Bandeja de Contactos/SpanFuncion'))
+		/*WebUI.click(findTestObject('Bandeja de Contactos/SpanFuncion'))
 
 		WebUI.delay(5)
 
-		WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))
+		WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))*/
+		
+		WebUI.delay(5)
+		
+		(DriverFactory.getWebDriver() as JavascriptExecutor).executeScript('$("#ddlCargo").data("kendoDropDownList").select(1);')
+		
+		
 	}
 
 	@And("digita el nombre para el contacto a crear (.*)")
@@ -127,7 +143,6 @@ class CrearContactos {
 		println "Ingresar apellidos del contacto"
 		WebUI.click(findTestObject('Bandeja de Contactos/ApellidosContacto'))
 		WebUI.setText(findTestObject('Bandeja de Contactos/ApellidosContacto'), apellidosContacto)
-	
 	}
 
 	@And("se presiona el botón Guardar")

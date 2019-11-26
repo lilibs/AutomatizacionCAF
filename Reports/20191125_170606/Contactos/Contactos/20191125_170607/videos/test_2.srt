@@ -1,0 +1,4 @@
+1
+00:00:00,236 --> 00:00:00,242
+1. runFeatureFile("Include/features/Contactos/InactivarContactos.feature")
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="37.619125">
+<testcase classname="Consultar Usuario" name="Consultar usuario existente" time="19.979853">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción administración....................................passed
+When digita el nombre del usuario a consultar liliana en el campo búsqueda..passed
+And presiona la tecla enter.................................................passed
+Then se visualiza el nombre del usuario liliana en el resultado de la búsqueda.passed
+]]></system-out>
+</testcase>
+<testcase classname="Consultar Usuario" name="Consultar usuario no existente" time="17.639272">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción administración....................................passed
+When digita el nombre del usuario a consultar Sandra en el campo búsqueda...passed
+And presiona la tecla enter.................................................passed
+Then se visualiza el resultado sin registros................................passed
+]]></system-out>
+</testcase>
+</testsuite>

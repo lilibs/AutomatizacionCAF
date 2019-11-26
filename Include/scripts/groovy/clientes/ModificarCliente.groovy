@@ -51,14 +51,14 @@ class ModificarCliente {
 	@And("El usuario da clic sobre el nombre del cliente")
 	def El_usuario_da_clic_sobre_el_nombre_del_cliente() {
 		println "Seleccionar cliente"
-
+		
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Bandeja de Clientes - Contactos de Tesorera/a_Liliana'))
 	}
 
 	@When("da clic sobre la opción Modificar")
 	def da_clic_sobre_la_opcion_Modificar () {
 		println "Opción Modificar"
-
+		WebUI.delay(5)
 		WebUI.verifyElementPresent(findTestObject('ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'),
 				5)
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle de Cliente - Contactos de Tesorera/a_Modificar'))
@@ -69,7 +69,7 @@ class ModificarCliente {
 	def actualiza_el_nombre_del_cliente (String NombreCliente1) {
 		println "Modifica nombre cliente"
 
-
+		WebUI.delay(5)
 		WebUI.setText(findTestObject('Object Repository/Nuevo/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Nombre Cliente_Nombre'), NombreCliente1)
 	}
 
@@ -77,7 +77,7 @@ class ModificarCliente {
 	@And("digita el correo (.*)")
 	def digita_el_correo (String correo) {
 		println "Modifica correo"
-
+		WebUI.delay(5)
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtCorreo'), correo)
 	}
 
@@ -85,7 +85,7 @@ class ModificarCliente {
 	@And("da clic en el botón Agregar correo")
 	def da_clic_en_el_boton_Agregar_correo() {
 		println "agregar opción"
-
+		WebUI.delay(5)
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/button_Agregar'))
 	}
 
@@ -93,26 +93,27 @@ class ModificarCliente {
 	@And("digita un tag (.*)")
 	def digita_un_tag (String tag) {
 		println "Modifica tag"
-
+		WebUI.delay(5)
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/input_Campo Opcional_txtTag'), tag)
 	}
 
 	@And("da clic en el botón Agregar tag")
 	def da_clic_en_el_boton_Agregar_tag () {
+		WebUI.delay(5)
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/button_Agregar'))
 	}
 
 	@And("digita la dirección (.*)")
 	def digita_la_direccion (String direccion) {
 		println "Modifica dirección"
-
+		WebUI.delay(5)
 		WebUI.setText(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/textarea_Campo Opcional_InformacionDireccion'), direccion)
 	}
 
 	@And("da clic en el botón Guardar")
 	def da_clic_en_el_boton_Guardar () {
 		println "Guarda la modificación de los datos del cliente"
-
+		WebUI.delay(5)
 		WebUI.click(findTestObject('Object Repository/ModificarCliente/Page_Detalle - Modificar Cliente - Contactos de Tesorera/BotonGuardar_Registro'))
 	}
 
