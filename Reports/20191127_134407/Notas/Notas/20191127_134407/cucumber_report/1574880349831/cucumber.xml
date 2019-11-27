@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.331994">
+<testcase classname="Modificar Notas" name="Modificar Nota" time="11.331994">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+And se selecciona la nota a modificar.......................................passed
+And se da clic sobre la acción Modificar....................................passed
+And se ubica en el formulario de modificar nota.............................passed
+And se modifica el titulo de la nota Titulo modificado......................passed
+And se modifica el contenido de la nota contenido modificado................passed
+And se guarda la información modificada.....................................passed
+Then el sistema presenta un mensaje de confirmación de la modificación......passed
+]]></system-out>
+</testcase>
+</testsuite>

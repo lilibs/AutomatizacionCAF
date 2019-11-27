@@ -1,0 +1,238 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 20,
+        "name": ": Modificar contacto",
+        "description": "",
+        "id": "modificación-de-contactos;:-modificar-contacto;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5616343517,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 991957158,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción contactos",
+            "match": {
+              "location": "ConsultarContactos.se_ubica_en_la_opcion_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233400730,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se ubica en la bandeja de contactos",
+            "match": {
+              "location": "ModificarContactos.se_ubica_en_la_bandeja_de_contactos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1167027982,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "se selecciona el contacto a modificar",
+            "match": {
+              "location": "ModificarContactos.se_selecciona_el_contacto_a_modificar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 450195667,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se modifican las observaciones Se escriben las obervaciones para modificar contacto 1 del contacto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se escriben las obervaciones para modificar contacto 1",
+                  "offset": 31
+                }
+              ],
+              "location": "ModificarContactos.se_modifican_las_observaciones_del_contacto(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 182133742,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se guarda la información modificada",
+            "match": {
+              "location": "ModificarContactos.se_guarda_la_informacion_modificada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4357207387,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "el sistema presenta un mensaje de confirmación",
+            "match": {
+              "location": "ModificarContactos.el_sistema_presenta_un_mensaje_de_confirmacion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModificarContacto"
+          },
+          {
+            "name": "@ModificarContacto"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": ": Modificar contacto",
+        "description": "",
+        "id": "modificación-de-contactos;:-modificar-contacto;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5282445879,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 910075256,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción contactos",
+            "match": {
+              "location": "ConsultarContactos.se_ubica_en_la_opcion_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223321173,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se ubica en la bandeja de contactos",
+            "match": {
+              "location": "ModificarContactos.se_ubica_en_la_bandeja_de_contactos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1061399086,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "se selecciona el contacto a modificar",
+            "match": {
+              "location": "ModificarContactos.se_selecciona_el_contacto_a_modificar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 459946233,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se modifican las observaciones Se escriben las obervaciones para modificar contacto 2 del contacto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se escriben las obervaciones para modificar contacto 2",
+                  "offset": 31
+                }
+              ],
+              "location": "ModificarContactos.se_modifican_las_observaciones_del_contacto(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235340829,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se guarda la información modificada",
+            "match": {
+              "location": "ModificarContactos.se_guarda_la_informacion_modificada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4366552090,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "el sistema presenta un mensaje de confirmación",
+            "match": {
+              "location": "ModificarContactos.el_sistema_presenta_un_mensaje_de_confirmacion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModificarContacto"
+          },
+          {
+            "name": "@ModificarContacto"
+          }
+        ]
+      }
+    ],
+    "name": "Modificación de contactos",
+    "description": "",
+    "id": "modificación-de-contactos",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Contactos/ModificarContactos.feature",
+    "tags": [
+      {
+        "name": "@ModificarContacto",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

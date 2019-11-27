@@ -1,0 +1,208 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 25,
+        "name": "Modificar cliente",
+        "description": "",
+        "id": "modificación-de-clientes;modificar-cliente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4661812775,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 744415076,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se ubica en la opción clientes",
+            "match": {
+              "location": "ConsultarCliente.se_ubica_en_la_opcion_clientes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 910302694,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "El usuario da clic sobre el nombre del cliente",
+            "match": {
+              "location": "ModificarCliente.El_usuario_da_clic_sobre_el_nombre_del_cliente()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6040370769,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "da clic sobre la opción Modificar",
+            "match": {
+              "location": "ModificarCliente.da_clic_sobre_la_opcion_Modificar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5218899356,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "actualiza el nombre del cliente Cliente",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cliente",
+                  "offset": 32
+                }
+              ],
+              "location": "ModificarCliente.actualiza_el_nombre_del_cliente(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5314998071,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "digita el correo cliente633@hotmail.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cliente633@hotmail.com",
+                  "offset": 17
+                }
+              ],
+              "location": "ModificarCliente.digita_el_correo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5166184522,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "da clic en el botón Agregar correo",
+            "match": {
+              "location": "ModificarCliente.da_clic_en_el_boton_Agregar_correo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5173843715,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "digita un tag valor",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valor",
+                  "offset": 14
+                }
+              ],
+              "location": "ModificarCliente.digita_un_tag(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5132929916,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "da clic en el botón Agregar tag",
+            "match": {
+              "location": "ModificarCliente.da_clic_en_el_boton_Agregar_tag()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5213102332,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "digita la dirección Cr 52 N 78 33",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cr 52 N 78 33",
+                  "offset": 20
+                }
+              ],
+              "location": "ModificarCliente.digita_la_direccion(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5208486222,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "da clic en el botón Guardar",
+            "match": {
+              "location": "ModificarCliente.da_clic_en_el_boton_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5725109294,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "el sistema muestra un mensaje de confirmación",
+            "match": {
+              "location": "ModificarCliente.el_sistema_muestra_un_mensaje_de_confirmacion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModificarClientes"
+          },
+          {
+            "name": "@ModificarCliente"
+          }
+        ]
+      }
+    ],
+    "name": "Modificación de clientes",
+    "description": "",
+    "id": "modificación-de-clientes",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Clientes/ModificarCliente.feature",
+    "tags": [
+      {
+        "name": "@ModificarClientes",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

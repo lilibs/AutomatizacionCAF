@@ -98,19 +98,15 @@ class CrearContactos {
 		println "Seleccionar cliente que representa"
 
 		WebUI.delay(5)
-		
+
 		(DriverFactory.getWebDriver() as JavascriptExecutor).executeScript('$("#ddlCliente").data("kendoDropDownList").select(3);')
-		
-	
-		
-		
+
+
+
+
 		/*WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/SeleccioneLi'))
-
-		WebUI.delay(5)
-
-		WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/ClienteRepLili'))*/
-
-		
+		 WebUI.delay(5)
+		 WebUI.click(findTestObject('Object Repository/Bandeja de Contactos/ClienteRepLili'))*/
 	}
 
 	@And("selecciona la función")
@@ -118,16 +114,12 @@ class CrearContactos {
 		println "Selecciona la función"
 
 		/*WebUI.click(findTestObject('Bandeja de Contactos/SpanFuncion'))
+		 WebUI.delay(5)
+		 WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))*/
 
 		WebUI.delay(5)
 
-		WebUI.click(findTestObject('CrearContacto/Page_Crear Contacto - Contactos de Tesorera/li_CIFO'))*/
-		
-		WebUI.delay(5)
-		
 		(DriverFactory.getWebDriver() as JavascriptExecutor).executeScript('$("#ddlCargo").data("kendoDropDownList").select(1);')
-		
-		
 	}
 
 	@And("digita el nombre para el contacto a crear (.*)")
