@@ -1,0 +1,118 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Activar contactos",
+        "description": "",
+        "id": "activar-contactos;activar-contactos;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8218576006,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1223528864,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se ubica en la opción contactos",
+            "match": {
+              "location": "ConsultarContactos.se_ubica_en_la_opcion_contactos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5909390826,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "consulta un contacto con estado Inactivo inactivo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Inactivo",
+                  "offset": 32
+                }
+              ],
+              "location": "ActivarInactivarContactos.consulta_un_contacto_con_estado_inactivo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5204090851,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "da clic sobre el botón activar",
+            "match": {
+              "location": "ActivarInactivarContactos.da_clic_sobre_el_boton_activar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1354755,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "El sistema muestra mensaje para activar el contacto",
+            "match": {
+              "location": "ActivarInactivarContactos.El_sistema_muestra_mensaje_para_activar_el_contacto()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5820251007,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "se da clic en el botón Aceptar",
+            "match": {
+              "location": "ActivarInactivarContactos.se_da_clic_en_el_boton_Aceptar()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ActivarInactivarContactos"
+          },
+          {
+            "name": "@activarContacto"
+          }
+        ]
+      }
+    ],
+    "name": "Activar contactos",
+    "description": "  Yo como usuario de la aplicación deseo activar contactos",
+    "id": "activar-contactos",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Contactos/ActivarContactos.feature",
+    "tags": [
+      {
+        "name": "@ActivarInactivarContactos",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

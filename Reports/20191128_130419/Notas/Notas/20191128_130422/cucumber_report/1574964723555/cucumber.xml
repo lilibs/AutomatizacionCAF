@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="18.341067">
+<testcase classname="Consultar notas" name="Consultar notas existentes" time="9.547171">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+When digita el nombre de la nota a consultar BMW en el campo búsqueda.......passed
+And presiona la tecla enter en el campo de búsqueda de la nota..............passed
+Then se visualiza el registro de la nota en el resultado de la búsqueda.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Consultar notas" name="Consultar notas no existentes" time="8.793896">
+<system-out><![CDATA[Given El usuario ingresa a la página principal..............................passed
+And se ubica en la opción notas.............................................passed
+When digita el nombre de la nota a consultar HOLA en el campo búsqueda......passed
+And presiona la tecla enter en el campo de búsqueda de la nota..............passed
+Then se visualiza el registro de la nota en el resultado de la búsqueda.....passed
+]]></system-out>
+</testcase>
+</testsuite>

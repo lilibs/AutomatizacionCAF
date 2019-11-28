@@ -1,0 +1,196 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Consultar usuario existente",
+        "description": "",
+        "id": "consultar-usuario;consultar-usuario-existente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7763415844,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1239924851,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la opción administración",
+            "match": {
+              "location": "ConsultarUsuarios.se_ubica_en_la_opcion_administracion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5552795583,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "digita el nombre del usuario a consultar liliana en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "liliana",
+                  "offset": 41
+                }
+              ],
+              "location": "ConsultarUsuarios.digita_el_nombre_del_usuario_a_consultar_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5139624350,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "presiona la tecla enter",
+            "match": {
+              "location": "ConsultarCliente.presiona_la_tecla_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5914928323,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se visualiza el nombre del usuario liliana en el resultado de la búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "liliana",
+                  "offset": 35
+                }
+              ],
+              "location": "ConsultarUsuarios.se_visualiza_el_nombre_del_usuario_en_el_resultado_de_la_busqueda(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarUsuario"
+          },
+          {
+            "name": "@ConsultaUsuario_Existente"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Consultar usuario no existente",
+        "description": "",
+        "id": "consultar-usuario;consultar-usuario-no-existente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5009251966,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "El usuario ingresa a la página principal",
+            "match": {
+              "location": "PasosComunesCliente.El_usuario_ingresa_a_la_pagina_principal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 833116239,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "se ubica en la opción administración",
+            "match": {
+              "location": "ConsultarUsuarios.se_ubica_en_la_opcion_administracion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5365319341,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "digita el nombre del usuario a consultar Sandra en el campo búsqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sandra",
+                  "offset": 41
+                }
+              ],
+              "location": "ConsultarUsuarios.digita_el_nombre_del_usuario_a_consultar_en_el_campo_busqueda(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5118187351,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "presiona la tecla enter",
+            "match": {
+              "location": "ConsultarCliente.presiona_la_tecla_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800416652,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "se visualiza el resultado sin registros",
+            "match": {
+              "location": "ConsultarUsuarios.se_visualiza_el_resultado_sin_registros()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConsultarUsuario"
+          },
+          {
+            "name": "@ConsultaUsuario_NoExistente"
+          }
+        ]
+      }
+    ],
+    "name": "Consultar Usuario",
+    "description": "",
+    "id": "consultar-usuario",
+    "keyword": "Feature",
+    "uri": "E:/CAF/Automatizacion/CAF1/Include/features/Administracion/ConsultarUsuarios.feature",
+    "tags": [
+      {
+        "name": "@ConsultarUsuario",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
